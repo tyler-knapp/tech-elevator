@@ -32,5 +32,6 @@ echo "Configuring Upstream..."
 
 git remote add upstream "https://bitbucket.org/${team}/${cohort}-main"
 git config branch.master.mergeOptions "--no-edit"
+git config branch.main.mergeOptions "--no-edit"
 
 echo "Done."
