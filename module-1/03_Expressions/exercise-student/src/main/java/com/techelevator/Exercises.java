@@ -431,6 +431,8 @@ public class Exercises {
 	 old35(15) → false
 	 */
 	public boolean old35(int n) {
+		if ( n % 3 == 0 ^ n % 5 ==0 )
+			return true;
 		return false;
 	}
 
@@ -443,6 +445,9 @@ public class Exercises {
 	 less20(20) → false
 	 */
 	public boolean less20(int n) {
+		if ( n % 20 >= 18  && n % 20 <20){
+			return true;
+		}
 		return false;
 	}
 
@@ -550,6 +555,11 @@ public class Exercises {
 	 inOrderEqual(5, 5, 7, true) → true
 	 */
 	public boolean inOrderEqual(int a, int b, int c, boolean equalOk) {
+		if (equalOk && ((a <= b) && b <= c)){
+			return true;
+		} else if( a < b && (b < c) ){
+			return true;
+		}
 		return false;
 	}
 
@@ -561,7 +571,16 @@ public class Exercises {
 	 loneSum(3, 3, 3) → 0
 	 */
 	public int loneSum(int a, int b, int c) {
-		return 0;
+		if (a == b && a == c && b == c) {
+			return 0;
+		} else if (a == b) {
+			return c;
+		} else if ( b == c){
+			return a;
+		} else if (a == c){
+			return b;
+		}
+		return a + b + c;
 	}
 
 	/*
@@ -575,7 +594,16 @@ public class Exercises {
 	 luckySum(13, 13, 3) → 0
 	 */
 	public int luckySum(int a, int b, int c) {
-		return 0;
+		if ( a == 13 && b ==13){
+			return 0;
+		} else if (a == 13) {
+			return c;
+		} else if (b ==13){
+			return a;
+		} else if (c == 13){
+			return a + b;
+		}
+		return a + b + c;
 	}
 
 }
