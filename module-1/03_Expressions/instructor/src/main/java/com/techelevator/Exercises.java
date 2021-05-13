@@ -4,13 +4,28 @@ public class Exercises {
 
 	/*
 	 1. The parameter weekday is true if it is a weekday, and the parameter vacation is true if we are on
-	 vacation. We sleep in if it is not a weekday or we're on vacation. Return true if we sleep in.
+	 vacation.
+	 We sleep in if it is not a weekday or we're on vacation.
+	 Return true if we sleep in.
 	 sleepIn(false, false) → true
 	 sleepIn(true, false) → false
 	 sleepIn(false, true) → true
 	 */
 	public boolean sleepIn(boolean weekday, boolean vacation) {
-		return false;
+
+//		return vacation || !weekday;
+
+		boolean willSleepIn = false;
+		// if on vacation sleep in
+		if (vacation == true) {
+			willSleepIn = true;
+		}
+		// if not a weekday sleep in
+		if (weekday == false) {
+			willSleepIn = true;
+		}
+		// otherwise don't sleep in
+		return willSleepIn;
 	}
 
 	/*
@@ -22,7 +37,20 @@ public class Exercises {
 	 monkeyTrouble(true, false) → false
 	 */
 	public boolean monkeyTrouble(boolean aSmile, boolean bSmile) {
-		return false;
+
+		return aSmile == bSmile;
+
+//		boolean inTrouble = false;
+//		// If both monkey smiling then in trouble
+//		if (aSmile == true && bSmile == true) {
+//			inTrouble = true;
+//		}
+//		// If neither monkey smiling then in trouble
+//		if ( !aSmile && !bSmile) {
+//			inTrouble = true;
+//		}
+//		// One smiling and one is not then not in trouble
+//		return inTrouble;
 	}
 
 	/*
