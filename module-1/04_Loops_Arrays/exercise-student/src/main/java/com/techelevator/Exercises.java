@@ -107,7 +107,12 @@ public class Exercises {
 	 sum2([1, 1, 1, 1]) → 2
 	 */
 	public int sum2(int[] nums) {
-		return 0;
+		if ( nums.length == 0){
+			return 0;
+		} else if (nums.length < 2){
+			return nums[0];
+		}
+		return nums[0] + nums[1];
 	}
 
 	/*
@@ -118,7 +123,7 @@ public class Exercises {
 	 middleWay([5, 2, 9], [1, 4, 5]) → [2, 4]
 	 */
 	public int[] middleWay(int[] a, int[] b) {
-		return new int[] {};
+		return new int[] {a[1], b[1]};
 	}
 
 	/*
@@ -128,7 +133,14 @@ public class Exercises {
 	 countEvens([2, 2, 0]) → 3
 	 countEvens([1, 3, 5]) → 0
 	 */
+
+
 	public int countEvens(int[] nums) {
+		for (int i = 0; i <= nums.length -1 ; i++){
+			if ( nums[i] % 2 == 0){
+				i++;
+			}
+		}
 		return 0;
 	}
 
@@ -143,6 +155,18 @@ public class Exercises {
 	 sum13([1, 2, 2, 1, 13, 3, 4]) → 10
 	 */
 	public int sum13(int[] nums) {
+		//SUM the array
+		for (int i = 0; i < nums.length ;i++ )
+			if( nums[i] != 13 ){
+				i++;
+			} else {
+				break;
+			}
+		if (nums.length ==0){
+
+		}
+		//13 doesnt count and numbers after 13 do not count
+		// empty array return 0
 		return 0;
 	}
 
