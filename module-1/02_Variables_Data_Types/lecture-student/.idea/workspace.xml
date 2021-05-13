@@ -25,26 +25,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../exercise-student" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../03_Expressions/exercise-student" />
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
-  <component name="RunManager" selected="JUnit.All in m01d02-variables-and-datatypes-exercises">
+  <component name="RunManager" selected="JUnit.All in m01d03-expressions-and-control-flow-exercises">
     <configuration name="Exercises" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.techelevator.Exercises" />
       <module name="main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.techelevator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.techelevator.HelloWorld" />
-      <module name="m01d02-variables-and-datatypes-lecture" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.techelevator.*" />
@@ -76,12 +63,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in m01d03-expressions-and-control-flow-exercises" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="m01d03-expressions-and-control-flow-exercises" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in m01d03-expressions-and-control-flow-lecture" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="m01d03-expressions-and-control-flow-lecture" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in m01d03-expressions-and-control-flow-exercises" />
+        <item itemvalue="JUnit.All in m01d03-expressions-and-control-flow-lecture" />
         <item itemvalue="JUnit.All in m01d02-variables-and-datatypes-exercises" />
         <item itemvalue="Application.Exercises" />
         <item itemvalue="Application.Lecture" />
-        <item itemvalue="Application.HelloWorld" />
       </list>
     </recent_temporary>
   </component>

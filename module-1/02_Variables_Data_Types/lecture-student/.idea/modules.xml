@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../exercise-student/m01d02-variables-and-datatypes-exercises.iml" filepath="$PROJECT_DIR$/../exercise-student/m01d02-variables-and-datatypes-exercises.iml" />
       <module fileurl="file://$PROJECT_DIR$/m01d02-variables-and-datatypes-lecture.iml" filepath="$PROJECT_DIR$/m01d02-variables-and-datatypes-lecture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../03_Expressions/exercise-student/m01d03-expressions-and-control-flow-exercises.iml" filepath="$PROJECT_DIR$/../../03_Expressions/exercise-student/m01d03-expressions-and-control-flow-exercises.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../03_Expressions/lecture-student/m01d03-expressions-and-control-flow-lecture.iml" filepath="$PROJECT_DIR$/../../03_Expressions/lecture-student/m01d03-expressions-and-control-flow-lecture.iml" />
     </modules>
   </component>
 </project>
