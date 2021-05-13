@@ -6,6 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/m01d02-variables-and-datatypes-lecture.iml" filepath="$PROJECT_DIR$/m01d02-variables-and-datatypes-lecture.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../03_Expressions/exercise-student/m01d03-expressions-and-control-flow-exercises.iml" filepath="$PROJECT_DIR$/../../03_Expressions/exercise-student/m01d03-expressions-and-control-flow-exercises.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../03_Expressions/lecture-student/m01d03-expressions-and-control-flow-lecture.iml" filepath="$PROJECT_DIR$/../../03_Expressions/lecture-student/m01d03-expressions-and-control-flow-lecture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../04_Loops_Arrays/exercise-student/m01d04-loops-and-arrays-exercise.iml" filepath="$PROJECT_DIR$/../../04_Loops_Arrays/exercise-student/m01d04-loops-and-arrays-exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../04_Loops_Arrays/lecture-student/m01d04-loops-and-arrays-lecture.iml" filepath="$PROJECT_DIR$/../../04_Loops_Arrays/lecture-student/m01d04-loops-and-arrays-lecture.iml" />
     </modules>
   </component>
 </project>
