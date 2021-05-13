@@ -7,8 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="m01d03-expressions-and-control-flow-instructor" />
+        <module name="m01d04-loops-and-arrays-lecture-final" />
         <module name="m01d02-variables-and-datatypes-instructor" />
         <module name="m01d03-expressions-and-control-flow-lecture-final" />
+        <module name="m01d04-loops-and-arrays-instructor" />
         <module name="m01d02-variables-and-datatypes-lecture-final" />
       </profile>
     </annotationProcessing>
@@ -17,6 +19,8 @@
       <module name="m01d02-variables-and-datatypes-lecture-final" target="11" />
       <module name="m01d03-expressions-and-control-flow-instructor" target="11" />
       <module name="m01d03-expressions-and-control-flow-lecture-final" target="11" />
+      <module name="m01d04-loops-and-arrays-instructor" target="11" />
+      <module name="m01d04-loops-and-arrays-lecture-final" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
