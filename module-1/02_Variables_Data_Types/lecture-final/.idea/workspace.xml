@@ -25,16 +25,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../04_Loops_Arrays/lecture-final" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../05_Command_Line_Programs/instructor" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
-  <component name="RunManager" selected="Application.LoopsAndArrays">
-    <configuration name="Exercises (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.techelevator.Exercises" />
-      <module name="m01d02-variables-and-datatypes-instructor" />
+  <component name="RunManager" selected="Application.CatPackingCalculator">
+    <configuration name="CatPackingCalculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.techelevator.example.CatPackingCalculator" />
+      <module name="m01d05-command-line-programs-lecture-final" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.techelevator.*" />
+          <option name="PATTERN" value="com.techelevator.example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -55,14 +55,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in m01d02-variables-and-datatypes-instructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="m01d02-variables-and-datatypes-instructor" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="All in m01d03-expressions-and-control-flow-instructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="m01d03-expressions-and-control-flow-instructor" />
       <option name="PACKAGE_NAME" value="" />
@@ -79,13 +71,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in m01d04-loops-and-arrays-instructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="m01d04-loops-and-arrays-instructor" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CatPackingCalculator" />
+        <item itemvalue="JUnit.All in m01d04-loops-and-arrays-instructor" />
         <item itemvalue="Application.LoopsAndArrays" />
         <item itemvalue="JUnit.All in m01d03-expressions-and-control-flow-instructor" />
         <item itemvalue="JUnit.All in m01d03-expressions-and-control-flow-lecture-final" />
-        <item itemvalue="JUnit.All in m01d02-variables-and-datatypes-instructor" />
-        <item itemvalue="Application.Exercises (1)" />
       </list>
     </recent_temporary>
   </component>

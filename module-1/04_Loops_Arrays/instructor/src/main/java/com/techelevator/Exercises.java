@@ -72,7 +72,8 @@ public class Exercises {
 	 reverse3([7, 0, 0]) → [0, 0, 7]
 	 */
 	public int[] reverse3(int[] nums) {
-		return new int[] {};
+
+		return new int[] { nums[2], nums[1], nums[0] };
 	}
 
 	/*
@@ -140,7 +141,16 @@ public class Exercises {
 	 has22([2, 1, 2]) → false
 	 */
 	public boolean has22(int[] nums) {
-		return false;
+		boolean foundAdjacentTwos = false;
+		// loop through the array
+			// check if the number is a 2
+				// if a 2 check if the next number is also a 2 and set the return to true
+		for (int i = 0; i < nums.length - 1 ; i++) {
+			if ( nums[i] == 2 && nums[i+1] == 2) {
+				foundAdjacentTwos = true;
+			}
+		}
+		return foundAdjacentTwos;
 	}
 	
 	/*
