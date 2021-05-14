@@ -136,12 +136,13 @@ public class Exercises {
 
 
 	public int countEvens(int[] nums) {
-		for (int i = 0; i <= nums.length -1 ; i++){
+		int count = 0;
+		for (int i = 0; i < nums.length ; i++){
 			if ( nums[i] % 2 == 0){
-				i++;
+				count += 1;
 			}
 		}
-		return 0;
+		return count;
 	}
 
 	/*
@@ -154,20 +155,17 @@ public class Exercises {
 	 sum13([1, 2, 2, 1, 13, 3]) → 6
 	 sum13([1, 2, 2, 1, 13, 3, 4]) → 10
 	 */
-	public int sum13(int[] nums) {
-		//SUM the array
-		for (int i = 0; i < nums.length ;i++ )
-			if( nums[i] != 13 ){
-				i++;
-			} else {
-				break;
-			}
-		if (nums.length ==0){
 
-		}
-		//13 doesnt count and numbers after 13 do not count
-		// empty array return 0
-		return 0;
+	public int sum13(int[] nums) {
+		int sum = 0;
+		for (int i = 0 ; i < nums.length ; i++ )
+			if(nums[i] != 13){
+				sum += nums[i];
+		} else if (nums[i] == 13){
+				i++;
+				continue;
+			}
+		return sum;
 	}
 
 	/*
@@ -196,7 +194,13 @@ public class Exercises {
 	 lucky13([1, 2, 4]) → false
 	 */
 	public boolean lucky13(int[] nums) {
-		return false;
+		boolean noOneOrThree = false;
+		for ( int i =0 ; i < nums.length ; i++){
+			if( nums[i] != 1 || nums[i] != 3){
+				noOneOrThree = true;
+			}
+		}
+		return noOneOrThree;
 	}
 
 	/*
