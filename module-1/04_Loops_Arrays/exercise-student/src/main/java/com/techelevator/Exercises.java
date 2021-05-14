@@ -194,13 +194,13 @@ public class Exercises {
 	 lucky13([1, 2, 4]) → false
 	 */
 	public boolean lucky13(int[] nums) {
-		boolean noOneOrThree = false;
+		boolean noOneOrThree = true;
 		for ( int i =0 ; i < nums.length ; i++){
-			if( nums[i] != 1 && nums[i] != 3){
-				noOneOrThree = true;
+			if( nums[i] == 1 || nums[i] == 3){
+				noOneOrThree = false;
 			}
 		}
-		return true;
+		return noOneOrThree;
 	}
 
 	/*
