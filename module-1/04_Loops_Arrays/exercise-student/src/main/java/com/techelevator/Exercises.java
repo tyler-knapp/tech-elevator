@@ -196,11 +196,11 @@ public class Exercises {
 	public boolean lucky13(int[] nums) {
 		boolean noOneOrThree = false;
 		for ( int i =0 ; i < nums.length ; i++){
-			if( nums[i] != 1 || nums[i] != 3){
+			if( nums[i] != 1 && nums[i] != 3){
 				noOneOrThree = true;
 			}
 		}
-		return noOneOrThree;
+		return true;
 	}
 
 	/*
@@ -210,7 +210,13 @@ public class Exercises {
 	 sum28([1, 2, 3, 4]) → false
 	 */
 	public boolean sum28(int[] nums) {
-		return false;
+		boolean sumOfTwos = true;
+		int count =0;
+		for (int i =0 ; i < nums.length ; i++)
+			if(nums[i] == 2 ){
+				count += nums[i];
+			}
+		return (count ==8);
 	}
 
 }
