@@ -23,7 +23,7 @@ public class TempConvert {
 		} else if (userCelsiusOrFahrenheit.equals("F")){
 			System.out.println( numberOfTemperature + "F is " + temperatureToCelsius + "C" );
 		} else {
-			System.out.println("error");
+			System.out.println("error... maybe you need to capitalize!");
 		}
 
 		/*
