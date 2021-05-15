@@ -28,7 +28,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../05_Command_Line_Programs/exercise-student" />
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
-  <component name="RunManager" selected="Application.LinearConvert">
+  <component name="RunManager" selected="Application.Fibonacci">
     <configuration name="CatPackageCalculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.techelevator.example.CatPackageCalculator" />
       <module name="m01d05-command-line-programs-lecture" />
@@ -42,8 +42,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinearConvert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.techelevator.LinearConvert" />
+    <configuration name="Fibonacci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.techelevator.Fibonacci" />
       <module name="m01d05-command-line-programs-exercise" />
       <extension name="coverage">
         <pattern>
@@ -55,9 +55,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoopsAndArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.techelevator.LoopsAndArrays" />
-      <module name="m01d04-loops-and-arrays-lecture" />
+    <configuration name="LinearConvert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.techelevator.LinearConvert" />
+      <module name="m01d05-command-line-programs-exercise" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.techelevator.*" />
@@ -91,11 +91,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Fibonacci" />
+        <item itemvalue="Application.CatPackageCalculator" />
         <item itemvalue="Application.LinearConvert" />
         <item itemvalue="Application.TempConvert" />
-        <item itemvalue="Application.CatPackageCalculator" />
         <item itemvalue="JUnit.All in m01d04-loops-and-arrays-exercise" />
-        <item itemvalue="Application.LoopsAndArrays" />
       </list>
     </recent_temporary>
   </component>
