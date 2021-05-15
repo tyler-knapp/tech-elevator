@@ -16,7 +16,7 @@ public class Fibonacci {
 		int fibPositionZero = 0;
 		int fibPositionOne = 1;
 		int fibSumPreviousTwoInts;
-		
+
 		if(userFibNumber == 0) {
 			System.out.println("0, 1");
 		} else if(userFibNumber == 1) {
