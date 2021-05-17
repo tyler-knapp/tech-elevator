@@ -1,5 +1,7 @@
 package com.techelevator;
 
+import java.nio.charset.StandardCharsets;
+
 public class Exercises {
 
 	/*
@@ -9,7 +11,8 @@ public class Exercises {
 	 helloName("X") → "Hello X!"
 	 */
 	public String helloName(String name) {
-		return null;
+		String newStr = new String ("Hello " + name +"!");
+		return newStr;
 	}
 
 	/*
@@ -20,7 +23,8 @@ public class Exercises {
 	 makeAbba("What", "Up") → "WhatUpUpWhat"
 	 */
 	public String makeAbba(String a, String b) {
-		return null;
+		String newOrder = new String(a + b + b + a);
+		return newOrder;
 	}
 
 	/*
@@ -32,7 +36,8 @@ public class Exercises {
 	 makeTags("cite", "Yay") → "<cite>Yay</cite>"
 	 */
 	public String makeTags(String tag, String word) {
-		return null;
+		String newTags = new String("<" + tag + ">" + word + "</" + tag + ">");
+		return newTags;
 	}
 
 	/*
@@ -44,7 +49,14 @@ public class Exercises {
 	 makeOutWord("[[]]", "word") → "[[word]]"
 	 */
 	public String makeOutWord(String out, String word) {
-		return null;
+
+		// break spring out into a start and end
+		String start = out.substring(0, 2);
+		// create new string that start + word + end
+		String end = out.substring(2);
+		// return the new string
+		String combined = start + word + end;
+		return combined;
 	}
 
 	/*
@@ -55,7 +67,8 @@ public class Exercises {
 	 extraEnd("Hi") → "HiHiHi"
 	 */
 	public String extraEnd(String str) {
-		return null;
+		String lastThreeCopiesOfLastTwoChars = new String(str.substring(str.length() - 2) + str.substring(str.length() - 2) + str.substring(str.length() - 2));
+		return lastThreeCopiesOfLastTwoChars;
 	}
 
 	/*
@@ -67,7 +80,13 @@ public class Exercises {
 	 firstTwo("ab") → "ab"
 	 */
 	public String firstTwo(String str) {
-		return null;
+		// If string is length is less that 2 then return the string
+		//if string length is 2 or greater return tjust the first 2 letters
+		if( str.length() < 2 ){
+			return str;
+		}
+		// if string length is 2 or greater return just the first 2 letters
+		return str.substring(0 , 2);
 	}
 
 	/*
@@ -77,7 +96,8 @@ public class Exercises {
 	 firstHalf("abcdef") → "abc"
 	 */
 	public String firstHalf(String str) {
-		return null;
+
+		return str.substring(0, str.length() / 2 );
 	}
 
 	/*
@@ -88,7 +108,7 @@ public class Exercises {
 	 withoutEnd("coding") → "odin"
 	 */
 	public String withoutEnd(String str) {
-		return null;
+		return str.substring(1, str.length() -1);
 	}
 
 	/*
@@ -100,7 +120,13 @@ public class Exercises {
 	 comboString("aaa", "b") → "baaab"
 	 */
 	public String comboString(String a, String b) {
-		return null;
+
+		String lastFirstLast = new String ( a + b + a);
+
+		if ( a.length() > b.length() ) {
+			lastFirstLast = new String (b + a + b);
+		}
+		return lastFirstLast;
 	}
 
 	/*
@@ -122,7 +148,10 @@ public class Exercises {
 	 left2("Hi") → "Hi"
 	 */
 	public String left2(String str) {
-		return null;
+
+		String rotatedLeftTwo = new String ( str.substring(2) + str.substring(0,2));
+
+		return rotatedLeftTwo;
 	}
 
 	/*
@@ -133,7 +162,10 @@ public class Exercises {
 	 right2("Hi") → "Hi"
 	 */
 	public String right2(String str) {
-		return null;
+
+		String rotatedRightTwo = new String( str.substring(str.length() - 2) + str.substring(0 , str.length() - 2));
+
+		return rotatedRightTwo;
 	}
 
 	/*
@@ -144,7 +176,12 @@ public class Exercises {
 	 theEnd("oh", true) → "o"
 	 */
 	public String theEnd(String str, boolean front) {
-		return null;
+
+		if(front){
+			return str.substring(0,1);
+		}
+		return str.substring( str.length() -1);
+
 	}
 
 	/*
@@ -155,7 +192,13 @@ public class Exercises {
 	 withoutEnd2("ab") → ""
 	 */
 	public String withoutEnd2(String str) {
-		return null;
+
+		String newVersion = "";
+
+		if( str.length() < 3){
+			return newVersion;
+		}
+		return newVersion = new String( str. substring( 1 , str.length() -1) );
 	}
 
 	/*
@@ -166,7 +209,8 @@ public class Exercises {
 	 middleTwo("Practice") → "ct"
 	 */
 	public String middleTwo(String str) {
-		return null;
+
+		return str.substring( ( (str.length() / 2) - 1 ) ,  str.length() / 2 + 1 );
 	}
 
 	/*
@@ -315,7 +359,15 @@ public class Exercises {
 	 altPairs("CodingHorror") → "Congrr"
 	 */
 	public String altPairs(String str) {
-		return null;
+		String newString = "";
+		for( int i = 0 ; i < str.length()  ; i += 4 ){
+			newString += str.charAt(i);
+			if( i + 1 < str.length()){
+				newString += str.charAt(i+1);
+			}
+
+		}
+		return newString;
 	}
 
 	/*
