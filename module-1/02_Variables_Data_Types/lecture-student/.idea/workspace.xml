@@ -25,7 +25,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../05_Command_Line_Programs/exercise-student" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../00a-week1-extra-exercises/src" />
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RunManager" selected="Application.DecimalToBinary">
@@ -114,5 +114,16 @@
       <updated>1620745000000</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../../05_Command_Line_Programs/exercise-student/src/main/java/com/techelevator/DecimalToBinary.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
