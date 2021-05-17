@@ -136,6 +136,7 @@ public class Lecture {
 		/*
 		20. What is 5 divided by 2?
 		*/
+
 		double resultOne = 5 / 2;
 		System.out.println(resultOne);
 
