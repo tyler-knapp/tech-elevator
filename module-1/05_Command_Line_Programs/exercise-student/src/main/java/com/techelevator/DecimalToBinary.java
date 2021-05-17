@@ -13,8 +13,15 @@ public class DecimalToBinary {
 		System.out.println("Please enter in a series of decimal values (separated by spaces): ");
 		//Convert String to an array?
 
-		double userInput = input.nextDouble();
-		input.nextLine();
+		String userDecimalInput = input.nextLine();
+
+		String[] userDecimalStringArray = userDecimalInput.split(" ");
+
+		int[] decimalIntegerArray = new int[userDecimalStringArray.length];
+
+		for(int i = 0 ; i < userDecimalStringArray.length ; i++){
+			decimalIntegerArray[i] = Integer.parseInt(userDecimalStringArray[i]);
+		}
 
 
 	}
