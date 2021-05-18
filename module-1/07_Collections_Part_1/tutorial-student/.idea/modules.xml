@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../06_Introduction_Objects_Strings/exercise-student/m01d06-introduction-to-objects-exercise.iml" filepath="$PROJECT_DIR$/../../06_Introduction_Objects_Strings/exercise-student/m01d06-introduction-to-objects-exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/m01d07-collections-part-1-tutorial.iml" filepath="$PROJECT_DIR$/m01d07-collections-part-1-tutorial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../exercise-student/m01d07-collections-part1-exercise.iml" filepath="$PROJECT_DIR$/../exercise-student/m01d07-collections-part1-exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../lecture-student/m01d07-collections-part1-lecture.iml" filepath="$PROJECT_DIR$/../lecture-student/m01d07-collections-part1-lecture.iml" />
+    </modules>
+  </component>
+</project>

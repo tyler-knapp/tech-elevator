@@ -287,10 +287,13 @@ public class Exercises {
 	 */
 	public boolean hasBad(String str) {
 
-		if ( str.substring(0 , 3).equals("bad") || str.substring(0 , 3).equals("xba") ){
+		if ( str.length() < 3 ) {
+			return false;
+		} else if ( str.substring(0, 3).equals("bad") ) {
 			return true;
+		} else {
+			return str.length() > 3 && str.substring(1, 4).equals("bad");
 		}
-		return false;
 	}
 
 	/*
@@ -300,7 +303,13 @@ public class Exercises {
 	 stringTimes("Hi", 1) → "Hi"
 	 */
 	public String stringTimes(String str, int n) {
-		return null;
+
+		String multipleWords = "";
+
+		for( int i = 0 ; i < n; i++){
+			multipleWords += str ;
+		}
+		return multipleWords;
 	}
 
 	/*
@@ -311,6 +320,14 @@ public class Exercises {
 	 frontTimes("Abc", 3) → "AbcAbcAbc"
 	 */
 	public String frontTimes(String str, int n) {
+
+//		String frontThreeLetters ="";
+//		if( str.length() < 3 ){
+//			return frontThreeLetters = new String( ){
+//
+//			}
+//		}
+
 		return null;
 	}
 
@@ -318,10 +335,18 @@ public class Exercises {
 	 Count the number of "xx" in the given string. We'll say that overlapping is allowed, so "xxx" contains 2 "xx".
 	 countXX("abcxx") → 1
 	 countXX("xxx") → 2
-	 countXX("xxxx") →
+	 countXX("xxxx") → 3
 	 */
 	public int countXX(String str) {
-		return 0;
+
+		int counter = 0;
+
+		for( int i = 0 ; i < str.length() - 1 ; i++){
+			if( str.substring( i , i + 2 ).contains("xx")){
+				counter++;
+			}
+		}
+		return counter;
 	}
 
 	/*
@@ -331,7 +356,19 @@ public class Exercises {
 	 doubleX("xxxxx") → true
 	 */
 	public boolean doubleX(String str) {
-		return false;
+
+		//boolean isAnXFollowedByAnotherX = false;
+
+		for (int i = 0; i < str.length() - 1; i++) {
+			if (str.charAt(i) == 'x') {
+				if (str.charAt(i + 1) == 'x') {
+					return true;
+				} else {
+					return false;
+				}
+			}
+		}
+				return false;
 	}
 
 	/*
@@ -341,7 +378,12 @@ public class Exercises {
 	 stringBits("Heeololeo") → "Hello"
 	 */
 	public String stringBits(String str) {
-		return null;
+		String everyOtherCharacter = "";
+
+		for( int i = 0 ; i < str.length() ; i+=2 ){
+			everyOtherCharacter += str.charAt(i);
+		}
+		return everyOtherCharacter;
 	}
 
 	/*
@@ -351,7 +393,12 @@ public class Exercises {
 	 stringSplosion("ab") → "aab"
 	 */
 	public String stringSplosion(String str) {
-		return null;
+
+		String explode = "";
+		for (int i = 0; i <= str.length(); i++)
+			explode += str.substring(0,i);
+
+		return explode;
 	}
 
 	/*
@@ -362,6 +409,12 @@ public class Exercises {
 	 last2("axxxaaxx") → 2
 	 */
 	public int last2(String str) {
+
+		int count = 0;
+		if(str.length() < 3 ){
+			return 0;
+		}
+
 		return 0;
 	}
 
@@ -402,7 +455,10 @@ public class Exercises {
 	 stringYak("yak123ya") → "123ya"
 	 */
 	public String stringYak(String str) {
-		return null;
+
+		String removeYak = new String( str.replace("yak", ""));
+
+		return removeYak;
 	}
 
 }
