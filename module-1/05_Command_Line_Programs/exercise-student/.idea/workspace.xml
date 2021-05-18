@@ -18,10 +18,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../team1-java-blue-week01-pair-exercises/05_Command_Line_Programs/src/main/java/com/techelevator/MartianWeight.java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../06_Introduction_Objects_Strings/exercise-student" />
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.All in m01d06-introduction-to-objects-exercise">
     <configuration name="DecimalToBinary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.techelevator.DecimalToBinary" />
       <module name="m01d05-command-line-programs-exercise" />
@@ -35,8 +35,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in m01d06-introduction-to-objects-exercise" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="m01d06-introduction-to-objects-exercise" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in m01d06-introduction-to-objects-exercise" />
         <item itemvalue="Application.DecimalToBinary" />
       </list>
     </recent_temporary>

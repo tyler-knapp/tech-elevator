@@ -221,7 +221,13 @@ public class Exercises {
 	 */
 	public boolean endsLy(String str) {
 
-		return false;
+		boolean doesItEndInLY = false;
+
+		if ( str.length() >= 2 && str.substring( str.length() -2 ).equals("ly") ) {
+			doesItEndInLY = true;
+		}
+
+		return doesItEndInLY;
 	}
 
 	/*
@@ -232,7 +238,11 @@ public class Exercises {
 	 nTwice("Chocolate", 1) → "Ce"
 	 */
 	public String nTwice(String str, int n) {
-		return null;
+
+		String frontOfArray = new String( str.substring( 0, n));
+		String backOfArray = new String( str.substring( str.length() - n));
+
+		return frontOfArray + backOfArray;
 	}
 
 	/*
@@ -244,7 +254,13 @@ public class Exercises {
 	 twoChar("java", 3) → "ja"
 	 */
 	public String twoChar(String str, int index) {
-		return null;
+
+		String twoLettersStartingAtIndex = new String( str.substring( index, index + 2));
+
+		if( str.length() - index > 2 ){
+			return twoLettersStartingAtIndex;
+		}
+		return str.substring(0,2);
 	}
 
 	/*
@@ -255,7 +271,10 @@ public class Exercises {
 	 middleThree("solving") → "lvi"
 	 */
 	public String middleThree(String str) {
-		return null;
+
+		String middleThreeLetters = new String( str.substring( str.length() / 2 - 1 , str.length() / 2 + 2) );
+
+		return middleThreeLetters;
 	}
 
 	/*
@@ -267,6 +286,10 @@ public class Exercises {
 	 hasBad("xxbadxx") → false
 	 */
 	public boolean hasBad(String str) {
+
+		if ( str.substring(0 , 3).equals("bad") || str.substring(0 , 3).equals("xba") ){
+			return true;
+		}
 		return false;
 	}
 
