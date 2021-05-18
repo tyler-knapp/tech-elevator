@@ -44,7 +44,14 @@ public class Exercises {
 	 makeOutWord("[[]]", "word") → "[[word]]"
 	 */
 	public String makeOutWord(String out, String word) {
-		return null;
+
+		// Break string out into a start and end
+		String start = out.substring(0,2);
+		String end = out.substring(2);
+		// create a new string that start + word + end
+		String combined = start + word + end;
+		// return the new string
+		return combined;
 	}
 
 	/*
@@ -67,7 +74,16 @@ public class Exercises {
 	 firstTwo("ab") → "ab"
 	 */
 	public String firstTwo(String str) {
-		return null;
+		// If string is length is less than 2 then return the string
+		// If string length is 2 or greater return just the first 2 letters
+
+		if (str == null) {
+			return "";
+		}
+		if (str.length() < 2) {
+			return str;
+		} 
+		return str.substring(0, 2);
 	}
 
 	/*
@@ -315,7 +331,15 @@ public class Exercises {
 	 altPairs("CodingHorror") → "Congrr"
 	 */
 	public String altPairs(String str) {
-		return null;
+		String newStr = "";
+
+		for (int i = 0; i < str.length() ; i += 4) {
+			newStr += str.charAt(i);
+			if (i + 1 < str.length()) {
+				newStr += str.charAt(i + 1);
+			}
+		}
+		return newStr;
 	}
 
 	/*
