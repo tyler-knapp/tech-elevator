@@ -37,7 +37,15 @@ public class Exercises {
 	 no4LetterWords( {"Jack", "Jill", "Jane", "John", "Jim"} )  ->  ["Jim"]
 	 */
 	public List<String> no4LetterWords(String[] stringArray) {
-		return null;
+		List<String> listWithout4LetterWords = new ArrayList<String>();
+
+		for (String word : stringArray) {
+			if (word.length() != 4) {
+				listWithout4LetterWords.add(word);
+			}
+		}
+
+		return listWithout4LetterWords;
 	}
 
 	/*
