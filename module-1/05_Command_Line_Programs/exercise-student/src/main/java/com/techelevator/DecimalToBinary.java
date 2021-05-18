@@ -2,61 +2,51 @@ package com.techelevator;
 
 import java.util.Scanner;
 
+/*
+Write a command line program which prompts the user for a series of decimal integer values
+and displays each decimal value as itself and its binary equivalent
+$ DecimalToBinary
+Please enter in a series of decimal values (separated by spaces): 460 8218 1 31313 987654321
+460 in binary is 111001100
+8218 in binary is 10000000011010
+1 in binary is 1
+31313 in binary is 111101001010001
+987654321 in binary is 111010110111100110100010110001
+*/
 public class DecimalToBinary {
 
 	public static void main(String[] args) {
 
-		//Get user input
-
 		Scanner input = new Scanner(System.in);
 
-		System.out.println("Please enter in a series of decimal values (separated by spaces): ");
-		//Convert String to an array?
+		System.out.print("Please enter in a series of decimal values (separated by spaces): ");
 
-		String userDecimalInput = input.nextLine();
+		String decimalValuesInput = input.nextLine();
+		String[] decimalValuesSeperated = decimalValuesInput.split(" ");
+		// Loop through our array of strings
+		for(int i = 0;  i < decimalValuesSeperated.length ; i++) {
+			//for each iteration parse and give us an int at specified index (i)
+			int inputNumber = Integer.parseInt(decimalValuesSeperated[i]);
+			// print out each user generated number & text
+			System.out.print(inputNumber + " in binary is ");
+			//pass input number to decimalToBinary
+			decimalToBinary(inputNumber);
+			System.out.println(" ");
+		}
+	}
+	public static void decimalToBinary(int inputNumber){
 
-		String[] userDecimalStringArray = userDecimalInput.split(" ");
+		int[] binaryNumber = new int[100];
+		int i = 0;
 
-		int[] decimalIntegerArray = new int[userDecimalStringArray.length];
+		while (inputNumber > 0){
 
-		for(int i = 0 ; i < userDecimalStringArray.length ; i++){
-
-			decimalIntegerArray[i] = Integer.parseInt(userDecimalStringArray[i]);
+			binaryNumber[i++] = inputNumber % 2 ;
+			inputNumber /=  2;
+		}
+		for(int j = i-1;j >= 0;j--){
+			System.out.print(binaryNumber[j]);
 
 		}
-
-		//System.out.println(decimalIntegerArray[2]);
-
-		//Iterate through the array
-		for (int i = 0 ; i < decimalIntegerArray.length ; i++){
-
-			//iterate the
-			for( int inner = 0 ; decimalIntegerArray[i] / 2 <= 1 ; inner++){
-
-				if( decimalIntegerArray[inner] % 2 == 0){
-					System.out.println("0");
-					decimalIntegerArray[inner] /=2;
-				}
-				System.out.println("1");
-				decimalIntegerArray[inner] /= 2;
-			}
-					}
-
-				}
-		}
-		//for( int i = decimalIntegerArray.length - 1  ; i > 0 ; i--){
-
-		//	if( decimalIntegerArray[i] % 2 == 1 ){
-		//		System.out.println("1");
-		//	}
-		//	System.out.println("0");
-		//}
-
-
-// 	while (input.hasNextInt()) {
-
-
-//while (userIntegerToConvert >= 1 {
-	//calculate and print next digit (left to right)
-//int currentBinaryDIgit = userIntegertoConvert 5 2;
-
+	}
+}
