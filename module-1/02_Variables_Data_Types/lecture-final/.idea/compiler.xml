@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="m01d03-expressions-and-control-flow-instructor" />
         <module name="m01d05-command-line-programs-instructor" />
+        <module name="m01d08-collections-part2-instructor" />
         <module name="m01d06-introduction-to-objects-instructor" />
         <module name="m01d04-loops-and-arrays-instructor" />
         <module name="m01d07-collections-part1-instructor" />
@@ -36,6 +37,7 @@
       <module name="m01d06-introduction-to-objects-lecture-final" target="11" />
       <module name="m01d07-collections-part1-instructor" target="11" />
       <module name="m01d07-collections-part1-lecture-final" target="11" />
+      <module name="m01d08-collections-part2-instructor" target="11" />
       <module name="m01d08-collections-part2-lecture-final" target="11" />
     </bytecodeTargetLevel>
   </component>

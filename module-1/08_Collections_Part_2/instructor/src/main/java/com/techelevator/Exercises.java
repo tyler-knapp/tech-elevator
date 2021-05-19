@@ -1,6 +1,7 @@
 package com.techelevator;
 
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 
 public class Exercises {
@@ -34,7 +35,22 @@ public class Exercises {
 	 *
 	 */
 	public String animalGroupName(String animalName) {
-		return null;
+
+		if (animalName == null) {
+			return "unknown";
+		}
+
+		Map<String, String> animalHerds = new HashMap<String, String>();
+		animalHerds.put("RHINO", "Crash");
+		animalHerds.put("GIRAFFE", "Tower");
+
+		String herdName = animalHerds.get( animalName.toUpperCase());
+
+		if (herdName == null) {
+			return "unknown";
+		}
+
+		return herdName;
 	}
 
 	/*
@@ -177,7 +193,23 @@ public class Exercises {
 	 *
 	 */
 	public Map<String, Integer> last2Revisited(String[] words) {
-		return null;
+		Map<String, Integer> endCounts = new HashMap<String, Integer>();
+
+		// loop through the the words
+		// for each word get the number of times the last 2 appear
+		// put in the map word is the key and the count is the value
+		for (String word : words) {
+			String end = word.substring( word.length() - 2);
+			int count = 0;
+			for (int i = 0; i < word.length() - 2; i++) {
+				if ( word.substring(i, i+2).equals(end)) {
+					count++;
+				}
+			}
+			endCounts.put(word, count);
+		}
+
+		return endCounts;
 	}
 
 }

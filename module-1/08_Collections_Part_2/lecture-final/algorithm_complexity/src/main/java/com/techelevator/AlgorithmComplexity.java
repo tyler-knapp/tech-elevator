@@ -36,7 +36,8 @@ public class AlgorithmComplexity {
 	 * The number of operations for the algorithm doesn't actually change as the problem size increases.
 	 */
 	public static boolean isLastElementEven(int[] array) {
-	    return array[array.length - 1] % 2 == 0;
+
+		return array[array.length - 1] % 2 == 0;
 	}
 	
 	/* O(n) - Linear Complexity
