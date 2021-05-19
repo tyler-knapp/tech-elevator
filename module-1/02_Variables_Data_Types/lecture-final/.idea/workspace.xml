@@ -26,16 +26,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../06_Introduction_Objects_Strings/instructor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../07_Collections_Part_1/instructor" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
-  <component name="RunManager" selected="JUnit.All in m01d06-introduction-to-objects-instructor">
-    <configuration name="CatPackingCalculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.techelevator.example.CatPackingCalculator" />
-      <module name="m01d05-command-line-programs-lecture-final" />
+  <component name="RunManager" selected="JUnit.All in m01d07-collections-part1-instructor">
+    <configuration name="Lecture (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.techelevator.Lecture" />
+      <module name="m01d07-collections-part1-lecture-final" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.techelevator.example.*" />
+          <option name="PATTERN" value="com.techelevator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -56,16 +56,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in m01d04-loops-and-arrays-instructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="m01d04-loops-and-arrays-instructor" />
+    <configuration name="All in m01d06-introduction-to-objects-instructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="m01d06-introduction-to-objects-instructor" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in m01d06-introduction-to-objects-instructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="m01d06-introduction-to-objects-instructor" />
+    <configuration name="All in m01d07-collections-part1-instructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="m01d07-collections-part1-instructor" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
       <method v="2">
@@ -81,11 +81,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in m01d07-collections-part1-instructor" />
+        <item itemvalue="Application.Lecture (1)" />
         <item itemvalue="JUnit.All in m01d06-introduction-to-objects-instructor" />
         <item itemvalue="Application.Lecture" />
         <item itemvalue="Java Scratch.Scratch" />
-        <item itemvalue="Application.CatPackingCalculator" />
-        <item itemvalue="JUnit.All in m01d04-loops-and-arrays-instructor" />
       </list>
     </recent_temporary>
   </component>
