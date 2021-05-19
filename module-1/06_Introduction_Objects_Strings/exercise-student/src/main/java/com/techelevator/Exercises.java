@@ -321,14 +321,12 @@ public class Exercises {
 	 */
 	public String frontTimes(String str, int n) {
 
-//		String frontThreeLetters ="";
-//		if( str.length() < 3 ){
-//			return frontThreeLetters = new String( ){
-//
-//			}
-//		}
+		String stringOfFirstThreeChars = "";
 
-		return null;
+		if(str.length() < 3){
+			return stringOfFirstThreeChars.substring(0);
+		}
+		return stringOfFirstThreeChars;
 	}
 
 	/*
@@ -395,9 +393,9 @@ public class Exercises {
 	public String stringSplosion(String str) {
 
 		String explode = "";
-		for (int i = 0; i <= str.length(); i++)
+		for (int i = 0; i <= str.length(); i++){
 			explode += str.substring(0,i);
-
+		}
 		return explode;
 	}
 
@@ -409,13 +407,19 @@ public class Exercises {
 	 last2("axxxaaxx") → 2
 	 */
 	public int last2(String str) {
-
-		int count = 0;
 		if(str.length() < 3 ){
 			return 0;
 		}
 
-		return 0;
+		int numberOfTimesASubstringAppears = 0;
+		String lastTwoChars = str.substring( str.length() - 2);
+
+		for(int i = 0 ; i < str.length() -2; i++){
+			if(str.substring(i, i + 2).equals(lastTwoChars)) {
+				numberOfTimesASubstringAppears += 1;
+			}
+		}
+		return numberOfTimesASubstringAppears;
 	}
 
 	/*
@@ -426,6 +430,7 @@ public class Exercises {
 	 stringX("xabxxxcdx") → "xabcdx"
 	 */
 	public String stringX(String str) {
+
 		return null;
 	}
 

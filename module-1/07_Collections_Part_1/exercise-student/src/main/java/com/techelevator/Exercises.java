@@ -78,9 +78,11 @@ public class Exercises {
 	public Integer findLargest(List<Integer> integerList) {
 		Integer maxNumberInList = 0;
 
-		for( int i = 0 ; i < integerList.size() - 2 ; i++ ){
+		for( int i = 0 ; i < integerList.size() - 1 ; i++){
 			if( integerList.get(i) > integerList.get(i + 1)){
 				maxNumberInList = integerList.get(i);
+			}else if( integerList.get(i) < integerList.get(i + 1)){
+				maxNumberInList = integerList.get( i + 1 );
 			}
 		}
 		return maxNumberInList;
