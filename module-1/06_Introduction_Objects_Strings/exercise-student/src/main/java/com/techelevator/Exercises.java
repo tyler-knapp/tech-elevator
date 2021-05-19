@@ -431,7 +431,13 @@ public class Exercises {
 	 */
 	public String stringX(String str) {
 
-		return null;
+		if( str.length() < 3){
+			return str;
+		}
+		String removeXExceptTheFrontOrEnd = str.substring( 1, str.length() -1);
+		removeXExceptTheFrontOrEnd = removeXExceptTheFrontOrEnd.replace("x", "");
+
+		return str.charAt(0) + removeXExceptTheFrontOrEnd + str.charAt( str.length() - 1);
 	}
 
 	/*
@@ -447,7 +453,6 @@ public class Exercises {
 			if( i + 1 < str.length()){
 				newString += str.charAt(i+1);
 			}
-
 		}
 		return newString;
 	}
