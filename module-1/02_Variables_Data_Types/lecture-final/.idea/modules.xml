@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../08_Collections_Part_2/lecture-final/algorithm_complexity/algorithm-complexity-lecture.iml" filepath="$PROJECT_DIR$/../../08_Collections_Part_2/lecture-final/algorithm_complexity/algorithm-complexity-lecture.iml" />
       <module fileurl="file://$PROJECT_DIR$/../instructor/m01d02-variables-and-datatypes-instructor.iml" filepath="$PROJECT_DIR$/../instructor/m01d02-variables-and-datatypes-instructor.iml" />
       <module fileurl="file://$PROJECT_DIR$/m01d02-variables-and-datatypes-lecture-final.iml" filepath="$PROJECT_DIR$/m01d02-variables-and-datatypes-lecture-final.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../03_Expressions/instructor/m01d03-expressions-and-control-flow-instructor.iml" filepath="$PROJECT_DIR$/../../03_Expressions/instructor/m01d03-expressions-and-control-flow-instructor.iml" />
@@ -14,6 +15,8 @@
       <module fileurl="file://$PROJECT_DIR$/../../06_Introduction_Objects_Strings/lecture-final/m01d06-introduction-to-objects-lecture-final.iml" filepath="$PROJECT_DIR$/../../06_Introduction_Objects_Strings/lecture-final/m01d06-introduction-to-objects-lecture-final.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../07_Collections_Part_1/instructor/m01d07-collections-part1-instructor.iml" filepath="$PROJECT_DIR$/../../07_Collections_Part_1/instructor/m01d07-collections-part1-instructor.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../07_Collections_Part_1/lecture-final/m01d07-collections-part1-lecture-final.iml" filepath="$PROJECT_DIR$/../../07_Collections_Part_1/lecture-final/m01d07-collections-part1-lecture-final.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../08_Collections_Part_2/instructor/m01d08-collections-part2-instructor.iml" filepath="$PROJECT_DIR$/../../08_Collections_Part_2/instructor/m01d08-collections-part2-instructor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../08_Collections_Part_2/lecture-final/sets_and_maps/m01d08-collections-part2-lecture-final.iml" filepath="$PROJECT_DIR$/../../08_Collections_Part_2/lecture-final/sets_and_maps/m01d08-collections-part2-lecture-final.iml" />
     </modules>
   </component>
 </project>
