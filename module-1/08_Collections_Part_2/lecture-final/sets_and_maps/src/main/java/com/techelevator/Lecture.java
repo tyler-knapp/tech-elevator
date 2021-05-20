@@ -106,7 +106,6 @@ public class Lecture {
 
 		System.out.println();
 		
-		
 		/* LOOPING OVER A MAP */
 		// Loop through a map by looping through the Keys (using keySet())
 		// Then using the keys to get the value
@@ -121,7 +120,6 @@ public class Lecture {
 		for(Map.Entry<String, String> mapEntry : animalNoises.entrySet()) {
 			System.out.println("The " + mapEntry.getKey() + " says " + mapEntry.getValue());
 		}
-
 
 		System.out.println();
 		
