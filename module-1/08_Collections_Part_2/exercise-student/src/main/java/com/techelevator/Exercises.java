@@ -1,6 +1,9 @@
 package com.techelevator;
 
+import javax.print.DocFlavor;
+import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 
 public class Exercises {
@@ -34,7 +37,30 @@ public class Exercises {
 	 *
 	 */
 	public String animalGroupName(String animalName) {
-		return null;
+
+		if (animalName == null){
+			return "unknown";
+		}
+
+		Map<String, String> animalHerds = new HashMap<String, String>();
+
+		animalHerds.put("RHINO" , "Crash");
+		animalHerds.put("GIRAFFE" , "Tower");
+		animalHerds.put("ELEPHANT","Herd");
+		animalHerds.put("LION","Pride");
+		animalHerds.put("CROW","Murder");
+		animalHerds.put("PIGEON","Kit");
+		animalHerds.put("FLAMINGO","Pat");
+		animalHerds.put("DEER","Herd");
+		animalHerds.put("DOG","pack");
+		animalHerds.put("CROCODILE","Float");
+
+		String herdName = animalHerds.get( animalName.toUpperCase() );
+
+		if(herdName == null){
+			return "unknown";
+		}
+		return herdName;
 	}
 
 	/*
@@ -60,7 +86,24 @@ public class Exercises {
 	 *
 	 */
 	public double isItOnSale(String itemNumber) {
-		return -1.0;
+
+		if(itemNumber == null){
+			return 0.00d;
+		}
+
+		Map<String , Double> discountPercentage = new HashMap<String, Double>();
+
+		discountPercentage.put("KITCHEN4001" , 0.20);
+		discountPercentage.put("GARAGE1070" , 0.15);
+		discountPercentage.put("LIVINGROOM" , 0.10);
+		discountPercentage.put("KITCHEN6073" , 0.40);
+		discountPercentage.put("BEDROOM3434" , 0.60);
+		discountPercentage.put("BATH0073" , 0.15);
+
+		if( discountPercentage.containsKey( itemNumber.toUpperCase() ) ) {
+			return discountPercentage.get( itemNumber.toUpperCase() );
+		}
+		return 0.00;
 	}
 
 	/*
@@ -74,7 +117,15 @@ public class Exercises {
 	 *
 	 */
 	public Map<String, Integer> robPeterToPayPaul(Map<String, Integer> peterPaul) {
-		return null;
+		int petersMoney = peterPaul.get("Peter");
+		int paulsMoney =peterPaul.get("Paul");
+
+		if( petersMoney > 0 && paulsMoney < 1000){
+			int takenMoney = petersMoney / 2;
+			peterPaul.put("Peter" , petersMoney - takenMoney );
+			peterPaul.put("Paul" , paulsMoney + takenMoney );
+		}
+		return peterPaul;
 	}
 
 	/*
@@ -87,7 +138,20 @@ public class Exercises {
 	 *
 	 */
 	public Map<String, Integer> peterPaulPartnership(Map<String, Integer> peterPaul) {
-		return null;
+
+		Integer petersStarting = peterPaul.get("Peter");
+		Integer paulsStarting = peterPaul.get("Paul");
+
+		if( petersStarting >= 5000 && paulsStarting >= 1000){
+			Map<String,Integer> partnership = new HashMap<String, Integer>();
+			Integer petersEnding = (petersStarting * 3) / 4;
+			Integer paulsEnding = (paulsStarting * 3) / 4;
+			partnership.put("Peter", petersEnding);
+			partnership.put("Paul" , paulsEnding);
+			partnership.put("PeterPaulPartnership", ( paulsStarting - paulsEnding )+ ( petersStarting - petersEnding));
+			return partnership;
+		}
+		return peterPaul;
 	}
 
 	/*
@@ -177,7 +241,23 @@ public class Exercises {
 	 *
 	 */
 	public Map<String, Integer> last2Revisited(String[] words) {
-		return null;
+
+		Map<String, Integer> endCounts = new HashMap<String ,Integer>();
+		//loop through the words
+		//for each word get the number of time the last 2 appear
+		//put in the word is the key and the count is the value
+
+		for(String word : words){
+			String end = word.substring( word.length() - 2);
+			int count = 0;
+			for( int i = 0; i < word.length() - 2; i++ ){
+				if( word.substring( i, i + 2 ).equals(end)){
+					count++;
+				}
+			}
+			endCounts.put(word, count);
+		}
+		return endCounts;
 	}
 
 }

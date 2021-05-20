@@ -6,6 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/m01d07-collections-part-1-tutorial.iml" filepath="$PROJECT_DIR$/m01d07-collections-part-1-tutorial.iml" />
       <module fileurl="file://$PROJECT_DIR$/../exercise-student/m01d07-collections-part1-exercise.iml" filepath="$PROJECT_DIR$/../exercise-student/m01d07-collections-part1-exercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/../lecture-student/m01d07-collections-part1-lecture.iml" filepath="$PROJECT_DIR$/../lecture-student/m01d07-collections-part1-lecture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../08_Collections_Part_2/exercise-student/m01d08-collections-part2-exercise.iml" filepath="$PROJECT_DIR$/../../08_Collections_Part_2/exercise-student/m01d08-collections-part2-exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../08_Collections_Part_2/lecture-student/m01d08-collections-part2-lecture.iml" filepath="$PROJECT_DIR$/../../08_Collections_Part_2/lecture-student/m01d08-collections-part2-lecture.iml" />
     </modules>
   </component>
 </project>
