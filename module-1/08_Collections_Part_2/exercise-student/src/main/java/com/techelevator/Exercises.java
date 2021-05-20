@@ -117,10 +117,11 @@ public class Exercises {
 	 *
 	 */
 	public Map<String, Integer> robPeterToPayPaul(Map<String, Integer> peterPaul) {
-		int petersMoney = peterPaul.get("Peter");
-		int paulsMoney =peterPaul.get("Paul");
 
-		if( petersMoney > 0 && paulsMoney < 1000){
+		int petersMoney = peterPaul.get("Peter");
+		int paulsMoney = peterPaul.get("Paul");
+
+		if( petersMoney > 0 && paulsMoney < 1000 ){
 			int takeMoney = petersMoney / 2;
 			peterPaul.put("Peter" , petersMoney - takeMoney );
 			peterPaul.put("Paul" , paulsMoney + takeMoney );
@@ -265,7 +266,22 @@ public class Exercises {
 	 */
 	public Map<String, Integer> consolidateInventory(Map<String, Integer> mainWarehouse,
 			Map<String, Integer> remoteWarehouse) {
-		return null;
+
+		Map<String, Integer> newMap = new HashMap<String, Integer>();
+
+		for ( String s : mainWarehouse.keySet() ){
+			if( remoteWarehouse.containsKey( s ) ){
+				newMap.put( s , ( mainWarehouse.get(s) + remoteWarehouse.get(s) ) );
+			} else {
+				newMap.put( s , mainWarehouse.get( s ) );
+			}
+		}
+		for ( String name : remoteWarehouse.keySet() ) {
+			if ( !(mainWarehouse.containsKey(name) ) ) {
+				newMap.put( name, remoteWarehouse.get( name ) );
+			}
+		}
+		return newMap;
 	}
 
 	/*
