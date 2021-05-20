@@ -6,8 +6,12 @@
       <module fileurl="file://$PROJECT_DIR$/m01d07-collections-part-1-tutorial.iml" filepath="$PROJECT_DIR$/m01d07-collections-part-1-tutorial.iml" />
       <module fileurl="file://$PROJECT_DIR$/../exercise-student/m01d07-collections-part1-exercise.iml" filepath="$PROJECT_DIR$/../exercise-student/m01d07-collections-part1-exercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/../lecture-student/m01d07-collections-part1-lecture.iml" filepath="$PROJECT_DIR$/../lecture-student/m01d07-collections-part1-lecture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../08_Collections_Part_2/tutorial-student/m01d08-collections-part-2-tutorial.iml" filepath="$PROJECT_DIR$/../../08_Collections_Part_2/tutorial-student/m01d08-collections-part-2-tutorial.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../08_Collections_Part_2/exercise-student/m01d08-collections-part2-exercise.iml" filepath="$PROJECT_DIR$/../../08_Collections_Part_2/exercise-student/m01d08-collections-part2-exercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../08_Collections_Part_2/lecture-student/m01d08-collections-part2-lecture.iml" filepath="$PROJECT_DIR$/../../08_Collections_Part_2/lecture-student/m01d08-collections-part2-lecture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../09_Classes_Encapsulation/tutorial-student/m01d09-classes-encapsulation-tutorial.iml" filepath="$PROJECT_DIR$/../../09_Classes_Encapsulation/tutorial-student/m01d09-classes-encapsulation-tutorial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../09_Classes_Encapsulation/exercise-student/m01d09-oop-with-encapsulation-exercise.iml" filepath="$PROJECT_DIR$/../../09_Classes_Encapsulation/exercise-student/m01d09-oop-with-encapsulation-exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../09_Classes_Encapsulation/lecture-student/m01d09-oop-with-encapsulation-lecture.iml" filepath="$PROJECT_DIR$/../../09_Classes_Encapsulation/lecture-student/m01d09-oop-with-encapsulation-lecture.iml" />
     </modules>
   </component>
 </project>

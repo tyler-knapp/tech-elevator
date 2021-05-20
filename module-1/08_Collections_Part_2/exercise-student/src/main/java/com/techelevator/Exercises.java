@@ -186,7 +186,21 @@ public class Exercises {
 	 *
 	 */
 	public Map<String, Integer> wordCount(String[] words) {
-		return null;
+
+		//ititialize a new map<String, Integer>
+		Map<String, Integer> updatedMap = new HashMap<String, Integer>();
+
+		int count = 0;
+		for( String s : words){
+			if ( updatedMap.containsKey(s) ) {
+				count = updatedMap.get(s);
+				count++;
+				updatedMap.put( s , count );
+			} else {
+				updatedMap.put( s , 1 );
+			}
+		}
+		return updatedMap;
 	}
 
 	/*
@@ -201,7 +215,20 @@ public class Exercises {
 	 *
 	 */
 	public Map<Integer, Integer> integerCount(int[] ints) {
-		return null;
+
+		Map<Integer, Integer> updatedMap = new HashMap<Integer, Integer>();
+
+		int count = 0;
+		for( Integer s : ints){
+			if ( updatedMap.containsKey(s) ) {
+				count = updatedMap.get(s);
+				count++;
+				updatedMap.put( s , count );
+			} else {
+				updatedMap.put( s , 1 );
+			}
+		}
+		return updatedMap;
 	}
 
 	/*
@@ -214,9 +241,18 @@ public class Exercises {
 	 *
 	 */
 	public Map<String, Boolean> wordMultiple(String[] words) {
-		return null;
-	}
 
+		Map<String, Boolean> map = new HashMap<String, Boolean>();
+		//boolean
+		for( String s : words ){
+			if( map.containsKey(s) ){
+				map.put(s, true);
+			} else {
+				map.put(s, false);
+			}
+		}
+		return map;
+	}
 	/*
 	 * Given two Maps, Map<String, Integer>, merge the two into a new Map, Map<String, Integer> where keys in Map2,
 	 * and their int values, are added to the int values of matching keys in Map1. Return the new Map.
