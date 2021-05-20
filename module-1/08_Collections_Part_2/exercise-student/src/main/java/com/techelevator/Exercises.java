@@ -121,9 +121,9 @@ public class Exercises {
 		int paulsMoney =peterPaul.get("Paul");
 
 		if( petersMoney > 0 && paulsMoney < 1000){
-			int takenMoney = petersMoney / 2;
-			peterPaul.put("Peter" , petersMoney - takenMoney );
-			peterPaul.put("Paul" , paulsMoney + takenMoney );
+			int takeMoney = petersMoney / 2;
+			peterPaul.put("Peter" , petersMoney - takeMoney );
+			peterPaul.put("Paul" , paulsMoney + takeMoney );
 		}
 		return peterPaul;
 	}
@@ -142,13 +142,13 @@ public class Exercises {
 		Integer petersStarting = peterPaul.get("Peter");
 		Integer paulsStarting = peterPaul.get("Paul");
 
-		if( petersStarting >= 5000 && paulsStarting >= 1000){
+		if( petersStarting >= 5000 && paulsStarting >= 10000){
+			Integer petersEnding = (petersStarting * 3 ) / 4;
+			Integer paulsEnding = (paulsStarting * 3 ) / 4;
 			Map<String,Integer> partnership = new HashMap<String, Integer>();
-			Integer petersEnding = (petersStarting * 3) / 4;
-			Integer paulsEnding = (paulsStarting * 3) / 4;
 			partnership.put("Peter", petersEnding);
 			partnership.put("Paul" , paulsEnding);
-			partnership.put("PeterPaulPartnership", ( paulsStarting - paulsEnding )+ ( petersStarting - petersEnding));
+			partnership.put("PeterPaulPartnership", ( paulsStarting - paulsEnding ) + ( petersStarting - petersEnding));
 			return partnership;
 		}
 		return peterPaul;
@@ -163,7 +163,14 @@ public class Exercises {
 	 * beginningAndEnding(["muddy", "good", "moat", "good", "night"]) → {"g": "d", "m": "t", "n": "t"}
 	 */
 	public Map<String, String> beginningAndEnding(String[] words) {
-		return null;
+		// initialize map to return
+		Map<String,String> firstLetterKeywordLastLetterValue = new HashMap<String, String>();
+		// iterate through array
+		for( String letter : words ){
+			//Set key to first letter and value to last letter
+			firstLetterKeywordLastLetterValue.put( letter.substring (0 ,1) , letter.substring( letter.length() - 1 ) );
+		}
+		return firstLetterKeywordLastLetterValue;
 	}
 
 	/*
