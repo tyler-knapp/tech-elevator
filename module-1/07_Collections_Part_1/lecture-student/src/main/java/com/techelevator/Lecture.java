@@ -29,7 +29,7 @@ public class Lecture {
 		System.out.println("####################");
 
 		for( int i = 0; i< instructors.size(); i++){
-			System.out.println(instructors.get(i) ); // same as instructors[i]
+			System.out.println( instructors.get(i) ); // same as instructors[i]
 		}
 
 		System.out.println("####################");

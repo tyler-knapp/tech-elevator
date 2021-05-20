@@ -2,6 +2,7 @@ package com.techelevator;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Exercises {
@@ -76,16 +77,16 @@ public class Exercises {
 	 findLargest( [34070, 1380, 81238, 7782, 234, 64362, 627] ) -> 64362
 	 */
 	public Integer findLargest(List<Integer> integerList) {
+
 		Integer maxNumberInList = 0;
 
-		for( int i = 0 ; i < integerList.size() - 1 ; i++){
-			if( integerList.get(i) > integerList.get(i + 1)){
+		for( int i = 0 ; i < integerList.size() - 2 ; i++){
+			if( integerList.get(i) > integerList.get(i + 1) ){
 				maxNumberInList = integerList.get(i);
-			}else if( integerList.get(i) < integerList.get(i + 1)){
-				maxNumberInList = integerList.get( i + 1 );
-			}
+			} else
+			maxNumberInList = integerList.get(i + 1);
 		}
-		return maxNumberInList;
+		return Collections.max(integerList);
 	}
 
 	/*
@@ -114,10 +115,16 @@ public class Exercises {
 	 foundIntTwice( [9, 23, 44, 2, 88, 44], 44) -> true
 	 */
 	public boolean foundIntTwice(List<Integer> integerList, int intToFind) {
-		//loop through list
-		boolean input = true;
-		for (int foundTwiceOrMore : integerList) {
-			//if( integerList.)
+
+		int count = 0;
+
+		for( int i : integerList){
+			if( i == intToFind){
+				count++;
+			}
+		}
+		if( count == 2 ){
+			return true;
 		}
 		return false;
 	}
