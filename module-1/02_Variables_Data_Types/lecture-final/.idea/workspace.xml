@@ -26,10 +26,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../08_Collections_Part_2/instructor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../09_Classes_Encapsulation/instructor" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
-  <component name="RunManager" selected="JUnit.All in m01d08-collections-part2-instructor">
+  <component name="RunManager" selected="JUnit.All in m01d09-oop-with-encapsulation-instructor">
     <configuration name="AlgorithmComplexity" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.techelevator.AlgorithmComplexity" />
       <module name="algorithm-complexity-lecture" />
@@ -43,9 +43,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lecture (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.techelevator.Lecture" />
-      <module name="m01d08-collections-part2-lecture-final" />
+    <configuration name="BusDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.techelevator.BusDriver" />
+      <module name="m01d09-oop-with-encapsulation-lecture-final" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.techelevator.*" />
@@ -64,14 +64,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in m01d07-collections-part1-instructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="m01d07-collections-part1-instructor" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="All in m01d08-collections-part2-instructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="m01d08-collections-part2-instructor" />
       <option name="PACKAGE_NAME" value="" />
@@ -80,13 +72,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in m01d09-oop-with-encapsulation-instructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="m01d09-oop-with-encapsulation-instructor" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in m01d09-oop-with-encapsulation-instructor" />
+        <item itemvalue="Application.BusDriver" />
         <item itemvalue="JUnit.All in m01d08-collections-part2-instructor" />
         <item itemvalue="JUnit.All in algorithm-complexity-lecture" />
         <item itemvalue="Application.AlgorithmComplexity" />
-        <item itemvalue="Application.Lecture (2)" />
-        <item itemvalue="JUnit.All in m01d07-collections-part1-instructor" />
       </list>
     </recent_temporary>
   </component>
