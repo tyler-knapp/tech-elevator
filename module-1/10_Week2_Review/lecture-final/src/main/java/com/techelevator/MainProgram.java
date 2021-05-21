@@ -43,6 +43,9 @@ public class MainProgram {
 
         System.out.println(deck);
 
+        deck.cut();
+        System.out.println(deck);
+
         Card firstCard = deck.deal();
         firstCard.flip();
         Card secondCard = deck.deal();
@@ -52,6 +55,8 @@ public class MainProgram {
         System.out.println(secondCard);
 
         System.out.println(deck);
+
+
     }
 
 
