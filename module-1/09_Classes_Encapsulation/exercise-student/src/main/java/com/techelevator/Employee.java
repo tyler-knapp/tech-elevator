@@ -10,10 +10,12 @@ public class Employee {
     private String department;
     private double annualSalary;
 
+    //no argument constructor explicitly stated because we need to
+    //overload it with a constructor that takes arguments
     public Employee(){
 
     }
-    //Constructor
+    //Constructor to overload our no-argument constructor above
     public Employee(int employeeId, String firstName, String lastName, double salary){
         this.employeeId = employeeId;
         this.firstName = firstName;

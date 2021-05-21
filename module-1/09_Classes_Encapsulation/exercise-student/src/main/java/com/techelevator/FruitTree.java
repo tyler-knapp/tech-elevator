@@ -6,6 +6,9 @@ public class FruitTree {
     private String typeOfFruit;
     private int piecesOfFruitLeft;
 
+    //why do we not need to
+    //explicitly write our no-argument constructor here?
+
     //Constructor
     public FruitTree(String typeOfFruit , int startingPiecesOfFruit){
         this.typeOfFruit = typeOfFruit;
