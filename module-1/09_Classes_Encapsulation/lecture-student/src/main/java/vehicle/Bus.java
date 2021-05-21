@@ -19,7 +19,7 @@ public class Bus {
 
     private String routeName;
     private int passengers;
-    private int gallonsOfGas = 50; // sets the starting balue to 50 when the object is created
+    private int gallonsOfGas = 50; // sets the starting value to 50 when the object is created
     private boolean isDoorOpen = false; // sets the starting value to false when the object is created
 
         /*
@@ -28,7 +28,7 @@ public class Bus {
         /*
             No-argument constructor is provided by Java implicitly as long as it is the only constant
             in the class
-            If there is a constructor overload the the no-argument constructor must
+            If there is a constructor overload then the no-argument constructor must
             be explicitly included, otherwise included if we want the class to be able to instantiated without passing arguments
             for example: Bus bus = new Bus()
          */
@@ -75,7 +75,7 @@ public class Bus {
     }
 
     /*
-    Static method is shared by all the instances of a class and should neber
+    Static method is shared by all the instances of a class and should never
     relate to a single instance. The should be functional, meaning that given the
     same input they always the same output and nothing is changed. They are used
     using the class name (String.valueOf()) instead of an object
@@ -132,11 +132,11 @@ public class Bus {
 
     @Override
     public String toString(){
-        //  Can return anu string that represents out object as a String
+        //  Can return any string that represents our object as a String
         //  Either with the raw value, or formatted
         //  the way we want it presented
 
-        return "Bus{ routeName=" + this.routeName +
+        return "Bus [routeName=" + this.routeName +
                 " passengers=" + this.passengers +
                 " gallonsOfGas=" + this. gallonsOfGas +
                 " isDoorOpen=" + this.isDoorOpen + "]";

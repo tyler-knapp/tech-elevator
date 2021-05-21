@@ -2,9 +2,9 @@ package com.techelevator;
 
 public class FruitTree {
 
+    //Instance Variables
     private String typeOfFruit;
     private int piecesOfFruitLeft;
-
 
     //Constructor
     public FruitTree(String typeOfFruit , int startingPiecesOfFruit){
