@@ -12,8 +12,29 @@ public class Elevator {
 
     //must be closed to open.
     public void openDoor(){
+        if(!isDoorOpen()){
+            doorOpen = !isDoorOpen();
+        }
+    }
+
+    public void closeDoor(){
         if(isDoorOpen()){
-            doorOpen = isDoorOpen();
+            doorOpen = !isDoorOpen();
+        }
+    }
+
+    public void goUp( int desiredFloor){
+        if(!doorOpen) {
+            if( desiredFloor > getCurrentFloor() && desiredFloor <= numberOfFloors){
+                currentFloor += desiredFloor - getCurrentFloor();
+            }
+        }
+    }
+    public void goDown( int desiredFloor){
+        if(!doorOpen){
+            if( desiredFloor < currentFloor  && desiredFloor <= numberOfFloors && desiredFloor > 0){
+                currentFloor -= getCurrentFloor() - desiredFloor;
+            }
         }
     }
 
