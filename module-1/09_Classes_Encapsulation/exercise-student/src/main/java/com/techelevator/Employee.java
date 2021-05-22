@@ -12,9 +12,9 @@ public class Employee {
 
     //no argument constructor explicitly stated because we need to
     //overload it with a constructor that takes arguments
-    public Employee(){
-
-    }
+//    public Employee(){
+//
+//    }
     //Constructor to overload our no-argument constructor above
     public Employee(int employeeId, String firstName, String lastName, double salary){
         this.employeeId = employeeId;
@@ -24,8 +24,12 @@ public class Employee {
     }
     //Method
     public void raiseSalary(double percent){
-
+        if( percent != 0){
+            annualSalary = annualSalary * ( 1.0 + (percent /100));
+        }
     }
+    //percentage given as a double but we need to convert it to decimal ex.) 5.5% = 0.055
+    // add one to it to get the increase salary not just the amount of the increase
 
     public int getEmployeeId() {
         return this.employeeId;
@@ -39,10 +43,30 @@ public class Employee {
         return this.lastName;
     }
 
-    //MAY NEED TO CLEANUP LAST NAME TO ALL CAPS?
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public String getFullName(){
+        return this.lastName + ", "+ this.firstName;
     }
+
+    public String getDepartment(){
+        return this.department;
+    }
+
+    public double getAnnualSalary(){
+        return this.annualSalary;
+    }
+
+    public void setLastName(String lastName){
+        this.firstName = firstName;
+    }
+
+    public void setDepartment(String department){
+        this.department = department;
+    }
+
+    //MAY NEED TO CLEANUP LAST NAME TO ALL CAPS?
+//    public void setLastName(String lastName) {
+//        this.lastName = lastName;
+//    }
 
 
 

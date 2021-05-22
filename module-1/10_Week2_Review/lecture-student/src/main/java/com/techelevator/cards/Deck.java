@@ -9,7 +9,7 @@ public class Deck {
     private List<Card> cards = new ArrayList<Card>();
     private boolean isShuffled = false;
 
-    
+
 
     public Deck(String[] suits, String[] ranks){
         for( String suit : suits){
