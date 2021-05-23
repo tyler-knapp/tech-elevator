@@ -56,7 +56,7 @@ public class Employee {
     }
 
     public void setLastName(String lastName){
-        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
     public void setDepartment(String department){
