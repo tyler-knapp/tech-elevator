@@ -67,14 +67,14 @@ public class Television {
 
     //Getters
     public boolean isOn() {
-        return this.isOn;
+        return isOn;
     }
 
     public int getCurrentChannel() {
-        return this.currentChannel;
+        return currentChannel;
     }
 
     public int getCurrentVolume() {
-        return this.currentVolume;
+        return currentVolume;
     }
 }

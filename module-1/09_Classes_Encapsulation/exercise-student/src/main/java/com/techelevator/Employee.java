@@ -32,27 +32,27 @@ public class Employee {
     // add one to it to get the increase salary not just the amount of the increase
 
     public int getEmployeeId() {
-        return this.employeeId;
+        return employeeId;
     }
 
     public  String getFirstName(){
-        return this.firstName;
+        return firstName;
     }
 
     public String getLastName(){
-        return this.lastName;
+        return lastName;
     }
 
     public String getFullName(){
-        return this.lastName + ", "+ this.firstName;
+        return lastName + ", "+ firstName;
     }
 
     public String getDepartment(){
-        return this.department;
+        return department;
     }
 
     public double getAnnualSalary(){
-        return this.annualSalary;
+        return annualSalary;
     }
 
     public void setLastName(String lastName){

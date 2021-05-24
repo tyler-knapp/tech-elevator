@@ -1,11 +1,16 @@
 package com.techelevator;
 
+import java.util.List;
+
 public class Application {
 
     /**
      * The main entry point in the application
      * @param args
      */
+     private List<Department> departments;
+
+
     public static void main(String[] args) {
         Application app = new Application();
         app.run();

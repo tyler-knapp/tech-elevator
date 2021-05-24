@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="m01d09-classes-encapsulation-tutorial" />
         <module name="m01d08-collections-part-2-tutorial" />
+        <module name="m01-week-2-review" />
         <module name="m01d06-introduction-to-objects-exercise" />
         <module name="m01d08-collections-part2-lecture" />
         <module name="m01d07-collections-part1-lecture" />
@@ -20,6 +21,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="m01-week-2-review" target="11" />
       <module name="m01d06-introduction-to-objects-exercise" target="11" />
       <module name="m01d07-collections-part-1-tutorial" target="11" />
       <module name="m01d07-collections-part1-exercise" target="11" />
