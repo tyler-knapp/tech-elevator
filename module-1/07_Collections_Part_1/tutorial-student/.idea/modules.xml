@@ -14,6 +14,8 @@
       <module fileurl="file://$PROJECT_DIR$/../../09_Classes_Encapsulation/exercise-student/m01d09-oop-with-encapsulation-exercise.iml" filepath="$PROJECT_DIR$/../../09_Classes_Encapsulation/exercise-student/m01d09-oop-with-encapsulation-exercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../09_Classes_Encapsulation/lecture-student/m01d09-oop-with-encapsulation-lecture.iml" filepath="$PROJECT_DIR$/../../09_Classes_Encapsulation/lecture-student/m01d09-oop-with-encapsulation-lecture.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../10_Week2_Review/lecture-student/m01d10-week2-review.iml" filepath="$PROJECT_DIR$/../../10_Week2_Review/lecture-student/m01d10-week2-review.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../11_Inheritance/exercise-student/m01d11-inheritance-exercises.iml" filepath="$PROJECT_DIR$/../../11_Inheritance/exercise-student/m01d11-inheritance-exercises.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../11_Inheritance/lecture-student/m01d11-inheritance-lecture.iml" filepath="$PROJECT_DIR$/../../11_Inheritance/lecture-student/m01d11-inheritance-lecture.iml" />
     </modules>
   </component>
 </project>

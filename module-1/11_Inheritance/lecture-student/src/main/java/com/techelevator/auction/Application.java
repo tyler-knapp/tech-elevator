@@ -1,5 +1,11 @@
 package com.techelevator.auction;
 
+import com.techelevator.animals.Animal;
+import com.techelevator.animals.Cat;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Application {
 
     public static void main(String[] args) {
@@ -10,12 +16,33 @@ public class Application {
 
         Auction generalAuction = new Auction("Tech Elevator t-shirt");
 
-        generalAuction.placeBid(new Bid("Josh", 1));
-        generalAuction.placeBid(new Bid("Fonz", 23));
-        generalAuction.placeBid(new Bid("Jenny", 13));
+        System.out.println(generalAuction.placeBid(new Bid("Josh", 1)));
+        System.out.println(generalAuction.placeBid(new Bid("Fonz", 23)));
+        System.out.println(generalAuction.placeBid(new Bid("Jenny", 13)));
         //....
         //....
         // This might go on until the auction runs out of time or hits a max # of bids
+
+        BuyoutAuction buyoutAuction = new BuyoutAuction("Book", 20);
+        buyoutAuction.placeBid( new Bid("name", 22));
+
+        ReserveAuction reserveAuction = new ReserveAuction("Pen", 5);
+        reserveAuction.placeBid(new Bid("Losing" , 2));
+        reserveAuction.placeBid(new Bid("Winning", 10));
+
+        /*
+        POLYMORPHISM BELOW THIS
+         */
+
+        List<Auction> auctions = new ArrayList<Auction>();
+
+        auctions.add(generalAuction);
+        auctions.add(buyoutAuction);
+        auctions.add(reserveAuction);
+
+        for (Auction auction : auctions){
+            System.out.println(auction.placeBid( new Bid("Polymorphism", 4)));
+        }
 
     }
 }
