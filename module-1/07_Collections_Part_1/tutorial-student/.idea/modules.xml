@@ -16,6 +16,8 @@
       <module fileurl="file://$PROJECT_DIR$/../../10_Week2_Review/lecture-student/m01d10-week2-review.iml" filepath="$PROJECT_DIR$/../../10_Week2_Review/lecture-student/m01d10-week2-review.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../11_Inheritance/exercise-student/m01d11-inheritance-exercises.iml" filepath="$PROJECT_DIR$/../../11_Inheritance/exercise-student/m01d11-inheritance-exercises.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../11_Inheritance/lecture-student/m01d11-inheritance-lecture.iml" filepath="$PROJECT_DIR$/../../11_Inheritance/lecture-student/m01d11-inheritance-lecture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../12_Polymorphism/exercise-student/m01d12-polymorphism-exercise.iml" filepath="$PROJECT_DIR$/../../12_Polymorphism/exercise-student/m01d12-polymorphism-exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../12_Polymorphism/lecture-student/m01d12-polymorphism-lecture.iml" filepath="$PROJECT_DIR$/../../12_Polymorphism/lecture-student/m01d12-polymorphism-lecture.iml" />
     </modules>
   </component>
 </project>
