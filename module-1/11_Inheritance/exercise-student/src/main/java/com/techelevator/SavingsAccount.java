@@ -15,7 +15,7 @@ public class SavingsAccount extends BankAccount{
 
         if(super.getBalance() - amountToWithdraw >= 150) {
             super.withdraw(amountToWithdraw);
-        }else if( super.getBalance() - amountToWithdraw < 150  && super.getBalance() >= 0 ) {
+        } else if( super.getBalance() - amountToWithdraw < 150  && super.getBalance() >= 0 ) {
                 super.withdraw(amountToWithdraw + 2);
             } else {
                 return super.getBalance();
