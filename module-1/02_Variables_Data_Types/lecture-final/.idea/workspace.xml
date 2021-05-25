@@ -13,6 +13,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -26,10 +27,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../11_Inheritance/lecture-final" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../12_Polymorphism/lecture-final" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
-  <component name="RunManager" selected="Application.Application">
+  <component name="RunManager" selected="Application.OldMacdonald">
     <configuration name="AnimalSoundsApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.techelevator.animals.AnimalSoundsApp" />
       <module name="m01d11-inheritance-lecture-final" />
@@ -69,10 +70,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in m01d09-oop-with-encapsulation-instructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="m01d09-oop-with-encapsulation-instructor" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+    <configuration name="OldMacdonald" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.techelevator.farm.OldMacdonald" />
+      <module name="m01d12-polymorphism-lecture-final" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.techelevator.farm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -86,11 +92,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.OldMacdonald" />
         <item itemvalue="Application.Application" />
         <item itemvalue="Application.AnimalSoundsApp" />
         <item itemvalue="Application.MainProgram" />
         <item itemvalue="Java Scratch.Scratch" />
-        <item itemvalue="JUnit.All in m01d09-oop-with-encapsulation-instructor" />
       </list>
     </recent_temporary>
   </component>
