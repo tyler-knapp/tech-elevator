@@ -23,6 +23,7 @@
       <module fileurl="file://$PROJECT_DIR$/../../10_Week2_Review/lecture-final/m01d10-week2-review-final.iml" filepath="$PROJECT_DIR$/../../10_Week2_Review/lecture-final/m01d10-week2-review-final.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../11_Inheritance/lecture-final/m01d11-inheritance-lecture-final.iml" filepath="$PROJECT_DIR$/../../11_Inheritance/lecture-final/m01d11-inheritance-lecture-final.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../12_Polymorphism/lecture-final/m01d12-polymorphism-lecture-final.iml" filepath="$PROJECT_DIR$/../../12_Polymorphism/lecture-final/m01d12-polymorphism-lecture-final.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../13_Inheritance_Abstract_Classes/lecture-final/m01d13-inheritance-part2-lecture-final.iml" filepath="$PROJECT_DIR$/../../13_Inheritance_Abstract_Classes/lecture-final/m01d13-inheritance-part2-lecture-final.iml" />
     </modules>
   </component>
 </project>

@@ -6,12 +6,24 @@ import java.util.List;
 public class OldMacdonald {
 	public static void main(String[] args) {
 
+		/*
+		FarmAnimal cannot be instantiated because it is an abstract class
+		 */
+		//FarmAnimal genericAnimal = new FarmAnimal("abc", "xyz");
 
 		Singable[] farmAnimals = new Singable[] {
-				new Cow(), new Chicken(), new Sheep(),
+				new Cat(), new Cow(), new Chicken(), new Sheep(),
 				new Tractor(), new Duck(), new MusicBox() };
 
 		for (Singable animal : farmAnimals) {
+			if (animal instanceof FarmAnimal) {
+
+				//((FarmAnimal) animal).wake();
+				// is equivalent to the next 2 lines
+
+				FarmAnimal animalAsFarmAnimal = (FarmAnimal) animal;
+				animalAsFarmAnimal.wake();
+			}
 			String name = animal.getName();
 			String sound = animal.getSound();
 			System.out.println("Old MacDonald had a farm, ee, ay, ee, ay, oh!");
