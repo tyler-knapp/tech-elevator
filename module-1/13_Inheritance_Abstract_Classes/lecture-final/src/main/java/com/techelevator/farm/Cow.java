@@ -18,5 +18,13 @@ public class Cow extends FarmAnimal implements Sellable {
 	}
 
 
+	@Override
+	public void eat() {
 
+	}
+
+	@Override
+	public boolean walk(int distance) {
+		return false;
+	}
 }

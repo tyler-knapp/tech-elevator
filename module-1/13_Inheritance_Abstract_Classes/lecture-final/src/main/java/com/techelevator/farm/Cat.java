@@ -11,6 +11,16 @@ public final class Cat extends FarmAnimal {
         super("Cat", "meow");
     }
 
+    @Override
+    public void eat() {
+
+    }
+
+    @Override
+    public boolean walk(int distance) {
+        return false;
+    }
+
     /*
     getSound() cannot be Overridden because it is
     final in FarmAnimal
