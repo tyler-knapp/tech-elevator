@@ -9,7 +9,6 @@ public class CreditCardAccount implements Accountable{
     public CreditCardAccount(String accountName, String accountNumber){
         this.accountHolder = accountName;
         this.accountNumber = accountNumber;
-        this.debt = debt;
     }
 
     public int pay( int amountToPay){
@@ -20,7 +19,6 @@ public class CreditCardAccount implements Accountable{
     public int charge(int amountToCharge){
         debt = debt + amountToCharge;
         return debt;
-
     }
 
     public String getAccountHolder() {

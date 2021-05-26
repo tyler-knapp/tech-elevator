@@ -30,6 +30,7 @@ public class BankAccountTests {
         BankAccount destination = (BankAccount) constructor.newInstance("","",0);
 
         Method transferTo = source.getClass().getMethod("transferTo", BankAccount.class, int.class);
+
         int newSourceBalance = (int) transferTo.invoke(source,destination,24);
 
         assertEquals(26, newSourceBalance);

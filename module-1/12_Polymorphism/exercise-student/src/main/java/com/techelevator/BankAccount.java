@@ -1,5 +1,7 @@
 package com.techelevator;
 
+import java.util.concurrent.TransferQueue;
+
 public class BankAccount implements Accountable {
 
     private String accountHolderName;
@@ -42,17 +44,9 @@ public class BankAccount implements Accountable {
 
     //work on transferTo Method
     public int transferTo(BankAccount destinationAccount, int transferAmount) {
-        //if checking account take money out of checking, transfer to to savings account
-            // if savings account take money out of savings, transfer money to checking account
-        if( destinationAccount instanceof CheckingAccount){
-            withdraw(transferAmount);
-            destinationAccount.deposit(transferAmount);
-           // return destinationAccount.getBalance();
-        } else if (destinationAccount instanceof SavingsAccount){
-            withdraw(transferAmount);
-            destinationAccount.deposit(transferAmount);
-        }
-        return destinationAccount.getBalance();
+            balance = withdraw(transferAmount);
+            destinationAccount.balance = destinationAccount.getBalance() + transferAmount;
+        return balance;
     }
 
 }
