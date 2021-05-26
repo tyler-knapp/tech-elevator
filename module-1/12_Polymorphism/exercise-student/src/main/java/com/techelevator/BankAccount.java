@@ -45,8 +45,7 @@ public class BankAccount implements Accountable {
     //work on transferTo Method
     public int transferTo(BankAccount destinationAccount, int transferAmount) {
             balance = withdraw(transferAmount);
-            destinationAccount.balance = destinationAccount.getBalance() + transferAmount;
+            destinationAccount.balance = destinationAccount.deposit(transferAmount);
         return balance;
     }
-
 }

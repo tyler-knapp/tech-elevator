@@ -2,8 +2,8 @@ package com.techelevator;
 
 public class CreditCardAccount implements Accountable{
 
-    private String accountHolder = "";
-    private String accountNumber ="";
+    private String accountHolder;
+    private String accountNumber;
     private int debt;
 
     public CreditCardAccount(String accountName, String accountNumber){

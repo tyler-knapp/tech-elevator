@@ -13,9 +13,11 @@
         <module name="m01d11-inheritance-exercises" />
         <module name="m01d12-polymorphism-lecture" />
         <module name="m01d09-oop-with-encapsulation-lecture" />
+        <module name="m01d13-inheritance-part2-exercise" />
         <module name="m01d07-collections-part1-exercise" />
         <module name="m01d08-collections-part2-exercise" />
         <module name="m01d09-oop-with-encapsulation-exercise" />
+        <module name="m01d13-inheritance-part2-lecture" />
         <module name="m01-week-2-review" />
         <module name="m01d08-collections-part2-lecture" />
         <module name="m01d11-inheritance-lecture" />
@@ -41,6 +43,8 @@
       <module name="m01d11-inheritance-lecture" target="11" />
       <module name="m01d12-polymorphism-exercise" target="11" />
       <module name="m01d12-polymorphism-lecture" target="11" />
+      <module name="m01d13-inheritance-part2-exercise" target="11" />
+      <module name="m01d13-inheritance-part2-lecture" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
