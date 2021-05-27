@@ -4,7 +4,6 @@ public class RectangleWall extends Wall{
 
     private int length;
     private int height;
-    protected int sideLength;
 
     public RectangleWall(String name, String color, int length, int height){
         super(name, color);
@@ -15,6 +14,7 @@ public class RectangleWall extends Wall{
     public RectangleWall(String name, String color) {
         super(name, color);
     }
+
 
     public String toString(){
         return getName() + " (" + getLength() + "x" + getHeight() + ") rectangle" ;
