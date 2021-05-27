@@ -1,5 +1,7 @@
 package com.techelevator.animals;
 
+import java.util.Objects;
+
 public class Dog {
 
 	private String name;
@@ -22,6 +24,6 @@ public class Dog {
 
 	public int getAge() {
 		return age;
-	}	
-	
+	}
+
 }
