@@ -19,4 +19,14 @@ public class Chicken extends FarmAnimal implements Sellable {
 	public int calculateShipping(int distanceInMiles) {
 		return distanceInMiles;
 	}
+
+	@Override
+	public void eat() {
+
+	}
+
+	@Override
+	public boolean walk(int distance) {
+		return false;
+	}
 }

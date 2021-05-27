@@ -15,4 +15,14 @@ public class Sheep extends FarmAnimal implements Sellable {
     public int calculateShipping(int distanceInMiles) {
         return 10 * distanceInMiles;
     }
+
+    @Override
+    public void eat() {
+
+    }
+
+    @Override
+    public boolean walk(int distance) {
+        return false;
+    }
 }

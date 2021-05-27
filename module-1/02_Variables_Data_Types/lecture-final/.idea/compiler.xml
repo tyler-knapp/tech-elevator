@@ -18,6 +18,7 @@
         <module name="m01d07-collections-part1-instructor" />
         <module name="m01d08-collections-part2-lecture-final" />
         <module name="m01d09-oop-with-encapsulation-instructor" />
+        <module name="m01d13-inheritance-part2-lecture-final" />
         <module name="m01d04-loops-and-arrays-lecture-final" />
         <module name="m01d06-introduction-to-objects-lecture-final" />
         <module name="algorithm-complexity-lecture" />
@@ -51,6 +52,7 @@
       <module name="m01d10-week2-review-final" target="11" />
       <module name="m01d11-inheritance-lecture-final" target="11" />
       <module name="m01d12-polymorphism-lecture-final" target="11" />
+      <module name="m01d13-inheritance-part2-lecture-final" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
