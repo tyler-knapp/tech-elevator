@@ -6,28 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="m01d03-expressions-and-control-flow-instructor" />
-        <module name="m01d08-collections-part-2-tutorial" />
-        <module name="m01d09-oop-with-encapsulation-lecture-final" />
-        <module name="m01d05-command-line-programs-instructor" />
-        <module name="m01d08-collections-part2-instructor" />
-        <module name="m01d11-inheritance-lecture-final" />
-        <module name="m01d12-polymorphism-lecture-final" />
-        <module name="m01d06-introduction-to-objects-instructor" />
-        <module name="m01d04-loops-and-arrays-instructor" />
-        <module name="m01d07-collections-part1-instructor" />
-        <module name="m01d08-collections-part2-lecture-final" />
-        <module name="m01d09-oop-with-encapsulation-instructor" />
-        <module name="m01d13-inheritance-part2-lecture-final" />
-        <module name="m01d04-loops-and-arrays-lecture-final" />
-        <module name="m01d06-introduction-to-objects-lecture-final" />
-        <module name="algorithm-complexity-lecture" />
-        <module name="m01d02-variables-and-datatypes-lecture-final" />
-        <module name="m01d07-collections-part1-lecture-final" />
-        <module name="m01d05-command-line-programs-lecture-final" />
-        <module name="m01d02-variables-and-datatypes-instructor" />
-        <module name="m01d03-expressions-and-control-flow-lecture-final" />
-        <module name="m01d10-week2-review-final" />
+        <module name="m01d14-unit-testing-instructor" />
+        <module name="m01d14-unit-testing-lecture-final" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -53,6 +33,8 @@
       <module name="m01d11-inheritance-lecture-final" target="11" />
       <module name="m01d12-polymorphism-lecture-final" target="11" />
       <module name="m01d13-inheritance-part2-lecture-final" target="11" />
+      <module name="m01d14-unit-testing-instructor" target="11" />
+      <module name="m01d14-unit-testing-lecture-final" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

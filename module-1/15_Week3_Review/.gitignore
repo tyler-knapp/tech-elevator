@@ -19,6 +19,17 @@ local.properties
 node_modules/
 ._*
 
+# IntelliJ User-specific stuff:
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+
+## IntelliJ File-based project format:
+*.iws
+*.iml
+
 # ignore filesystem housekeeping files created by OSX
 .DS_Store
 .DS_Store?

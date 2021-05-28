@@ -48,6 +48,23 @@ public class LectureTest {
     @Test
     public void assertDoubleTo2DecimalPlaces() {
         double result = lecture.thirdDouble(10);
+        /*
+            When testing with doubles
+            assertEquals( expectedValue, actualValue, delta)
+
+            delta - is the allowed difference between the 2 numbers
+
+            1.1 and 1.3  have a delta of .2
+                1.3
+            -   1.1
+            ----------
+                 .2
+
+             10/3  = 3.3333333333333335
+             3.33 == 3.3333333333333335
+             delta of 0.001  (true if 3.332, 3.333, 3.334)
+             delta of 0.009  (true if 3.330 - 3.339
+         */
         Assert.assertEquals(3.33, result, 0.009);
     }
 

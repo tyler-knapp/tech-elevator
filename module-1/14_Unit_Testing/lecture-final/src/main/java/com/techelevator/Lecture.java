@@ -12,7 +12,8 @@ public class Lecture {
 		private int balance;
 
 		public Lecture(int balance) {
-			this.balance = 100;
+
+			this.balance = balance;
 		}
    
 	   /*
@@ -124,10 +125,12 @@ public class Lecture {
 		Add the given amount to the balance
 		 */
 		public void addToBalance(int amountToAdd) {
+
 			this.balance += amountToAdd;
 		}
 
 		public int getBalance() {
+
 			return this.balance;
 		}
 

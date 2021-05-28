@@ -19,7 +19,9 @@ public class ExerciseProblems {
     }
 
     /*
-     3. Given two int values, return their sum. Unless the two values are the same, then return double their sum.
+     3. Given two int values, return their sum.
+     Unless the two values are the same,
+     then return double their sum.
      sumDouble(1, 2) → 3
      sumDouble(3, 2) → 5
      sumDouble(2, 2) → 8
@@ -49,7 +51,8 @@ public class ExerciseProblems {
 
 
     /*
-     Given a string, return a version without both the first and last char of the string. The string
+     Given a string, return a version without both the first
+     and last char of the string. The string
      may be any length, including 0.
      withoutEnd2("Hello") → "ell"
      withoutEnd2("abc") → "b"
