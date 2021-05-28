@@ -1,5 +1,8 @@
 package com.techelevator.view;
 
+import com.techelevator.items.Item;
+
+import java.util.Map;
 import java.util.Scanner;
 
 public class Menu {
@@ -36,7 +39,6 @@ public class Menu {
 
     public String getChoiceFromItems() {
 
-        showItems();
         String choice = null;
 
         while(choice == null) {
@@ -58,8 +60,13 @@ public class Menu {
 
     }
 
-    private void showItems() {
-        System.out.println("Available Items:");
+    public void showItems(Map<String, Item> items) {
+
+        for (Map.Entry<String, Item> entry : items.entrySet()) {
+            System.out.print(entry.getKey());
+            System.out.print("  " +entry.getValue().getName());
+            System.out.println("  $" + entry.getValue().getPrice());
+        }
     }
 
 }
