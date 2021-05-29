@@ -27,21 +27,58 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../14_Unit_Testing/instructor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../15_Week3_Review/lecture-final" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
-  <component name="RunManager" selected="JUnit.FruitTreeTest">
-    <configuration name="ExerciseProblemsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="m01d14-unit-testing-lecture-final" />
+  <component name="RunManager" selected="Application.MainProgram">
+    <configuration name="MainProgram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.techelevator.MainProgram" />
+      <module name="m01d15-week3-review-final" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.techelevator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.techelevator" />
-      <option name="MAIN_CLASS_NAME" value="com.techelevator.ExerciseProblemsTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in m01d14-unit-testing-lecture-final" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="m01d14-unit-testing-lecture-final" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FizzBuzzTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="m01d14-unit-testing-lecture-final" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.techelevator.fizzbuzz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.techelevator.fizzbuzz" />
+      <option name="MAIN_CLASS_NAME" value="com.techelevator.fizzbuzz.FizzBuzzTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FizzBuzzTest.fizz_if_number_multiple_of_3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="m01d14-unit-testing-lecture-final" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.techelevator.fizzbuzz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.techelevator.fizzbuzz" />
+      <option name="MAIN_CLASS_NAME" value="com.techelevator.fizzbuzz.FizzBuzzTest" />
+      <option name="METHOD_NAME" value="fizz_if_number_multiple_of_3" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -61,52 +98,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LectureTest.assertObjectsWithEqualsOverride" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="m01d14-unit-testing-lecture-final" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.techelevator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.techelevator" />
-      <option name="MAIN_CLASS_NAME" value="com.techelevator.LectureTest" />
-      <option name="METHOD_NAME" value="assertObjectsWithEqualsOverride" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LectureTest.assertObjectsWithoutEqualsOverride" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="m01d14-unit-testing-lecture-final" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.techelevator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.techelevator" />
-      <option name="MAIN_CLASS_NAME" value="com.techelevator.LectureTest" />
-      <option name="METHOD_NAME" value="assertObjectsWithoutEqualsOverride" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Scratch" />
-      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.java" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainProgram" />
+        <item itemvalue="JUnit.FizzBuzzTest" />
+        <item itemvalue="JUnit.FizzBuzzTest.fizz_if_number_multiple_of_3" />
         <item itemvalue="JUnit.FruitTreeTest" />
-        <item itemvalue="JUnit.LectureTest.assertObjectsWithEqualsOverride" />
-        <item itemvalue="JUnit.LectureTest.assertObjectsWithoutEqualsOverride" />
-        <item itemvalue="Java Scratch.Scratch" />
-        <item itemvalue="JUnit.ExerciseProblemsTest" />
+        <item itemvalue="JUnit.All in m01d14-unit-testing-lecture-final" />
       </list>
     </recent_temporary>
   </component>
@@ -129,6 +127,27 @@
           <line>59</line>
           <option name="timeStamp" value="76" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../../14_Unit_Testing/lecture-final/src/main/java/com/techelevator/trees/FruitTree.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../../15_Week3_Review/lecture-final/src/main/java/com/techelevator/MainProgram.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../../15_Week3_Review/lecture-final/src/main/java/com/techelevator/MainProgram.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/../../14_Unit_Testing/lecture-final/src/main/java/com/techelevator/animals/Dog.java</url>
+          <line>7</line>
+          <properties field="breed" class="com.techelevator.animals.Dog" />
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -136,5 +155,14 @@
         <watch expression="x" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/m01d15_week3_review_final$All_in_m01d14_unit_testing_lecture_final.ic" NAME="All in m01d14-unit-testing-lecture-final Coverage Results" MODIFIED="1622208691251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/m01d15_week3_review_final$FruitTreeTest.ic" NAME="FruitTreeTest Coverage Results" MODIFIED="1622208991854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.techelevator.trees.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/m01d15_week3_review_final$ExerciseProblemsTest.ic" NAME="ExerciseProblemsTest Coverage Results" MODIFIED="1622207424664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.techelevator.*</FILTER>
+    </SUITE>
   </component>
 </project>
