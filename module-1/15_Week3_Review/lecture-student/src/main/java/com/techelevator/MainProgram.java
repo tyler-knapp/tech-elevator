@@ -1,6 +1,9 @@
 package com.techelevator;
 
+import com.techelevator.items.Item;
 import com.techelevator.view.Menu;
+
+import java.util.Map;
 
 public class MainProgram {
 
@@ -8,6 +11,7 @@ public class MainProgram {
     private static final String CHOICE_SHOW_ITEMS = "S";
 
     private Menu menu;
+    private Store store= new Store();
 
     public MainProgram(Menu menu) {
         this.menu = menu;
@@ -32,6 +36,9 @@ public class MainProgram {
     }
 
     private void showItemsMenu() {
+
+        Map<String, Item> items = store.getInventory();
+        menu.showItems(items);
 
         while(true) {
             String choice = menu.getChoiceFromItems();
