@@ -97,7 +97,7 @@ public class AnimalGroupNameTest {
     }
 
     @Test
-    public void giraffe_uppercase_returns_crash(){
+    public void giraffe_uppercase_returns_Tower(){
         //Arrange
         //Act
         String result = animalGroup.getHerd("GIRAFFE");
@@ -115,7 +115,7 @@ public class AnimalGroupNameTest {
     }
 
     @Test
-    public void giraffe_uppercase_and_lowercase_returns_crash(){
+    public void giraffe_uppercase_and_lowercase_returns_tower(){
         //Arrange
         //Act
         String result = animalGroup.getHerd("GirAffe");
