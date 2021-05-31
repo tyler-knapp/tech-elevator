@@ -133,4 +133,21 @@ public class WordCountTest {
         Assert.assertEquals(expectedResult, result);
     }
 
+    @Test
+    public void one_of_each_string(){
+        //Arrange
+        String[] testArray = {"c", "b", "a"};
+
+        Map<String, Integer> expectedResult = new HashMap<String, Integer>();
+        expectedResult.put("c", 1);
+        expectedResult.put("b", 1);
+        expectedResult.put("a", 1);
+
+        //Act
+        Map<String, Integer> result = wordcount.getCount(testArray);
+
+        //Assert
+        Assert.assertEquals(expectedResult, result);
+    }
+
 }

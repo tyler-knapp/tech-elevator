@@ -10,7 +10,6 @@
         <module name="m01d08-collections-part-2-tutorial" />
         <module name="m01d06-introduction-to-objects-exercise" />
         <module name="m01d14-unit-testing-lecture" />
-        <module name="m01d14-unit-testing-lecture-final" />
         <module name="m01d07-collections-part1-lecture" />
         <module name="m01d11-inheritance-exercises" />
         <module name="m01d15-week3-review" />
@@ -18,6 +17,7 @@
         <module name="m01d09-oop-with-encapsulation-lecture" />
         <module name="m01d13-inheritance-part2-exercise" />
         <module name="m01d07-collections-part1-exercise" />
+        <module name="m01d15-polymorphism-pair-exercises" />
         <module name="m01d08-collections-part2-exercise" />
         <module name="m01d14-unit-testing-exercise" />
         <module name="m01d09-oop-with-encapsulation-exercise" />
@@ -52,6 +52,7 @@
       <module name="m01d14-unit-testing-exercise" target="11" />
       <module name="m01d14-unit-testing-lecture" target="11" />
       <module name="m01d14-unit-testing-lecture-final" target="11" />
+      <module name="m01d15-polymorphism-pair-exercises" target="1.8" />
       <module name="m01d15-week3-review" target="11" />
     </bytecodeTargetLevel>
   </component>
