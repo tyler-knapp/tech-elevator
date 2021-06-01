@@ -5,12 +5,13 @@ import com.techelevator.items.Bookmark;
 import com.techelevator.items.Item;
 import com.techelevator.items.Magazine;
 
+import java.io.FileNotFoundException;
 import java.util.HashMap;
 import java.util.Map;
 
 public class MemoryInventoryReader implements InventoryReader {
     @Override
-    public Map<String, Item> read() {
+    public Map<String, Item> read() throws FileNotFoundException {
 
         Map<String, Item> inventory = new HashMap<String, Item>();
 
