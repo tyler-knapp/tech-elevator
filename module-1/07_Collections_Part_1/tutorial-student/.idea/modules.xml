@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../../10_Week2_Review/optional-practice-exercise/m01-week-2-review.iml" filepath="$PROJECT_DIR$/../../10_Week2_Review/optional-practice-exercise/m01-week-2-review.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../team1-java-blue-week01-pair-exercises/05_Command_Line_Programs/m01d05-command-line-programs-exercises-pair.iml" filepath="$PROJECT_DIR$/../../../../team1-java-blue-week01-pair-exercises/05_Command_Line_Programs/m01d05-command-line-programs-exercises-pair.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../06_Introduction_Objects_Strings/exercise-student/m01d06-introduction-to-objects-exercise.iml" filepath="$PROJECT_DIR$/../../06_Introduction_Objects_Strings/exercise-student/m01d06-introduction-to-objects-exercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/m01d07-collections-part-1-tutorial.iml" filepath="$PROJECT_DIR$/m01d07-collections-part-1-tutorial.iml" />
       <module fileurl="file://$PROJECT_DIR$/../exercise-student/m01d07-collections-part1-exercise.iml" filepath="$PROJECT_DIR$/../exercise-student/m01d07-collections-part1-exercise.iml" />
@@ -24,6 +25,8 @@
       <module fileurl="file://$PROJECT_DIR$/../../14_Unit_Testing/student-lecture/m01d14-unit-testing-lecture.iml" filepath="$PROJECT_DIR$/../../14_Unit_Testing/student-lecture/m01d14-unit-testing-lecture.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../../../team6-java-blue-week03-pair-exercises/Polymorphism-pair-exercise/m01d15-polymorphism-pair-exercises.iml" filepath="$PROJECT_DIR$/../../../../team6-java-blue-week03-pair-exercises/Polymorphism-pair-exercise/m01d15-polymorphism-pair-exercises.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../15_Week3_Review/lecture-student/m01d15-week3-review.iml" filepath="$PROJECT_DIR$/../../15_Week3_Review/lecture-student/m01d15-week3-review.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../16_FileIO_Reading_in/exercise-student/m01d16-file-io-part1-exercise.iml" filepath="$PROJECT_DIR$/../../16_FileIO_Reading_in/exercise-student/m01d16-file-io-part1-exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../16_FileIO_Reading_in/lecture-student/m01d16-file-io-part1-lecture.iml" filepath="$PROJECT_DIR$/../../16_FileIO_Reading_in/lecture-student/m01d16-file-io-part1-lecture.iml" />
     </modules>
   </component>
 </project>

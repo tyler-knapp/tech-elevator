@@ -18,6 +18,15 @@ public class Menu {
         System.out.println("Goodbye!");
     }
 
+    public String getInventoryPathFromUser(){
+        System.out.println("Path to inventory file:");
+        return in.nextLine();
+    }
+
+
+    public void showFileNotFound(){
+        System.out.println("File Not found. Please try again!");
+    }
     public String getChoiceFromMainMenu() {
         String choice = null;
         while (choice == null) {

@@ -3,6 +3,7 @@ package com.techelevator;
 import com.techelevator.items.Item;
 import com.techelevator.view.Menu;
 
+import java.io.FileNotFoundException;
 import java.util.Map;
 
 public class MainProgram {
@@ -11,14 +12,23 @@ public class MainProgram {
     private static final String CHOICE_SHOW_ITEMS = "S";
 
     private Menu menu;
-    private Store store= new Store();
+    private Store store;
 
     public MainProgram(Menu menu) {
         this.menu = menu;
     }
 
-    public void run() {
+    public void run() throws FileNotFoundException {
 
+        while (true) {
+            String filename = menu.getInventoryPathFromUser();
+            try {
+                store = new Store(filename);
+                break;
+            } catch (FileNotFoundException e) {
+                menu.showFileNotFound();
+            }
+        }
         menu.showWelcome();
 
         while(true) {
@@ -56,7 +66,7 @@ public class MainProgram {
 
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         Menu menu = new Menu();
         MainProgram main = new MainProgram(menu);
         main.run();
