@@ -1,6 +1,9 @@
 package com.techelevator;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class FindAndReplace {
@@ -9,7 +12,7 @@ public class FindAndReplace {
 
         Scanner input = new Scanner(System.in);
 
-        String path = "C:\\Users\\Student\\source\\repos\\tylerknapp-java-blue\\module-1\\17_FileIO_Writing_out\\exercise-student-optional\\src\\test\\resources\\bacon.txt";
+        //String path = "C:\\Users\\Student\\source\\repos\\tylerknapp-java-blue\\module-1\\17_FileIO_Writing_out\\exercise-student-optional\\src\\test\\resources\\bacon.txt";
 
         System.out.println("What is the search word?");
         String searchWord = input.nextLine();
@@ -34,9 +37,14 @@ public class FindAndReplace {
             System.out.println("This is not a file");
         }
 
+        try(Scanner fileScanner = new Scanner(file)) {
+            while(fileScanner.hasNextLine()){
 
+            }
 
-
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
 
 
     }

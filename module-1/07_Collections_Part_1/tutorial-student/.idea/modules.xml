@@ -28,6 +28,7 @@
       <module fileurl="file://$PROJECT_DIR$/../../16_FileIO_Reading_in/exercise-student/m01d16-file-io-part1-exercise.iml" filepath="$PROJECT_DIR$/../../16_FileIO_Reading_in/exercise-student/m01d16-file-io-part1-exercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../16_FileIO_Reading_in/lecture-student/m01d16-file-io-part1-lecture.iml" filepath="$PROJECT_DIR$/../../16_FileIO_Reading_in/lecture-student/m01d16-file-io-part1-lecture.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../17_FileIO_Writing_out/exercise-student-optional/m01d17-file-io-part2-exercise.iml" filepath="$PROJECT_DIR$/../../17_FileIO_Writing_out/exercise-student-optional/m01d17-file-io-part2-exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../17_FileIO_Writing_out/extra-exercises-optional/m01d18-file-io-part2-exercises-pair.iml" filepath="$PROJECT_DIR$/../../17_FileIO_Writing_out/extra-exercises-optional/m01d18-file-io-part2-exercises-pair.iml" />
     </modules>
   </component>
 </project>
