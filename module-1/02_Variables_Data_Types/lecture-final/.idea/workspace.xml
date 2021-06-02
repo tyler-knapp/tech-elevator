@@ -27,52 +27,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../16_FileIO_Reading_in/exercise-student" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../17_FileIO_Writing_out/lecture-final" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
-  <component name="RunManager" selected="Application.MainProgram">
-    <configuration name="ExceptionStackExamples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.techelevator.exceptions.ExceptionStackExamples" />
-      <module name="m01d16-file-io-part1-lecture-final" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.techelevator.exceptions.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExceptionsExamples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.techelevator.exceptions.ExceptionsExamples" />
-      <module name="m01d16-file-io-part1-lecture-final" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.techelevator.exceptions.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FileReadingExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.techelevator.scanner.FileReadingExample" />
-      <module name="m01d16-file-io-part1-lecture-final" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.techelevator.scanner.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainProgram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.techelevator.MainProgram" />
-      <module name="m01d15-week3-review-final" />
+  <component name="RunManager" selected="Application.ColorWriterExample">
+    <configuration name="BufferedWriterExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.techelevator.BufferedWriterExample" />
+      <module name="m01d17-file-io-part2-lecture-final" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.techelevator.*" />
@@ -83,12 +44,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThrowingExceptionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.techelevator.exceptions.ThrowingExceptionExample" />
-      <module name="m01d16-file-io-part1-lecture-final" />
+    <configuration name="ColorWriterExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.techelevator.ColorWriterExample" />
+      <module name="m01d17-file-io-part2-lecture-final" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.techelevator.exceptions.*" />
+          <option name="PATTERN" value="com.techelevator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileLecture" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.techelevator.FileLecture" />
+      <module name="m01d17-file-io-part2-lecture-final" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.techelevator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FlushingExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.techelevator.FlushingExample" />
+      <module name="m01d17-file-io-part2-lecture-final" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.techelevator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrintWriterExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.techelevator.PrintWriterExample" />
+      <module name="m01d17-file-io-part2-lecture-final" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.techelevator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,11 +98,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainProgram" />
-        <item itemvalue="Application.FileReadingExample" />
-        <item itemvalue="Application.ThrowingExceptionExample" />
-        <item itemvalue="Application.ExceptionStackExamples" />
-        <item itemvalue="Application.ExceptionsExamples" />
+        <item itemvalue="Application.ColorWriterExample" />
+        <item itemvalue="Application.FlushingExample" />
+        <item itemvalue="Application.BufferedWriterExample" />
+        <item itemvalue="Application.PrintWriterExample" />
+        <item itemvalue="Application.FileLecture" />
       </list>
     </recent_temporary>
   </component>
