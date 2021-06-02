@@ -1,5 +1,7 @@
 package com.techelevator;
 
+import java.io.*;
+
 public class ColorWriterExample {
 
     /*
@@ -8,11 +10,24 @@ public class ColorWriterExample {
     private final static String FILE_NAME = "";
     private final static int UPPER_LIMIT = 200;
 
-    public static void main(String[] args)  {
+    public static void main(String[] args) throws IOException {
 
-        for (int i = 1 ; i <= UPPER_LIMIT ; i++) {
-            System.out.println(getOutput(i));
-        }
+        String pathToFile = "C:\\Users\\Student\\source\\repos\\java-blue-main\\module-1\\17_FileIO_Writing_out\\lecture-final\\colors.txt";
+        File file = new File( pathToFile );
+
+
+        try (PrintWriter printWriter = new PrintWriter(file);
+             BufferedWriter bufferedWriter = new BufferedWriter(printWriter)) {
+
+            for (int i = 1; i <= UPPER_LIMIT; i++) {
+                //System.out.println(getOutput(i));
+                bufferedWriter.write(getOutput(i));
+                bufferedWriter.newLine();
+            }
+
+        } 
+
+
 
         System.out.println("DONE!");
     }
