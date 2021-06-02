@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../m1-assessment/Module-1-Coding-Assessment.iml" filepath="$PROJECT_DIR$/../../m1-assessment/Module-1-Coding-Assessment.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../10_Week2_Review/optional-practice-exercise/m01-week-2-review.iml" filepath="$PROJECT_DIR$/../../10_Week2_Review/optional-practice-exercise/m01-week-2-review.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../../../team1-java-blue-week01-pair-exercises/05_Command_Line_Programs/m01d05-command-line-programs-exercises-pair.iml" filepath="$PROJECT_DIR$/../../../../team1-java-blue-week01-pair-exercises/05_Command_Line_Programs/m01d05-command-line-programs-exercises-pair.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../06_Introduction_Objects_Strings/exercise-student/m01d06-introduction-to-objects-exercise.iml" filepath="$PROJECT_DIR$/../../06_Introduction_Objects_Strings/exercise-student/m01d06-introduction-to-objects-exercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/m01d07-collections-part-1-tutorial.iml" filepath="$PROJECT_DIR$/m01d07-collections-part-1-tutorial.iml" />
       <module fileurl="file://$PROJECT_DIR$/../exercise-student/m01d07-collections-part1-exercise.iml" filepath="$PROJECT_DIR$/../exercise-student/m01d07-collections-part1-exercise.iml" />
