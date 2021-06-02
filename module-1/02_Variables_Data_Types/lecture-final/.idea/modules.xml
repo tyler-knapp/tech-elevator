@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../m1-assessment/Module-1-Coding-Assessment.iml" filepath="$PROJECT_DIR$/../../m1-assessment/Module-1-Coding-Assessment.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../14_Unit_Testing/instructor/m01d14-unit-testing-instructor.iml" filepath="$PROJECT_DIR$/../../14_Unit_Testing/instructor/m01d14-unit-testing-instructor.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../14_Unit_Testing/lecture-final/m01d14-unit-testing-lecture-final.iml" filepath="$PROJECT_DIR$/../../14_Unit_Testing/lecture-final/m01d14-unit-testing-lecture-final.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../15_Week3_Review/lecture-final/m01d15-week3-review-final.iml" filepath="$PROJECT_DIR$/../../15_Week3_Review/lecture-final/m01d15-week3-review-final.iml" />
