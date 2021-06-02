@@ -25,7 +25,7 @@ public class ColorWriterExample {
                 bufferedWriter.newLine();
             }
 
-        } 
+        }
 
 
 
