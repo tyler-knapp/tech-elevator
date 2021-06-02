@@ -1,10 +1,8 @@
 package com.techelevator;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 public class FindAndReplace {
 
@@ -30,6 +28,8 @@ public class FindAndReplace {
 
         File file = new File( pathToSourceFile );
 
+        File destFile = new File(destinationFilePath);
+
         if(!file.exists()) {
             System.out.println("File does not exist");
         }
@@ -37,15 +37,24 @@ public class FindAndReplace {
             System.out.println("This is not a file");
         }
 
-        try(Scanner fileScanner = new Scanner(file)) {
+        if(!destFile.exists()){
+            System.out.println("File does not exist");
+        }
+
+        if(!destFile.isFile()){
+            System.out.println("This is not a file");
+        }
+        try(
+                Scanner fileScanner = new Scanner( file ) ;
+                PrintWriter dataOutput = new PrintWriter( destFile )
+        ) {
             while(fileScanner.hasNextLine()){
-
+            String line = fileScanner.nextLine();
+            dataOutput.println(line.replaceAll(searchWord, replacementWord));
             }
-
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-
 
     }
 
