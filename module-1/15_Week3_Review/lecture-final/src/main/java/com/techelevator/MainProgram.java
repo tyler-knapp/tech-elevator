@@ -51,7 +51,6 @@ public class MainProgram {
         Map<String, Item> items = store.getInventory();
         menu.showItems(items);
 
-
         while(true) {
             String choice = menu.getChoiceFromItems();
 

@@ -10,6 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MemoryInventoryReader implements InventoryReader {
+
     @Override
     public Map<String, Item> read() throws FileNotFoundException {
 

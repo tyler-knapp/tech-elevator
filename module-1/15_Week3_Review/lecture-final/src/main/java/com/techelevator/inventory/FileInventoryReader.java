@@ -19,7 +19,6 @@ public class FileInventoryReader implements InventoryReader {
         this.filename = filename;
     }
 
-
     @Override
     public Map<String, Item> read() throws FileNotFoundException {
         Map<String, Item> inventory = new HashMap<String, Item>();
@@ -49,10 +48,7 @@ public class FileInventoryReader implements InventoryReader {
                 inventory.put(parts[0], newItem);
 
             }
-
-
         }
-
         return inventory;
     }
 }
