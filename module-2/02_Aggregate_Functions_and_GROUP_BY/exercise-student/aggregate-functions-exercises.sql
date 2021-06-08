@@ -158,7 +158,7 @@ SELECT MAX(population), countrycode
 FROM city 
 WHERE countrycode IN(SELECT code FROM country)
 GROUP BY  countrycode
-ORDER BY MAX(population) DESC, countrycode ASC;
+ORDER BY MAX(population) DESC;
 
 
 -- 22. The average, minimum, and maximum non-null life expectancy of each continent 
