@@ -4,36 +4,25 @@ public class HotelReservation {
 
     private String name;
     private int numberOfNights;
-    private double estimatedTotal;
+
 
     public HotelReservation(String name, int numberOfNights){
         this.name = name;
         this.numberOfNights = numberOfNights;
     }
 
-    public HotelReservation(){
-
-    }
-
     public double actualTotal(boolean requiresCleaning, boolean usedMinibar){
+        double actualTotal = getEstimatedTotal();
+
         if(usedMinibar){
-            estimatedTotal += 12.99;
-        } else {
-            estimatedTotal += 0.00;
+            actualTotal += 12.99;
         }
-
-        if(requiresCleaning){
-            estimatedTotal += 34.99;
-        } else {
-            estimatedTotal += 0.00;
+        if (requiresCleaning){
+            actualTotal += 34.99;
+        } if(usedMinibar && requiresCleaning){
+            actualTotal += 34.99;
         }
-
-        if(usedMinibar && requiresCleaning){
-            estimatedTotal += (12.99) + (34.99 * 2);
-        } else{
-            estimatedTotal += 0.00;
-        }
-        return 0;
+        return actualTotal;
     }
 
     public String getName() {
@@ -45,11 +34,16 @@ public class HotelReservation {
     }
 
     public double getEstimatedTotal() {
-        return estimatedTotal = numberOfNights * 59.99;
+        return numberOfNights * 59.99;
+    }
+
+    public void setNumberOfNights(int numberOfNights){
+        this.numberOfNights = numberOfNights;
     }
 
     @Override
     public String toString(){
         return "RESERVATION - " + getName() + " - " + getEstimatedTotal();
     }
+
 }
