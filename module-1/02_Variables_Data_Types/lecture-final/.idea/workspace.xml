@@ -27,10 +27,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../m1-assessment" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../java-blue-week04-pair-exercises/m1-capstone-java-cateringsystem" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
-  <component name="RunManager" selected="Application.ColorWriterExample">
+  <component name="RunManager" selected="Application.CateringSystemCLI">
     <configuration name="BufferedWriterExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.techelevator.BufferedWriterExample" />
       <module name="m01d17-file-io-part2-lecture-final" />
@@ -44,9 +44,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ColorWriterExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.techelevator.ColorWriterExample" />
-      <module name="m01d17-file-io-part2-lecture-final" />
+    <configuration name="CateringSystemCLI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.techelevator.CateringSystemCLI" />
+      <module name="m1-java-capstone-catering-system" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.techelevator.*" />
@@ -57,8 +57,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileLecture" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.techelevator.FileLecture" />
+    <configuration name="ColorWriterExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.techelevator.ColorWriterExample" />
       <module name="m01d17-file-io-part2-lecture-final" />
       <extension name="coverage">
         <pattern>
@@ -98,11 +98,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CateringSystemCLI" />
         <item itemvalue="Application.ColorWriterExample" />
         <item itemvalue="Application.FlushingExample" />
         <item itemvalue="Application.BufferedWriterExample" />
         <item itemvalue="Application.PrintWriterExample" />
-        <item itemvalue="Application.FileLecture" />
       </list>
     </recent_temporary>
   </component>
