@@ -3,13 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../../m1-assessment/Module-1-Coding-Assessment.iml" filepath="$PROJECT_DIR$/../../m1-assessment/Module-1-Coding-Assessment.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../14_Unit_Testing/instructor/m01d14-unit-testing-instructor.iml" filepath="$PROJECT_DIR$/../../14_Unit_Testing/instructor/m01d14-unit-testing-instructor.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../14_Unit_Testing/lecture-final/m01d14-unit-testing-lecture-final.iml" filepath="$PROJECT_DIR$/../../14_Unit_Testing/lecture-final/m01d14-unit-testing-lecture-final.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../15_Week3_Review/lecture-final/m01d15-week3-review-final.iml" filepath="$PROJECT_DIR$/../../15_Week3_Review/lecture-final/m01d15-week3-review-final.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../16_FileIO_Reading_in/exercise-student/m01d16-file-io-part1-exercise.iml" filepath="$PROJECT_DIR$/../../16_FileIO_Reading_in/exercise-student/m01d16-file-io-part1-exercise.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../16_FileIO_Reading_in/lecture-final/m01d16-file-io-part1-lecture-final.iml" filepath="$PROJECT_DIR$/../../16_FileIO_Reading_in/lecture-final/m01d16-file-io-part1-lecture-final.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../17_FileIO_Writing_out/lecture-final/m01d17-file-io-part2-lecture-final.iml" filepath="$PROJECT_DIR$/../../17_FileIO_Writing_out/lecture-final/m01d17-file-io-part2-lecture-final.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../../../java-blue-week04-pair-exercises/m1-capstone-java-cateringsystem/m1-java-capstone-catering-system.iml" filepath="$PROJECT_DIR$/../../../../java-blue-week04-pair-exercises/m1-capstone-java-cateringsystem/m1-java-capstone-catering-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../../sideproject/projectname.iml" filepath="$PROJECT_DIR$/../../../../../sideproject/projectname.iml" />
     </modules>
   </component>
 </project>
