@@ -3,14 +3,8 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/../../14_Unit_Testing/lecture-final/pom.xml" />
-        <option value="$PROJECT_DIR$/../../14_Unit_Testing/instructor/pom.xml" />
-        <option value="$PROJECT_DIR$/../../15_Week3_Review/lecture-final/pom.xml" />
-        <option value="$PROJECT_DIR$/../../16_FileIO_Reading_in/lecture-final/pom.xml" />
-        <option value="$PROJECT_DIR$/../../16_FileIO_Reading_in/exercise-student/pom.xml" />
-        <option value="$PROJECT_DIR$/../../17_FileIO_Writing_out/lecture-final/pom.xml" />
         <option value="$PROJECT_DIR$/../../m1-assessment/pom.xml" />
-        <option value="$PROJECT_DIR$/../../../../java-blue-week04-pair-exercises/m1-capstone-java-cateringsystem/pom.xml" />
+        <option value="$PROJECT_DIR$/../../../../../sideproject/pom.xml" />
       </list>
     </option>
   </component>
