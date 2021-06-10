@@ -192,7 +192,7 @@ JOIN film_category ON film.film_id = film_category.film_id
 JOIN category ON film_category.category_id = category.category_id
 JOIN inventory ON film.film_id = inventory.film_id
 JOIN rental ON inventory.inventory_id = rental.inventory_id
-WHERE category.name ='Comedy'
+WHERE category.name = 'Comedy'
 GROUP BY actor.actor_id, last_first, category.name
 ORDER BY number_of_rentals DESC
 LIMIT 5;
