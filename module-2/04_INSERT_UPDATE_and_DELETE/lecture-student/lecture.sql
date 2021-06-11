@@ -1,9 +1,10 @@
 -- INSERT
 SELECT *
-FROM countrylanguage;
+FROM countrylanguage
+WHERE countrycode = 'GBR';
 
 -- 1. Add Klingon as a spoken language in the USA
-INSERT INTO countrylanguage(countrycode, language, isofficial,percentage)
+INSERT INTO countrylanguage (countrycode, language, isofficial, percentage)
 VALUES ('USA', 'Klingon', false, 10);
 -- 2. Add Klingon as a spoken language in Great Britain
 INSERT INTO countrylanguage VALUES ('GBR', 'Klingon', false, 10);
