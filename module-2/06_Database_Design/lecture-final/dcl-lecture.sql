@@ -15,3 +15,6 @@ GRANT USAGE, SELECT ON SEQUENCE contact_contact_id_seq TO rachelle;
 -- Revoke SELECT ON a table from a user
 REVOKE SELECT ON contact FROM rachelle;
 
+
+-- GRANT means to give a user access to something
+-- REVOKE means to take away user access from something          
