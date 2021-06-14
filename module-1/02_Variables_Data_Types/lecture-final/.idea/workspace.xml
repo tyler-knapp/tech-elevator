@@ -27,16 +27,29 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../sideproject" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../module-2/07_Database_Connectivity_DAO/lecture-final" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
-  <component name="RunManager" selected="Application.Module1CodingAssessment">
-    <configuration name="CateringSystemCLI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.techelevator.CateringSystemCLI" />
-      <module name="m1-java-capstone-catering-system" />
+  <component name="RunManager" selected="Application.ContactApp">
+    <configuration name="ContactApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.techelevator.dao.ContactApp" />
+      <module name="m02d07-dao-lecture-final" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.techelevator.*" />
+          <option name="PATTERN" value="com.techelevator.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DAOExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.techelevator.dao.DAOExample" />
+      <module name="m02d07-dao-lecture-final" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.techelevator.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -50,6 +63,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.techelevator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringJDBCExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.techelevator.springjdbc.SpringJDBCExample" />
+      <module name="m02d07-dao-lecture-final" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.techelevator.springjdbc.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -72,45 +98,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HotelReservationTest.actual_total_minibarused_and_cleaning_required" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Module-1-Coding-Assessment" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.techelevator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.techelevator" />
-      <option name="MAIN_CLASS_NAME" value="com.techelevator.HotelReservationTest" />
-      <option name="METHOD_NAME" value="actual_total_minibarused_and_cleaning_required" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HotelReservationTest.estimated_total" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Module-1-Coding-Assessment" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.techelevator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.techelevator" />
-      <option name="MAIN_CLASS_NAME" value="com.techelevator.HotelReservationTest" />
-      <option name="METHOD_NAME" value="estimated_total" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ContactApp" />
+        <item itemvalue="Application.DAOExample" />
+        <item itemvalue="Application.SpringJDBCExample" />
         <item itemvalue="Application.Module1CodingAssessment" />
         <item itemvalue="JUnit.HotelReservationTest" />
-        <item itemvalue="JUnit.HotelReservationTest.actual_total_minibarused_and_cleaning_required" />
-        <item itemvalue="JUnit.HotelReservationTest.estimated_total" />
-        <item itemvalue="Application.CateringSystemCLI" />
       </list>
     </recent_temporary>
   </component>
@@ -142,6 +136,11 @@
           <url>file://$PROJECT_DIR$/../../16_FileIO_Reading_in/lecture-final/src/main/java/com/techelevator/scanner/FileReadingExample.java</url>
           <line>10</line>
           <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../../../module-2/07_Database_Connectivity_DAO/lecture-final/src/main/java/com/techelevator/dao/DAOExample.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="122" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/../../14_Unit_Testing/lecture-final/src/main/java/com/techelevator/animals/Dog.java</url>

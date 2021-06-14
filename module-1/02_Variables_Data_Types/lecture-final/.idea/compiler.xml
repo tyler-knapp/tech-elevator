@@ -6,8 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Module-1-Coding-Assessment" />
-        <module name="projectname" />
+        <module name="m02d07-dao-lecture-final" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -39,6 +38,7 @@
       <module name="m01d16-file-io-part1-exercise" target="11" />
       <module name="m01d16-file-io-part1-lecture-final" target="11" />
       <module name="m01d17-file-io-part2-lecture-final" target="11" />
+      <module name="m02d07-dao-lecture-final" target="11" />
       <module name="m1-java-capstone-catering-system" target="11" />
       <module name="Module-1-Coding-Assessment" target="1.8" />
       <module name="projectname" target="11" />
