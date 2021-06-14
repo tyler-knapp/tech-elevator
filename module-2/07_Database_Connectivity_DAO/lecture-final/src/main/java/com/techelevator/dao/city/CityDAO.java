@@ -4,10 +4,10 @@ import java.util.List;
 
 public interface CityDAO {
 
-	public void save(City newCity);
-	public City findCityById(long id);
-	public List<City> findCityByCountryCode(String countryCode);
-	public List<City> findCityByDistrict(String district, String countrycode);
-	public void update(City city);
-	public void delete(long id);
+	 void save(City newCity);
+	 City findCityById(long id);
+	 List<City> findCityByCountryCode(String countryCode);
+	 List<City> findCityByDistrict(String district, String countryCode);
+	 void update(City city);
+	 void delete(long id);
 }

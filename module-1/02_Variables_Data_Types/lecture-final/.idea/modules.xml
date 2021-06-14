@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../../m1-assessment/Module-1-Coding-Assessment.iml" filepath="$PROJECT_DIR$/../../m1-assessment/Module-1-Coding-Assessment.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../../../../sideproject/projectname.iml" filepath="$PROJECT_DIR$/../../../../../sideproject/projectname.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../module-2/07_Database_Connectivity_DAO/lecture-final/m02d07-dao-lecture-final.iml" filepath="$PROJECT_DIR$/../../../module-2/07_Database_Connectivity_DAO/lecture-final/m02d07-dao-lecture-final.iml" />
     </modules>
   </component>
 </project>

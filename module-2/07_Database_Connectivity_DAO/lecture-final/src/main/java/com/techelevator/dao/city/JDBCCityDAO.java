@@ -25,7 +25,7 @@ public class JDBCCityDAO implements CityDAO {
 							   "VALUES(?, ?, ?, ?, ?)";
 		// Calls the getNextCityId() method to get the next ID.  The sets it on the City object and uses it to
 		// insert the record
-		newCity.setId(getNextCityId());
+		newCity.setId( getNextCityId() );
 		jdbcTemplate.update(sqlInsertCity, newCity.getId(),
 										  newCity.getName(),
 										  newCity.getCountryCode(),

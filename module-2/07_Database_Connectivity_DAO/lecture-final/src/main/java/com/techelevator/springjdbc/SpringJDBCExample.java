@@ -56,6 +56,7 @@ public class SpringJDBCExample {
 		/* The first parameter to the "queryForRowSet" method is a String containing a parameterized SQL statement
 		 * Any following parameters are used to replace query placeholders (i.e. '?') in the order in which they appear */
 		String category = "Comedy";
+											//  queryForRowSet( sql, parameters )
 		SqlRowSet results = dvdstoreJdbcTemplate.queryForRowSet(sqlFilmsByCategory, category);
 
 		/*
@@ -81,7 +82,7 @@ public class SpringJDBCExample {
 		/* use the "update" method to run INSERT, UPDATE, and DELETE statements */
 		String sqlCreateActor = "INSERT INTO actor(actor_id, first_name, last_name) "+
 								"VALUES (DEFAULT, ?, ?)";
-		
+
 		dvdstoreJdbcTemplate.update(sqlCreateActor,  "Craig", "Castelaz");
 
 
@@ -129,5 +130,23 @@ public class SpringJDBCExample {
 								  "VALUES(?, ?, ?, ?, ?)";
 		
 		worldJdbcTemplate.update(sqlCreateNewCity, id, "Smallville", "USA", "Kansas", 45001);
+
+
+		/*
+		 Getting a generated ID using RETURNING
+		 */
+		String sqlCreateNewCityWithReturning = "INSERT INTO city(id, name, countrycode, district, population) "+
+				"VALUES(DEFAULT, ?, ?, ?, ?) RETURNING id";
+
+		/*
+			When using INSERT...RETURNING must use queryForRowSet() instead of update()
+		 */
+		SqlRowSet insertResult = worldJdbcTemplate.queryForRowSet(sqlCreateNewCityWithReturning,
+				"Smallville", "USA", "Kansas", 45001);
+
+		insertResult.next();
+		int newCityId = insertResult.getInt("id");
+
+		System.out.println("New City Id with Returning: " + newCityId);
 	}
 }
