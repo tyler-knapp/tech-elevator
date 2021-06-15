@@ -65,24 +65,37 @@ public class JDBCCityDAOIntegrationTest {
 
 	@Test
 	public void save_new_city_and_read_it_back() throws SQLException {
+		// Arrange - create a city object
 		City theCity = getCity("SQL Station", "South Dakota", TEST_COUNTRY, 65535);
 
+		// Act - use the save() method to insert the city and the findCityById() to retrieve it again
 		dao.save(theCity);
 		City savedCity = dao.findCityById(theCity.getId());
 
+		// Assert - verify the save() method set the id and that the city that was returned was the one inserted
 		assertNotEquals(null, theCity.getId());
 		assertCitiesAreEqual(theCity, savedCity);
 	}
 
+	/*
+	TESTING A SELECT
+	 */
 	@Test
 	public void returns_cities_by_country_code() {
-		City theCity = getCity("SQL Station", "South Dakota", TEST_COUNTRY, 65535);
 
+		// Arrange - Inserting a City
+		City theCity = getCity("SQL Station", "South Dakota", TEST_COUNTRY, 65535);
 		dao.save(theCity);
+
+		// Act - find the city that was inserted
 		List<City> results = dao.findCityByCountryCode(TEST_COUNTRY);
 
+		// Assert
+		// Assert that the list returned was not null
 		assertNotNull(results);
+		// Assert that the number of cities returned in the list is corect
 		assertEquals(1, results.size());
+		// get the city from the list and assert it is equal to the city we inserted
 		City savedCity = results.get(0);
 		assertCitiesAreEqual(theCity, savedCity);
 	}
@@ -90,23 +103,32 @@ public class JDBCCityDAOIntegrationTest {
 	@Test
 	public void returns_multiple_cities_by_country_code() {
 
+		// Arrange - inserting 2 cities in the test country
 		dao.save(getCity("SQL Station", "South Dakota", TEST_COUNTRY, 65535));
 		dao.save(getCity("Postgres Point", "North Dakota", TEST_COUNTRY, 65535));
 
+		// Act - call the method that returns those cities by country code
 		List<City> results = dao.findCityByCountryCode(TEST_COUNTRY);
 
+		// Assert - verify that correct number of cities where returned
 		assertNotNull(results);
 		assertEquals(2, results.size());
 	}
 
+	/*
+	 SELECT
+	 */
 	@Test
 	public void returns_cities_by_district() {
+		// Arrange - Insert a new city
 		String testDistrict = "Tech Elevator";
 		City theCity = getCity("SQL Station", testDistrict, TEST_COUNTRY, 65535);
 		dao.save(theCity);
 
+		// Act - call the method being tested that should return the inserted city
 		List<City> results = dao.findCityByDistrict(testDistrict);
 
+		// Assert - verify that the city returned in the act is the same one that was inserted in the arrange
 		assertNotNull(results);
 		assertEquals(1, results.size());
 		City savedCity = results.get(0);
