@@ -27,84 +27,97 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../module-2/07_Database_Connectivity_DAO/lecture-final" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../module-2/08_Integration_Testing/lecture-final" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
-  <component name="RunManager" selected="Application.ContactApp">
-    <configuration name="ContactApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.techelevator.dao.ContactApp" />
-      <module name="m02d07-dao-lecture-final" />
+  <component name="RunManager" selected="JUnit.JdbcPhoneDAOIntegrationTest.retrieve_phone_by_contact">
+    <configuration name="JdbcContactDAOIntegrationTest.delete_contact" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="m02d08-integration-testing-lecture-final" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.techelevator.dao.*" />
+          <option name="PATTERN" value="com.techelevator.addressbook.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.techelevator.addressbook" />
+      <option name="MAIN_CLASS_NAME" value="com.techelevator.addressbook.JdbcContactDAOIntegrationTest" />
+      <option name="METHOD_NAME" value="delete_contact" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DAOExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.techelevator.dao.DAOExample" />
-      <module name="m02d07-dao-lecture-final" />
+    <configuration name="JdbcContactDAOIntegrationTest.insert_contact" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="m02d08-integration-testing-lecture-final" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.techelevator.dao.*" />
+          <option name="PATTERN" value="com.techelevator.addressbook.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.techelevator.addressbook" />
+      <option name="MAIN_CLASS_NAME" value="com.techelevator.addressbook.JdbcContactDAOIntegrationTest" />
+      <option name="METHOD_NAME" value="insert_contact" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Module1CodingAssessment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.techelevator.Module1CodingAssessment" />
-      <module name="Module-1-Coding-Assessment" />
+    <configuration name="JdbcContactDAOIntegrationTest.retrieve_multiple_contacts_with_truncate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="m02d08-integration-testing-lecture-final" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.techelevator.*" />
+          <option name="PATTERN" value="com.techelevator.addressbook.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.techelevator.addressbook" />
+      <option name="MAIN_CLASS_NAME" value="com.techelevator.addressbook.JdbcContactDAOIntegrationTest" />
+      <option name="METHOD_NAME" value="retrieve_multiple_contacts_with_truncate" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringJDBCExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.techelevator.springjdbc.SpringJDBCExample" />
-      <module name="m02d07-dao-lecture-final" />
+    <configuration name="JdbcContactDAOIntegrationTest.update_contact" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="m02d08-integration-testing-lecture-final" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.techelevator.springjdbc.*" />
+          <option name="PATTERN" value="com.techelevator.addressbook.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.techelevator.addressbook" />
+      <option name="MAIN_CLASS_NAME" value="com.techelevator.addressbook.JdbcContactDAOIntegrationTest" />
+      <option name="METHOD_NAME" value="update_contact" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HotelReservationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Module-1-Coding-Assessment" />
+    <configuration name="JdbcPhoneDAOIntegrationTest.retrieve_phone_by_contact" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="m02d08-integration-testing-lecture-final" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.techelevator.*" />
+          <option name="PATTERN" value="com.techelevator.addressbook.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.techelevator" />
-      <option name="MAIN_CLASS_NAME" value="com.techelevator.HotelReservationTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.techelevator.addressbook" />
+      <option name="MAIN_CLASS_NAME" value="com.techelevator.addressbook.JdbcPhoneDAOIntegrationTest" />
+      <option name="METHOD_NAME" value="retrieve_phone_by_contact" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ContactApp" />
-        <item itemvalue="Application.DAOExample" />
-        <item itemvalue="Application.SpringJDBCExample" />
-        <item itemvalue="Application.Module1CodingAssessment" />
-        <item itemvalue="JUnit.HotelReservationTest" />
+        <item itemvalue="JUnit.JdbcPhoneDAOIntegrationTest.retrieve_phone_by_contact" />
+        <item itemvalue="JUnit.JdbcContactDAOIntegrationTest.delete_contact" />
+        <item itemvalue="JUnit.JdbcContactDAOIntegrationTest.update_contact" />
+        <item itemvalue="JUnit.JdbcContactDAOIntegrationTest.insert_contact" />
+        <item itemvalue="JUnit.JdbcContactDAOIntegrationTest.retrieve_multiple_contacts_with_truncate" />
       </list>
     </recent_temporary>
   </component>
@@ -141,6 +154,11 @@
           <url>file://$PROJECT_DIR$/../../../module-2/07_Database_Connectivity_DAO/lecture-final/src/main/java/com/techelevator/dao/DAOExample.java</url>
           <line>54</line>
           <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../../../module-2/08_Integration_Testing/lecture-final/src/test/java/com/techelevator/city/JDBCCityDAOIntegrationTest.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="132" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/../../14_Unit_Testing/lecture-final/src/main/java/com/techelevator/animals/Dog.java</url>

@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../../../java-blue-week06-pair-exercises/07-08-DAO_and_Integration_testing_exercise-pair/Tickets.iml" filepath="$PROJECT_DIR$/../../../../java-blue-week06-pair-exercises/07-08-DAO_and_Integration_testing_exercise-pair/Tickets.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../../module-2/07_Database_Connectivity_DAO/lecture-final/m02d07-dao-lecture-final.iml" filepath="$PROJECT_DIR$/../../../module-2/07_Database_Connectivity_DAO/lecture-final/m02d07-dao-lecture-final.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../module-2/08_Integration_Testing/lecture-final/m02d08-integration-testing-lecture-final.iml" filepath="$PROJECT_DIR$/../../../module-2/08_Integration_Testing/lecture-final/m02d08-integration-testing-lecture-final.iml" />
     </modules>
   </component>
 </project>
