@@ -15,27 +15,43 @@ public class HotelService {
     }
 
     public Hotel[] listHotels() {
-        return null;
+        String endPoint = API_BASE_URL + "hotels";
+
+        // Raw JSON response can be returned as a String
+        //String rawJson = restTemplate.getForObject(endPoint, String.class);
+
+       Hotel[] hotels = restTemplate.getForObject(endPoint, Hotel[].class);
+        return hotels;
     }
 
     public Review[] listReviews() {
-        return null;
+        String endPoint = API_BASE_URL + "reviews";
+        Review[] reviews = restTemplate.getForObject(endPoint, Review[].class);
+        return reviews;
     }
 
     public Hotel getHotelById(int id) {
-        return null;
+        String endPoint = API_BASE_URL + "hotels/" + id;
+        Hotel hotel = restTemplate.getForObject(endPoint, Hotel.class);
+        return hotel;
     }
 
     public Review[] getReviewsByHotelId(int hotelID) {
-        return null;
+        String endPoint = API_BASE_URL + "hotels/"  + hotelID + "/reviews";
+        Review[] reviewsForHotel = restTemplate.getForObject(endPoint, Review[].class);
+        return reviewsForHotel;
     }
 
     public Hotel[] getHotelsByStarRating(int stars) {
-        return null;
+        String endPoint = API_BASE_URL + "hotels?stars=" + stars;
+        Hotel[] hotelsForStarReviews = restTemplate.getForObject(endPoint, Hotel[].class);
+        return hotelsForStarReviews;
     }
 
     public City getWithCustomQuery(){
-        return null;
+        String endPoint = "https://api.teleport.org/api/cities/geonameid:5128581/";
+        City city = restTemplate.getForObject(endPoint, City.class);
+        return city;
     }
 
 }
