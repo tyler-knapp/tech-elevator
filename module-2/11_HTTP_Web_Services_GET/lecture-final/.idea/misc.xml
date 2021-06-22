@@ -5,6 +5,8 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../instructor/pom.xml" />
+        <option value="$PROJECT_DIR$/../../12_HTTP_Web_Services_POST/lecture-final/pom.xml" />
+        <option value="$PROJECT_DIR$/../../12_HTTP_Web_Services_POST/instructor/pom.xml" />
       </list>
     </option>
   </component>
