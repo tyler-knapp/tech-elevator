@@ -7,12 +7,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="m02d11-http-web-services-GET-lecture-final" />
+        <module name="m02d12-http-web-services-POST-instructor" />
         <module name="m02d11-http-web-services-GET-instructor" />
+        <module name="m02d12-http-web-services-POST-lecture-final" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="m02d11-http-web-services-GET-instructor" target="11" />
       <module name="m02d11-http-web-services-GET-lecture-final" target="11" />
+      <module name="m02d12-http-web-services-POST-instructor" target="11" />
+      <module name="m02d12-http-web-services-POST-lecture-final" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
