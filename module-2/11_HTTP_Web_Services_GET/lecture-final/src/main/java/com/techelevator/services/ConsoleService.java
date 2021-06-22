@@ -1,5 +1,6 @@
 package com.techelevator.services;
 
+import com.techelevator.models.City;
 import com.techelevator.models.Hotel;
 import com.techelevator.models.Review;
 
@@ -47,6 +48,10 @@ public class ConsoleService {
 
     public void printHotel(Hotel hotel) {
         System.out.println(hotel.toString());
+    }
+
+    public void printCity(City city) {
+        System.out.println(city.getFull_name() + " population " + city.getPopulation());
     }
 
     public void printReviews(Review[] reviews) {
