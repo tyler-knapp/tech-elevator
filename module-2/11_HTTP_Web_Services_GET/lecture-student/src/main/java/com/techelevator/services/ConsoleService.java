@@ -1,5 +1,6 @@
 package com.techelevator.services;
 
+import com.techelevator.models.City;
 import com.techelevator.models.Hotel;
 import com.techelevator.models.Review;
 
@@ -63,6 +64,10 @@ public class ConsoleService {
     public void exit() {
         scanner.close();
         System.exit(0);
+    }
+
+    public void printCity(City city){
+        System.out.println(city.getFull_name() + " population " + city.getPopulation());
     }
 
 }
