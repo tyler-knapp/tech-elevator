@@ -28,8 +28,20 @@ public class HotelService {
    * @return Reservation
    */
   public Reservation addReservation(String newReservation) {
-    // TODO: Implement method
-    return null;
+    //need to bui the reservation object - this is just
+    //for this app ad has nothing to do with how to do a POST
+    Reservation reservation = makeReservation(newReservation);
+    if (reservation == null){
+      return null;
+    }
+    HttpHeaders headers = new HttpHeaders();
+    headers.setContentType(MediaType.APPLICATION_JSON);
+
+    HttpEntity<Reservation> entity = new HttpEntity<Reservation>(reservation, headers);
+
+    reservation = restTemplate.postForObject(BASE_URL + "reservations", entity, Reservation.class);
+
+    return reservation;
   }
 
   /**
@@ -60,7 +72,23 @@ public class HotelService {
    */
   public Hotel[] listHotels() {
     Hotel[] hotels = null;
-    // TODO: Implement method
+    try{
+      String endPoint = BASE_URL + "hotels";
+      hotels = restTemplate.getForObject(endPoint, Hotel[].class);
+      //ResourceAccessException is thrown when the client cannot connect to the server
+    } catch (ResourceAccessException e){
+      //Handle connection error
+      console.printError( e.getMessage() );
+    } catch (RestClientResponseException e){
+      /*
+      RestClientResponseException is thrown when th server returns an error status code
+      like 4xx (400, 404, etc) or a 5xx (500)
+      */
+      //handle server response errors
+      //rawStatusCode contains the HTTP status code (404, etc)
+      //statusText contains the HTTP status message (Not Found)
+      console.printError(e.getRawStatusCode() + " " + e.getStatusText());
+    }
     return hotels;
   }
 
@@ -72,7 +100,19 @@ public class HotelService {
    */
   public Hotel getHotel(int id) {
     Hotel hotel = null;
-  // TODO: Implement method
+    String endPoint = BASE_URL + "hotels/" + id;
+
+    try {
+      hotel = restTemplate.getForObject(endPoint, Hotel.class);
+    } catch (ResourceAccessException e){
+      console.printError(e.getMessage());
+    } catch (RestClientResponseException e){
+      if(e.getRawStatusCode() == 404){
+        console.printError("the endpoint was not found");
+      } else {
+        console.printError(e.getRawStatusCode() + " " + e.getStatusText());
+      }
+    }
     return hotel;
   }
 
