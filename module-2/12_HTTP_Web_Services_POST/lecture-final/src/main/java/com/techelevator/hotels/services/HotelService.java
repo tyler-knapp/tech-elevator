@@ -28,20 +28,65 @@ public class HotelService {
    * @return Reservation
    */
   public Reservation addReservation(String newReservation) {
-    // TODO: Implement method
-    return null;
+    // need to build the reservation object - this is just
+    // for this app and has nothing to do with how to do a POST
+    Reservation reservation = makeReservation(newReservation);
+    if (reservation == null) {
+      return null;
+    }
+
+    // 1. Create a header for the Content-Type application/json
+    HttpHeaders headers = new HttpHeaders();
+    headers.setContentType(MediaType.APPLICATION_JSON);
+
+    // 2. Put the reservation in the message body
+                                                                // ( objectForTheMessageBody, headers)
+    HttpEntity<Reservation> entity = new HttpEntity<Reservation>(reservation, headers);
+
+    try {
+      // 3. Send the POST with the header and the message body
+      // ( url, httpEntityWithTheHeaderAndBody, classToDeserializeTo)
+      reservation = restTemplate.postForObject(BASE_URL + "reservations", entity, Reservation.class);
+    } catch (ResourceAccessException e) {
+      console.printError(e.getMessage());
+    } catch (RestClientResponseException e) {
+      console.printError(e.getRawStatusCode() + " " + e.getStatusText());
+    }
+    return reservation;
   }
 
   /**
    * Updates an existing reservation by replacing the old one with a new
    * reservation
    *
-   * @param CSV
+   * @param updatedReservation
    * @return
    */
-  public Reservation updateReservation(String CSV) {
-    // TODO: Implement method
-    return null;
+  public Reservation updateReservation(String updatedReservation) {
+    Reservation reservation = makeReservation(updatedReservation);
+    if (reservation == null) {
+      return null;
+    }
+
+    // 1. Create the Header
+    HttpHeaders headers = new HttpHeaders();
+    headers.setContentType(MediaType.APPLICATION_JSON);
+    // 2. Create the Message Body
+    HttpEntity<Reservation> entity = new HttpEntity<Reservation>(reservation, headers);
+    // 3. PUT using the header and message body
+
+    String endpointUrl = BASE_URL + "reservations/" + reservation.getId();
+
+    try {
+      restTemplate.put(endpointUrl, entity);
+    } catch (ResourceAccessException e) {
+      console.printError(e.getMessage());
+    } catch (RestClientResponseException e) {
+      console.printError(e.getRawStatusCode() + " " + e.getStatusText());
+    }
+
+
+    return reservation;
   }
 
   /**
@@ -50,7 +95,15 @@ public class HotelService {
    * @param id
    */
   public void deleteReservation(int id) {
-    // TODO: Implement method
+    String endpointUrl = BASE_URL + "reservations/" + id;
+    try {
+      restTemplate.delete(endpointUrl);
+    } catch (ResourceAccessException e) {
+      console.printError(e.getMessage());
+    } catch (RestClientResponseException e) {
+      console.printError(e.getRawStatusCode() + " " + e.getStatusText());
+    }
+
   }
 
   /**
@@ -60,7 +113,26 @@ public class HotelService {
    */
   public Hotel[] listHotels() {
     Hotel[] hotels = null;
-    // TODO: Implement method
+    try {
+      String endpoint = BASE_URL + "hotels";
+      hotels = restTemplate.getForObject(endpoint, Hotel[].class);
+    } catch (ResourceAccessException e) {
+       /* ResourceAccessException is thrown when the client cannot
+          connect to the server
+        */
+      // handle connection error
+      console.printError( e.getMessage() );
+
+    } catch (RestClientResponseException e) {
+      /*  RestClientResponseException is thrown when the server returns an error status code
+          like 4xx (400, 404, etc) or a 5xx (500)
+       */
+      // handle server response errors
+      // rawStatusCode contains the HTTP Status Code (404)
+      // statusText contains the HTTP status message (Not Found)
+      console.printError(e.getRawStatusCode() + " " + e.getStatusText());
+    }
+
     return hotels;
   }
 
@@ -72,7 +144,18 @@ public class HotelService {
    */
   public Hotel getHotel(int id) {
     Hotel hotel = null;
-  // TODO: Implement method
+    String endpoint = BASE_URL + "hotels/" + id;
+    try {
+      hotel = restTemplate.getForObject(endpoint, Hotel.class);
+    } catch (ResourceAccessException e) {
+      console.printError(e.getMessage());
+    } catch (RestClientResponseException e) {
+      if (e.getRawStatusCode() == 404) {
+        console.printError("The endpoint was not found");
+      } else {
+        console.printError(e.getRawStatusCode() + " " + e.getStatusText());
+      }
+    }
     return hotel;
   }
 
