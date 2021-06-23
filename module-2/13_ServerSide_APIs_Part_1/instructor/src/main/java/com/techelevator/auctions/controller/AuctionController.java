@@ -17,4 +17,9 @@ public class AuctionController {
         this.dao = new MemoryAuctionDAO();
     }
 
+    @RequestMapping(path="", method=RequestMethod.GET)
+    public List<Auction> list() {
+        return dao.list();
+    }
+
 }
