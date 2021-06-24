@@ -92,20 +92,25 @@ public class AuctionService {
         HttpEntity<Auction> entity = new HttpEntity<Auction>(auction, headers);
 
         try {
-           restTemplate.put(API_URL, entity);
+           restTemplate.put(API_URL + "/" + auction.getId(), entity);
         } catch (ResourceAccessException e){
             return null;
         } catch ( RestClientResponseException e){
             return null;
         }
-
-
         return auction;
     }
 
     public boolean delete(int id) throws RestClientResponseException, ResourceAccessException {
-        // place code here
-        return false;
+        String endpointUrl = API_URL + "/" + id;
+        try {
+            restTemplate.delete(endpointUrl);
+        } catch (ResourceAccessException e) {
+            return false;
+        } catch (RestClientResponseException e) {
+            return false;
+        }
+        return true;
     }
 
     private HttpEntity<Auction> makeEntity(Auction auction) {
