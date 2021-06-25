@@ -52,9 +52,7 @@ public class HotelController {
                     }
                 }
             }
-
         }
-
         return filteredHotels;
     }
 
