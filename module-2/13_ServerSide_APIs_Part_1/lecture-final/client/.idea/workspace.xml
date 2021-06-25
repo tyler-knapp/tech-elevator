@@ -18,7 +18,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../instructor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../14_ServerSide_APIs_Part_2/lecture-final/client" />
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RunManager" selected="JUnit.AuctionControllerTest">

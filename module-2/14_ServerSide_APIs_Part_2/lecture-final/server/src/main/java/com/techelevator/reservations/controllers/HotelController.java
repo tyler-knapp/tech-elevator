@@ -41,8 +41,13 @@ public class HotelController {
      * @return all info for a given hotel
      */
     @RequestMapping(path = "/hotels/{id}", method = RequestMethod.GET)
-    public Hotel get(@PathVariable int id) {
-        return hotelDAO.get(id);
+    public Hotel get(@PathVariable int id) throws HotelNotFoundException {
+       Hotel hotel = hotelDAO.get(id);
+
+       if (hotel == null) {
+            throw new HotelNotFoundException();
+       }
+       return hotel;
     }
 
     /**
@@ -87,7 +92,35 @@ public class HotelController {
     @RequestMapping(path = "/hotels/{id}/reservations", method = RequestMethod.POST)
     public Reservation addReservation(@Valid @RequestBody Reservation reservation, @PathVariable("id") int hotelID)
             throws HotelNotFoundException {
+
         return reservationDAO.create(reservation, hotelID);
+    }
+
+    /**
+     * Updates an existing reservation (PUT)
+     * @param reservation
+     * @param reservationId
+     * @return
+     * @throws ReservationNotFoundException
+     */
+    @RequestMapping(path="/reservations/{id}", method=RequestMethod.PUT)
+    public Reservation update(@Valid @RequestBody Reservation reservation,
+                              @PathVariable(name="id") int reservationId) throws ReservationNotFoundException {
+
+        reservationDAO.update(reservation, reservationId);
+        return reservation;
+    }
+
+
+    /**
+     * Deletes a reservation for a hotel
+     * @param reservationId
+     * @throws ReservationNotFoundException
+     */
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    @RequestMapping(path="/reservations/{id}", method=RequestMethod.DELETE)
+    public void delete(@PathVariable("id") int reservationId) throws ReservationNotFoundException {
+        reservationDAO.delete(reservationId);
     }
 
     /**
