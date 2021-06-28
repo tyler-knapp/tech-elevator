@@ -11,7 +11,7 @@ import java.util.Map;
 public class App {
 
     private static final String API_BASE_URL = "http://localhost:8080/";
-
+    private static final int LIST_ALL_HOTELS = 1;
     public static void main(String[] args) {
         int menuSelection = 999;
         int hotelId = -1;
@@ -23,7 +23,7 @@ public class App {
         while (menuSelection != 0) {
             menuSelection = consoleService.printMainMenu();
             try {
-                if (menuSelection == 1) {
+                if (menuSelection == LIST_ALL_HOTELS) {
                     // List all hotels
                     consoleService.printHotels(hotelService.listHotels());
                 } else if (menuSelection == 2) {
@@ -49,6 +49,7 @@ public class App {
                     int reservationId = consoleService.promptForReservation(reservations, "Delete Reservation");
                     hotelService.deleteReservation(reservationId);
                 } else if (menuSelection == 6) {
+                    // Login
                     String credentials = consoleService.promptForLogin();
                     if( credentials.split(",").length == 2 ) {
                         ResponseEntity<Map> response = authenticationService.login(credentials);
