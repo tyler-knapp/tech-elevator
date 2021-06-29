@@ -17,6 +17,22 @@ import java.security.Principal;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+Authentication (login)
+-----------------------
+@PreAuthorize("isAuthenticated()") -- checks if the user is logged in.  Can be applied at class or method level.
+@PreAuthorize("permitAll) -- overrides login allowing a anonymous (guest) access to a specific method
+
+Authorization
+-----------------------
+@PreAuthorize("hasRole('ROLE')")  -- only allows access if the user has the specific role
+@PreAuthorize("hasAnyRole('ROLE1','ROLE2',...)") -- same as hasRole(), but checks multiple roles
+Principal - argument that can be added to any controller method so SpringBoot will pass the Principal object, which
+            will have the username from the token accessible by getName()
+ */
+
+
+@PreAuthorize("isAuthenticated()")  // PreAuthorize sets security roles at either the class or method level
 @RestController
 public class HotelController {
 
@@ -33,6 +49,8 @@ public class HotelController {
      *
      * @return a list of all hotels in the system
      */
+
+    @PreAuthorize("permitAll")  // allows anonymous access
     @RequestMapping(path = "/hotels", method = RequestMethod.GET)
     public List<Hotel> list() {
         return hotelDAO.list();
@@ -114,10 +132,17 @@ public class HotelController {
      * @param id
      * @throws ReservationNotFoundException
      */
+    /*
+    Principal can be added to any method controller method and Spring Boot will pass the method
+    the object.  The principal will have the name of the currently logged in user.
+     */
+
+    // @PreAuthorize("hasAnyRole('ADMIN','CREATOR')")  -- allows you to check for multiple roles
+    @PreAuthorize("hasRole('ADMIN')")   // -- checks for a single role
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @RequestMapping(path = "/reservations/{id}", method = RequestMethod.DELETE)
-    public void delete(@PathVariable int id) throws ReservationNotFoundException {
-        auditLog("delete", id, "username");
+    public void delete(@PathVariable int id, Principal principal) throws ReservationNotFoundException {
+        auditLog("delete", id, principal.getName());
         reservationDAO.delete(id);
     }
 
@@ -162,7 +187,7 @@ public class HotelController {
      */
     private void auditLog(String operation, int reservation, String username) {
         System.out.println(
-                "User: " + username + "performed the operation: " + operation + "on reservation: " + reservation);
+                "User: " + username + " performed the operation: " + operation + " on reservation: " + reservation);
     }
 
 }

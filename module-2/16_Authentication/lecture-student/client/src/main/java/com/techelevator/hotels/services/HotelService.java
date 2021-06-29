@@ -2,10 +2,7 @@ package com.techelevator.hotels.services;
 
 import com.techelevator.hotels.models.Hotel;
 import com.techelevator.hotels.models.Reservation;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.MediaType;
+import org.springframework.http.*;
 import org.springframework.web.client.RestClientResponseException;
 import org.springframework.web.client.RestTemplate;
 
@@ -36,7 +33,24 @@ public class HotelService {
     }
 
     // TODO: Fix Me
-    throw new HotelServiceException("NOT IMPLEMENTED");
+    // STEP 1:  Create the request entity with the authorization header and token
+    HttpHeaders headers = new HttpHeaders();
+    headers.setContentType(MediaType.APPLICATION_JSON);
+    headers.setBearerAuth(AUTH_TOKEN);  // set the token
+    HttpEntity<Reservation> entity = new HttpEntity<Reservation>(reservation, headers);
+
+    // STEP 2: Make the POST request using Exchange
+    try {
+      String url = BASE_URL + "hotels/" + reservation.getHotelID() + "/reservations";
+
+//    ResponseEntity<Reservation> response = restTemplate.exchange(url, HttpMethod.GET, entity, Reservation.class);
+//    reservation = response.getBody();
+                                      // ( url, HTTP Method, entity, classToReturn )
+      reservation = restTemplate.exchange(url, HttpMethod.POST, entity, Reservation.class).getBody();
+    } catch (RestClientResponseException e) {
+      throw new HotelServiceException(e.getRawStatusCode() + " " + e.getStatusText());
+    }
+    return reservation;
   }
 
   /**
