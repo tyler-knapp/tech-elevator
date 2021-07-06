@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fan Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Fan Form</h1>
+    </header>
+    
+    <main>
+        <h2>
+            Fan Form
+        </h2>
+        <form action = "/fan-page/index.html" method="GET">
+            <div>
+                <label for="name"> Name:</label>
+                <input type="text" name="nameOnForm" id ="name"/>
+            </div>
+            <div>
+                <label for="emailOfFan">Email:</label>
+                <input id="emailOfFan" name="emailOfFan" type="email" />
+            </div>
+            <div>
+                <label for="dateOfBirth">Date of Birth:</label>
+                <input id="dateOfBirth" name="dateOfBirth" type="date" />
+            </div>
+            <div>
+                <label for="favoriteColor">Favorite color:</label>
+                <input id="favoriteColor" name="favoriteColor" type="color" />
+            </div>
+            <div>
+                <label for="confirmDataIsCorrect">Confirm data is correct:</label>
+                <input id="confirmDataIsCorrect" name="confirmDataIsCorrect" type="radio" />
+            </div>
+            <input type="submit">
+
+        </form>
+    </main>
+
+</body>
+</html>
