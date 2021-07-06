@@ -52,7 +52,7 @@ public class AuctionService {
         return auctions;
     }
 
-    public Auction[] findAuctionsSearchPrice(double price) {
+    public Auction[] findAuctionsSearchPrice( double price ) {
         Auction[] auctions = null;
         try {
             auctions = restTemplate.getForObject(API_URL + "?currentBid_lte=" + price, Auction[].class);
@@ -66,9 +66,6 @@ public class AuctionService {
 
     public Auction add(String auctionString) {
         Auction auction = makeAuction(auctionString);
-//        if(auction == null){
-//            return null;
-//        }
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
