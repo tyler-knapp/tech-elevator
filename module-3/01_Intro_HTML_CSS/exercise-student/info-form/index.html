@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fan Form</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
     <header>
         <h1>Fan Form</h1>
     </header>
-    
+
     <main>
-        <h2>
-            Fan Form
-        </h2>
-        <form action = "/fan-page/index.html" method="GET">
+    
+        <form action="http://localhost:3000/api/users/login" method="POST">
             <div>
                 <label for="name"> Name:</label>
-                <input type="text" name="nameOnForm" id ="name"/>
+                <input type="text" name="nameOnForm" id="name" />
             </div>
             <div>
                 <label for="emailOfFan">Email:</label>
@@ -36,10 +36,34 @@
                 <label for="confirmDataIsCorrect">Confirm data is correct:</label>
                 <input id="confirmDataIsCorrect" name="confirmDataIsCorrect" type="radio" />
             </div>
+            <div>
+                <label for="about">Tell us about yourself:</label><br />
+                <textarea id="about" name="about" rows="8" cols="60"></textarea>
+            </div>
+            <div>
+                <label for="favoriteFood">Favorite Foods</label>
+                <select name="favoriteFood" id="favoriteFood" multiple="true">
+                  <option>Pizza</option>
+                  <option>Ice Cream</option>
+                  <option>Meat</option>
+                  <option>Seafood</option>
+                </select>
+            </div>
+            <div>
+                <label for="department">Department:</label>
+                <select id="department" name="department">
+                  <option value="">--Please choose an option--</option>
+                  <option value="sales">Sales</option>
+                  <option value="marketing">Marketing</option>
+                  <option value="IT">IT</option>
+                </select>
+            </div>
+
             <input type="submit">
 
         </form>
     </main>
 
 </body>
+
 </html>
