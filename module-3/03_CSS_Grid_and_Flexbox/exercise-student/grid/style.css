@@ -50,3 +50,77 @@ header img {
 #student-picture img{
     border-radius: 50%;
 }
+
+#main-grid{
+    display: grid;
+    height: 100vh;
+    row-gap: 20px;
+    column-gap: 50px;
+    grid-template-columns: 1fr 350px;
+    align-items: center;
+    grid-template-areas: "headline headline student-picture"
+    "student-quote student-quote student-picture"
+    "student-profile student-profile student-contact"
+    "experience-grid experience-grid experience-grid"
+    "footer footer footer";
+}
+
+#headline{
+    grid-area: headline;
+}
+
+#student-picture{
+    grid-area: student-picture;
+    text-align: center;
+}
+
+#student-quote{
+    grid-area: student-quote;
+}
+
+#student-picture{
+    grid-area: student-picture;
+}
+
+#student-profile{
+    grid-area: student-profile;
+}
+
+#student-contact{
+    grid-area: student-contact;
+    text-align: center;
+}
+
+#experience-grid{
+    height: 100vh;
+    grid-area: experience-grid;
+    row-gap: 20px;
+    column-gap: 50px;
+    display: grid;
+    grid-template-areas: "experience-code experience-code"
+    "experience-database experience-database"
+    "experience-web experience-design";
+}
+
+#experience-code{
+    grid-area: experience-code;
+}
+
+#experience-database{
+    grid-area: experience-database;
+}
+
+#experience-web{
+    grid-area: experience-web;
+}
+
+#experience-design{
+    grid-area: experience-design;
+}
+
+body > footer{
+    position: absolute;
+    bottom: 0;
+    
+}
+
