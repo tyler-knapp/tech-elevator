@@ -10,8 +10,28 @@
  */
 function variables() {
   // Declares a variable where the value cannot be changed
+  const daysPerWeek = 7;
+  console.log('There are ' + daysPerWeek + ' days in the week');
+
+  // Template Literals use ticks instead of quotes and ${variable}
+  console.log(`There are ${daysPerWeek} days in the week`);
+   
   // Declares a variable those value can be changed
+  let daysPerMonth = 30;
+  console.log(`There are ${daysPerMonth} days in the month`);
+  
   // Declares a variable that will always be an array
+  const weekdays = [
+      'Monday',
+      'Tuesday',
+      'Wednesday',
+      'Thursday',
+      'Friday',
+      'Saturday',
+      'Sunday'
+  ];
+  console.log(weekdays);
+  console.table(weekdays);
 }
 
 /**
@@ -70,14 +90,29 @@ function objects() {
       "Milton Waddams",
       "Samir Nagheenanajar",
       "Michael Bolton"
-    ]
+    ],
+    toString: function() {
+      return `${this.lastName}, ${this.firstName} (${this.age})`;
+    }
   };
 
   // Log the object
-
+  console.log(person);
+  console.table(person);
   // Log the first and last name
+  for (let i = 0; i < person.employees.length; i++) {
+    console.log(`Employee ${i + 1} is ${person.employees[i]}`);
+  }
 
+  console.log(`${person.firstName} ${person.lastName}`);
+  console.log(`${person['firstName']} ${person['lastName']}`);
+
+  person.frstName = 'John';
+  console.table(person);
   // Log each employee
+
+  console.log(person.toString());
+  console.log(person.toString);
 }
 
 /*
@@ -129,6 +164,8 @@ function stringFunctions(value) {
   console.log(`.startsWith('Hello') - ${value.startsWith("Hello")}`);
   console.log(`.indexOf('Hello') - ${value.indexOf("Hello")}`);
 
+  console.log(`.substr(1,3) - ${value.substr(1,3)}`);
+  console.log(`.substring(1,3) - ${value.substring(1,3)}`);
   /*
     Other Methods
         - split(string)

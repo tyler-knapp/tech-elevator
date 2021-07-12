@@ -12,7 +12,10 @@
 			return x + y;
         }
 */
-
+function sumDouble(x, y) {
+	let sum = x + y;
+	return x === y ? sum * 2 : sum;
+}
 /*
 2. **hasTeen** We'll say that a number is "teen" if it is in the range 13..19 inclusive. 
     Given 3 int values, return true if 1 or more of them are teen.
@@ -21,7 +24,13 @@
 		hasTeen(20, 19, 10) → true
 		hasTeen(20, 10, 13) → true
 */
-
+function hasTeen(x, y, z) {
+	// solve the problem
+	// return the solution
+	if (x >= 13 && x <= 19 ) {
+		return true;
+	}
+}
 /* 
 3. **lastDigit** Given two non-negative int values, return true if they have the same 
     last digit, such as with 27 and 57.
@@ -116,3 +125,7 @@ firstName, lastName, and age. Populate the properties with your values.
 		age
 	}
 */
+function createObject() {
+	// create an object and assign it to a variable
+	// return the object by returning the value of the variable
+}
