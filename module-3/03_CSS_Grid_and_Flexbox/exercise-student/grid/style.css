@@ -62,7 +62,6 @@ header img {
     "student-quote student-quote student-picture"
     "student-profile student-profile student-contact"
     "experience-grid experience-grid experience-grid"
-    "footer footer footer";
 }
 
 #headline{
@@ -118,9 +117,39 @@ header img {
     grid-area: experience-design;
 }
 
-body > footer{
-    position: absolute;
-    bottom: 0;
-    
+@media only screen and (max-width: 1024px){
+    #main-grid{
+        grid-template-areas: "headline headline"
+        "student-quote student-picture"
+        "student-quote student-contact"
+        "student-profile student-profile"
+        "experience-grid experience-grid";
+        column-gap: 35px;
+    }
+    #experience-grid{
+        row-gap: 20px;
+        column-gap: 20px;
+        grid-template-areas: "experience-code experience-web"
+        "experience-database experience-design";
+    }
+
+    @media only screen and (max-width: 450px){
+        #main-grid{
+            grid-template-areas: "headline"
+            "student-picture"
+            "student-quote" 
+            "student-contact"
+            "student-profile"
+            "experience-grid";
+            column-gap: 35px;
+        }
+        #experience-grid{
+            row-gap: 20px;
+            column-gap: 20px;
+            grid-template-areas: "experience-code"
+            "experience-web"
+            "experience-database"
+            "experience-design";
+        }
 }
 
