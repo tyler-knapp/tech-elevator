@@ -86,18 +86,22 @@ function addAll(...num){
  */
 
  /**
-  * Taking in an array of strings. Prepending each word in the array with 'Happy'.
-  * Returning the new array.
+  * Taking in an array of strings. Prepend each word in the array with 'Happy'.
+  * Return the new array.
   * 
   * @param {String[]} originalArray The string array before we prepend
   * @returns {String[]} The resulting string array
   */
 function makeHappy(originalArray){
-    originalArray.map( (word) => {
-        'Happy' + word;
+    let newArray = [];
+    for(let i = 0 ; i < originalArray.length ; i++){
+        newArray = originalArray.map(
+            (element) => {
+                return 'Happy' + element;
+            }
+        );
     }
-    );
-    return originalArray;
+    return newArray;
 }
 
 
@@ -136,7 +140,7 @@ function makeHappy(originalArray){
   */
 
   function findLargest(nums =0, words = ""){
-      
+
   }
 
 
