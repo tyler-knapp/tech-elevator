@@ -73,7 +73,10 @@ let unfilteredArray = [1, 2, 3, 4, 5, 6];
  *
  * Use `map` and an anonymous function.
  */
+function getFullAddressesOfProperties() {
 
+
+}
 /*
  * Write and document a function called findLargest.
  *

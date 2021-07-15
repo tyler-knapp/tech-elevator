@@ -61,14 +61,46 @@ function displayReview(review) {
 // LECTURE STARTS HERE ---------------------------------------------------------------
 
 
+document.addEventListener('DOMContentLoaded', () => {
+  // set the product reviews page title
+  setPageTitle();
+  // set the product reviews page description
+  setPageDescription();
+  // display all of the product reviews on our page
+  displayReviews();
+
+  const desc = document.querySelector('.description');
+  desc.addEventListener('click', (eventObj) =>{
+    toggleDescriptionEdit(eventObj.target);
+  });
+
+  const inputDesc = document.getElementById('inputDesc');
+  inputDesc.addEventListener('keyup', (eventObj) =>{
+    if (eventObj.key === 'Enter') {
+      exitDescriptionEdit(eventObj.target, true);
+    } else if (eventObj.key === 'Escape') {
+      exitDescriptionEdit(eventObj.target, false);
+    }
+  });
+
+  inputDesc.addEventListener('mouseleave', (eventObj) => {
+    exitDescriptionEdit(eventObj.target, false);
+  })
+
+  const showHideButton = document.getElementById('btnToggleForm')
+  showHideButton.addEventListener('click', () => {
+    showHideForm();
+  });
+
+  const saveButton = document.getElementById('btnSaveReview');
+  saveButton.addEventListener('click', (eventObj) => {
+    eventObj.preventDefault()
+    saveReview();
+  });
+
+});
 
 
-// set the product reviews page title
-setPageTitle();
-// set the product reviews page description
-setPageDescription();
-// display all of the product reviews on our page
-displayReviews();
 
 
 
@@ -76,7 +108,22 @@ displayReviews();
 /**
  * I will save the review that was added using the add review from
  */
-function saveReview() {}
+function saveReview() {
+  const name = document.getElementById('name');
+  const title = document.getElementById('title');
+  const review = document.getElementById('review');
+  const rating = document.getElementById('rating');
+
+  const newReview =  {
+    reviewer: name.value,
+    title: title.value,
+    review: review.value,
+    rating: rating.value
+  }
+  reviews.push(newReview);
+  displayReview(newReview);
+  showHideForm();
+}
 
 
 
