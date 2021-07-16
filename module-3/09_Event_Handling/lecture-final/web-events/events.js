@@ -30,6 +30,7 @@ function addHandleMouseEvents() {
 
     // mouse down
     document.getElementById('mousedowndiv').addEventListener('mousedown', (e) => {
+        console.log(e);
         showMouseButtonText(e.which);
     });
 
