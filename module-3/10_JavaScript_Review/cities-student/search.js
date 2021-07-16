@@ -10,13 +10,23 @@ document.addEventListener('DOMContentLoaded', () => {
     getCities();
     parent = document.getElementById('cityList');
 
+    const showAll = document.getElementById('showAll')
+    showAll.addEventListener('click',  () => {
+        showAllCities();
+
+    });
+
+    // document.addEventListener
+
     /*
         Add an Event here so when the Show All button is clicked the
         showAllCities() method is called.
     */
 
     
-
+document.getElementById('showFiltered').addEventListener('click', () => {
+    showFilterCities();
+});
 
     /*
         Add an Event here so when the Filter button is clicked the 
@@ -32,9 +42,15 @@ document.addEventListener('DOMContentLoaded', () => {
 function showAllCities() {
     removeAllCities();
 
+
+    cities.forEach( (city) => {
+        addCity(city.name, city.district, city.countrycode, city.population);
+
+    });
+
     /*
         Add Code that calls the addCity() method for each city object 
-        in the city array. 
+        in the city array.) 
         
         The add City method takes the following arguments for the city:
             cityName
@@ -42,15 +58,24 @@ function showAllCities() {
             cityCountryCode
             cityPopulation   
     */
-
-
-
-
 }
 
 
 function showFilterCities() {
     removeAllCities();
+
+    const filter = document.getElementById('filter').value;
+
+    const filteredCities = cities.filter( city => {
+        return city.name.startsWith(filter);
+    });
+
+    console.table(filteredCities);
+
+    filteredCities.forEach( (city) => {
+        addCity(city.name, city.district, city.countrycode, city.population);
+
+    });
 
     /*
         Add Code that does the following:

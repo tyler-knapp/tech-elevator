@@ -40,16 +40,16 @@ main.insertAdjacentElement('beforeend', container);
  */
 function markCompleted() {
 
-  // groceries.forEach( () => {
+  groceries.forEach( (item) => {
+    const container = document.querySelectorAll('li');
+    container.classList.add('completed');
+
+  });
+
+  // for ( let i = 0 ; i < groceries.length ; i++){
   //   const container = document.querySelector('li');
-  //   container.classList.add('completed');
-
-  // });
-
-  for ( let i = 0 ; i < groceries.length ; i++){
-    const container = document.querySelector('li');
-    container[i].classList.add('completed');
-  }
+  //   groceries[i].classList.add('completed');
+  // }
 
 
 
