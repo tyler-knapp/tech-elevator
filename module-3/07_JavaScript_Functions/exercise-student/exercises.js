@@ -123,6 +123,22 @@ function makeHappy(originalArray){
  * Use `map` and an anonymous function.
  */
 
+ /**
+  * 
+  * @param {object[]} address an array of Objects
+  * @returns {String[]} 
+  */
+function getFullAddressesOfProperties(address){
+    let addressAsString = [];
+    console.log(address);
+    console.table(address);
+
+    addressAsString = address.map( (addr) => {
+        return addr; 
+    })
+    return addressAsString;
+}
+
 /*
  * Write and document a function called findLargest.
  *
