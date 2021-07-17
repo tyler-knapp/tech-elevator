@@ -80,16 +80,17 @@ document.addEventListener('DOMContentLoaded', () => {
   // HINT: use its id #display to get a reference to it
 
 
-  const numbersArray = Array.from(document.getElementsByClassName('number'));
-  console.table(numbersArray);
-  // get a reference to all of the numbers
-  numbersArray.forEach( number => {
-    number.addEventListener('click' , () => {
-      clickNumber(value);
-    });
+// get a reference to all of the numbers
+  const numbers = document.querySelectorAll('button.number');
+  console.table(numbers);
+  
+   // loop over each of the numbers
+  numbers.forEach( number => {
+    // add a click event listener to each number to call the function clickNumber
+    number.addEventListener('click' , clickNumber);
   });
-  // loop over each of the numbers
-  // add a click event listener to each number to call the function clickNumber
+ 
+  
 
   // get a reference to the decimal point button
   // add a click event listener to call the function clickNumber
