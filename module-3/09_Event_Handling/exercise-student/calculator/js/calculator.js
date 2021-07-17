@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
   console.table(numbers);
   
    // loop over each of the numbers
-  numbers.forEach( number => {
+  numbers.forEach( (number) => {
     // add a click event listener to each number to call the function clickNumber
     number.addEventListener('click' , clickNumber);
   });
