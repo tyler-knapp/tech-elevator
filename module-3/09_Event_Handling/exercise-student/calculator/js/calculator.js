@@ -72,12 +72,22 @@ function clear() {
 }
 
 // add event listener for when the DOM is loaded
-document.addEventListener('LOADED_EVENT_GOES_HERE', () => {
+document.addEventListener('DOMContentLoaded', () => {
 
+
+  const display = document.getElementById('display');
   // set the variable called display equal to the display element
   // HINT: use its id #display to get a reference to it
 
+
+  const numbersArray = Array.from(document.getElementsByClassName('number'));
+  console.table(numbersArray);
   // get a reference to all of the numbers
+  numbersArray.forEach( number => {
+    number.addEventListener('click' , () => {
+      clickNumber(value);
+    });
+  });
   // loop over each of the numbers
   // add a click event listener to each number to call the function clickNumber
 

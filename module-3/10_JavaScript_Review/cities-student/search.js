@@ -61,6 +61,7 @@ function showAllCities() {
 }
 
 
+<<<<<<< HEAD
 function showFilterCities() {
     removeAllCities();
 
@@ -69,6 +70,9 @@ function showFilterCities() {
     const filteredCities = cities.filter( city => {
         return city.name.startsWith(filter);
     });
+=======
+}
+>>>>>>> a11a5e3649e8250b12b93409aa51a31d136bbdc5
 
     console.table(filteredCities);
 

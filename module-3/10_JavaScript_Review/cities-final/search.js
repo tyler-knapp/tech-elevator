@@ -15,13 +15,19 @@ document.addEventListener('DOMContentLoaded', () => {
         showAllCities() method is called.
     */
 
-    
+    document.getElementById('showAll').addEventListener('click', () => {
+        showAllCities();
+    });
 
 
     /*
         Add an Event here so when the Filter button is clicked the 
         showFilteredCities() method is called.
     */
+    document.getElementById('showFiltered').addEventListener('click', () => {
+        showFilterCities();
+    });
+
 
 
 
@@ -42,7 +48,9 @@ function showAllCities() {
             cityCountryCode
             cityPopulation   
     */
-
+    cities.forEach( (city) => {
+        addCity(city.name, city.district, city.countrycode, city.population);
+    });
 
 
 
@@ -68,14 +76,19 @@ function showFilterCities() {
     */
 
     // STEP 1: get the value from the Starts with Text field
-  
-
+    const filter = document.getElementById('filter').value;
+    
     // STEP 2: create the new array of cities for cities that start with that value
-
+    const filteredCities = cities.filter( city => {
+        return city.name.startsWith(filter);
+        //return city.name.toUpperCase().startWith(filter.toUpperCase());
+    });
 
     // STEP 3: Call addCity() for every city in the new array
  
-
+    filteredCities.forEach( city => {
+        addCity(city.name, city.district, city.countrycode, city.population);
+    })
 
 
 }
