@@ -37,5 +37,15 @@ function displayGroceries() {
   });
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+
 setPageTitle();
 displayGroceries();
+
+const item = document.querySelector('ul').children.children;
+item.addEventListener('click', () => {
+item.classList.add('.completed')
+});
+
+
+});
