@@ -23,7 +23,9 @@
           </select>
         </td>
       </tr>
-      <!-- user listing goes here -->
+      <tr class="user" v-for="user in users" v-bind:key="user">
+        {{user.firstName}} {{user.lastName}} {{user.username}} {{user.emailAddress}} {{user.status}}
+      </tr>
     </tbody>
   </table>
 </template>
