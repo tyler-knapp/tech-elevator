@@ -4,44 +4,47 @@
     <p class="description">{{ description }}</p>
     <div class="well-display">
       <div class="well">
-        <span class="amount">{{ averageRating }}</span>
+        <span class="amount" v-on:click="filter = 0">{{ averageRating }}</span>
         Average Rating
       </div>
       <div class="well">
-        <span class="amount">{{numberOfOneStarReviews}}</span>
+        <span class="amount" v-on:click="filter = 1">{{numberOfOneStarReviews}}</span>
         1 Star Review{{ numberOfOneStarReviews == 1 ? '' : 's' }}
       </div>
       <div class="well">
-        <span class="amount">{{numberOfTwoStarReviews}}</span>
+        <span class="amount" v-on:click="filter = 2">{{numberOfTwoStarReviews}}</span>
         2 Star Review{{ numberOfTwoStarReviews == 1 ? '' : 's' }}
       </div>
       <div class="well">
-        <span class="amount">{{numberOfThreeStarReviews}}</span>
+        <span class="amount" v-on:click="filter = 3">{{numberOfThreeStarReviews}}</span>
         3 Star Review{{ numberOfThreeStarReviews == 1 ? '' : 's' }}
       </div>
       <div class="well">
-        <span class="amount">{{numberOfFourStarReviews}}</span>
+        <span class="amount" v-on:click="filter = 4">{{numberOfFourStarReviews}}</span>
         4 Star Review{{ numberOfFourStarReviews == 1 ? '' : 's' }}
       </div>
       <div class="well">
-        <span class="amount">{{numberOfFiveStarReviews}}</span>
+        <span class="amount" v-on:click="filter = 5">{{numberOfFiveStarReviews}}</span>
         5 Star Review{{ numberOfFiveStarReviews == 1 ? '' : 's' }}
       </div>
     </div>
 
-<!--
-    <form>
+    <a href="#" 
+      v-on:click.prevent="showForm = true"
+      v-show="showForm === false">Add New Review</a>
+
+    <form v-if="showForm" v-on:submit.prevent="addReview">
       <div class="form-element">
         <label for="reviewer">Name:</label>
-        <input id="reviewer" type="text" />
+        <input id="reviewer" type="text" v-model="newReview.reviewer"/>
       </div>
       <div class="form-element">
         <label for="title">Title:</label>
-        <input id="title" type="text"  />
+        <input id="title" type="text" v-model="newReview.title"  />
       </div>
       <div class="form-element">
         <label for="rating">Rating:</label>
-        <select id="rating">
+        <select id="rating" v-model.number="newReview.rating">
           <option value="1">1 Star</option>
           <option value="2">2 Stars</option>
           <option value="3">3 Stars</option>
@@ -51,19 +54,20 @@
       </div>
       <div class="form-element">
         <label for="review">Review:</label>
-        <textarea id="review"></textarea>
+        <textarea id="review" v-model="newReview.review"></textarea>
       </div>
-      <input type="submit" value="Save" />
-      <input type="button" value="Cancel" />
+      <input type="submit" value="Save" v-bind:disabled="!isFormValid" />
+      <input type="button" value="Cancel" v-on:click="resetForm" />
     </form>
--->
+
     <div
       class="review"
       v-bind:class="{ favorited: review.favorited }"
-      v-for="review in reviews"
+      v-for="review in filteredReviews"
       v-bind:key="review.id"
     >
       <h4>{{ review.reviewer }}</h4>
+      
       <div class="rating">
         <img
           src="../assets/star.png"
@@ -80,6 +84,11 @@
         <input type="checkbox" v-model="review.favorited" />
       </p>
     </div>
+
+    <div v-if="filteredReviews.length === 0">
+      <p>No {{ filter }} Star Reviews Found</p>
+    </div>
+
   </div>
 </template>
 
@@ -91,6 +100,9 @@ export default {
       name: "Cigar Parties for Dummies",
       description:
         "Host and plan the perfect cigar party for all your squirrelly friends.",
+      newReview: {},
+      showForm: false,
+      filter: 0,
       reviews: [
         {
           reviewer: "Malcolm Gladwell",
@@ -124,35 +136,50 @@ export default {
     };
   },
   computed: {
+    filteredReviews() {
+      return this.reviews.filter( review => {
+        return this.filter === 0 ? true : this.filter === review.rating;
+      });
+    },
     averageRating() {
       let sum = this.reviews.reduce((currentSum, review) => {
         return currentSum + review.rating;
       }, 0);
-      return sum / this.reviews.length;
+      return (sum / this.reviews.length).toFixed(2);
     },
     numberOfOneStarReviews() {
-      return this.reviews.reduce((count, review) => {
-        return count + (review.rating === 1 ? 1 : 0);
-      }, 0);
+      return this.numberOfReviews(1);
     },
     numberOfTwoStarReviews() {
-      return this.reviews.reduce((count, review) => {
-        return count + (review.rating === 2 ? 1 : 0);
-      }, 0);
+      return this.numberOfReviews(2);
     },
     numberOfThreeStarReviews() {
-      return this.reviews.reduce((count, review) => {
-        return count + (review.rating === 3 ? 1 : 0);
-      }, 0);
+      return this.numberOfReviews(3);
     },
     numberOfFourStarReviews() {
-      return this.reviews.reduce((count, review) => {
-        return count + (review.rating === 4 ? 1 : 0);
-      }, 0);
+      return this.numberOfReviews(4);
     },
     numberOfFiveStarReviews() {
+      return this.numberOfReviews(5);
+    },
+    isFormValid() {
+      return Boolean(this.newReview.reviewer && this.newReview.title &&
+        this.newReview.rating && this.newReview.review);
+    }
+  },
+  methods: {
+    addReview(event) {  // The event object is implicitly passed to any method handling an event
+      console.log(event)
+      this.reviews.unshift(this.newReview);
+      this.resetForm();
+    },
+    resetForm() {
+      this.newReview = {};
+      this.showForm = false;
+    },
+    numberOfReviews(numOfStars) {
       return this.reviews.reduce((count, review) => {
-        return count + (review.rating === 5 ? 1 : 0);
+        return count + (review.rating === numOfStars);
       }, 0);
     }
   }
@@ -228,5 +255,9 @@ form > input[type="button"] {
 form > input[type="submit"] {
   width: 100px;
   margin-right: 10px;
+}
+div.main div.well-display div.well span.amount:hover {
+  color: blue;
+  cursor: pointer;
 }
 </style>
