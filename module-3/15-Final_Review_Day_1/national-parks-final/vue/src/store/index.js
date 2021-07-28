@@ -20,6 +20,7 @@ export default new Vuex.Store({
   state: {
     token: currentToken || '',
     user: currentUser || {},
+    stateFilter: '',
     parks: [
       {
           parkCode: 'acad',
@@ -128,6 +129,9 @@ export default new Vuex.Store({
     ]
   },
   mutations: {
+    SET_STATE_FILTER(state, stateCode) {
+      state.stateFilter = stateCode;
+    },
     SET_AUTH_TOKEN(state, token) {
       state.token = token;
       localStorage.setItem('token', token);

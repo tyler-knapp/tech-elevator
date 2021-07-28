@@ -5,6 +5,8 @@ import Login from '../views/Login.vue'
 import Logout from '../views/Logout.vue'
 import Register from '../views/Register.vue'
 import store from '../store/index'
+import Parks from '../views/Parks'
+import ParkDetail from '../views/ParkDetail'
 
 Vue.use(Router)
 
@@ -53,6 +55,22 @@ const router = new Router({
         requiresAuth: false
       }
     },
+    {
+      path: '/parks',
+      name: 'parks',
+      component: Parks,
+      meta: {
+        requiresAuth: false
+      }
+    },
+    {
+      path: '/parks/:parkcode',
+      name: 'park-detail',
+      component: ParkDetail,
+      meta: {
+        requiresAuth: false
+      }
+    }
   ]
 })
 
