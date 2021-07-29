@@ -60,5 +60,26 @@ items.forEach( (item) => {
     });
 });
 
+if(allItemsIncomplete){
+  button.addEventListener('click', () => {
+    allItemsIncomplete = false;
+    items.forEach( (item) => {
+      item.classList.remove('incomplete')
+      item.classList.add('completed')
+      button.innerText = 'Mark All Incomplete'
+    });
+  });
+}
+
+if(!allItemsIncomplete){
+  button.addEventListener('click', () => {
+    allItemsIncomplete = true;
+    items.forEach( (item) => {
+      item.classList.remove('completed')
+      item.classList.add('incomplete')
+      button.innerText = 'Mark All Complete'
+    });
+  });
+}
 
 });
