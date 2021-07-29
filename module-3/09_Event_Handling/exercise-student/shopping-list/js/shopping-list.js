@@ -43,17 +43,22 @@ setPageTitle();
 displayGroceries();
 
 const items = document.querySelectorAll('li');
+const button = document.getElementById('toggleAll');
+
 
 items.forEach( (item) => {
   item.addEventListener('click', () => {
+    item.classList.remove('incomplete')
     item.classList.add('completed')
     });
-
 });
 
-
-
-
+items.forEach( (item) => {
+  item.addEventListener('dblclick', () => {
+    item.classList.remove('completed')
+    item.classList.add('incomplete')
+    });
+});
 
 
 });
