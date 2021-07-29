@@ -24,7 +24,32 @@ export default {
     };
   },
   methods: {
-    saveTopic() {}
+    saveTopic() {
+      topicService
+        .addTopic(this.topic)
+        .then(response => {
+          if(response.status === 201){
+            this.$router.push('/');
+          }
+        })
+        .catch(error => {
+          this.handleErrorResponse(error, "adding");
+        });
+    },
+    handleErrorResponse(error, verb) {
+      if (error.response) {
+        this.errorMsg =
+          "Error " + verb + " card. Response received was '" +
+          error.response.statusText +
+          "'.";
+      } else if (error.request) {
+        this.errorMsg =
+          "Error " + verb + " card. Server could not be reached.";
+      } else {
+        this.errorMsg =
+          "Error " + verb + " card. Request could not be created.";
+      }
+    }
   }
 };
 </script>
