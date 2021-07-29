@@ -71,7 +71,7 @@ if(allItemsIncomplete){
   });
 }
 
-if(!allItemsIncomplete){
+if(allItemsIncomplete === false ){
   button.addEventListener('click', () => {
     allItemsIncomplete = true;
     items.forEach( (item) => {
