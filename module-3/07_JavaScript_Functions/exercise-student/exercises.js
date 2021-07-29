@@ -21,7 +21,7 @@
  */
 
  function isAdmitted(gpa, satScore = 0, recommendation = false){
-     if(gpa > 4.0 || satScore > 1300 || (gpa > 3.0 && recommendation == true) ||(satScore > 1200 && recommendation == true)){
+     if(gpa > 4.0 || satScore > 1300 || (gpa > 3.0 && recommendation == true) || (satScore > 1200 && recommendation == true)){
          return true;
      }
      return false;
@@ -89,18 +89,16 @@ function addAll(...num){
   * Taking in an array of strings. Prepend each word in the array with 'Happy'.
   * Return the new array.
   * 
-  * @param {String[]} originalArray The string array before we prepend
-  * @returns {String[]} The resulting string array
+  * @param {string[]} [originalArray = []] The string array before we prepend
+  * @returns {string[]} The resulting string array
   */
-function makeHappy(originalArray){
+function makeHappy(originalArray = []){
     let newArray = [];
-    for(let i = 0 ; i < originalArray.length ; i++){
         newArray = originalArray.map(
-            (element) => {
+            element => {
                 return 'Happy' + element;
             }
         );
-    }
     return newArray;
 }
 
@@ -151,7 +149,7 @@ function getFullAddressesOfProperties(address){
   * 
   * 
   * @param {number[]} nums Array of numbers to loop through
-  * @param {String[]} words
+  * @param {string[]} words
   * @returns {number} The resulting largest number
   */
 

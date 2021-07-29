@@ -10,11 +10,10 @@ let groceries = ['apples', 'bananas', 'watermelon', 'milk', 'eggs', 'cheese', 'b
  * This function will get a reference to the title and set its text to the value
  * of the pageTitle variable that was set above.
  */
-function setPageTitle() {}
-const page = document.getElementById('title').innerHTML = pageTitle;
+function setPageTitle() {
+document.getElementById('title').innerHTML = pageTitle;
 
-
-
+}
 
 /**
  * This function will loop over the array of groceries that was set above and add them to the DOM.
@@ -40,19 +39,12 @@ main.insertAdjacentElement('beforeend', container);
  */
 function markCompleted() {
 
-  groceries.forEach( (item) => {
-    const container = document.querySelectorAll('li');
-    container.classList.add('completed');
-
-  });
-
-  // for ( let i = 0 ; i < groceries.length ; i++){
-  //   const container = document.querySelector('li');
-  //   groceries[i].classList.add('completed');
-  // }
-
-
-
+      const allGroceryItems = document.querySelectorAll('li');
+      allGroceryItems.forEach( (item) => {
+        item.classList.add('completed'); 
+      })
+             
+  
 }
 
 setPageTitle();

@@ -42,10 +42,18 @@ document.addEventListener('DOMContentLoaded', () => {
 setPageTitle();
 displayGroceries();
 
-const item = document.querySelector('ul').children.children;
-item.addEventListener('click', () => {
-item.classList.add('.completed')
+const items = document.querySelectorAll('li');
+
+items.forEach( (item) => {
+  item.addEventListener('click', () => {
+    item.classList.add('completed')
+    });
+
 });
+
+
+
+
 
 
 });
