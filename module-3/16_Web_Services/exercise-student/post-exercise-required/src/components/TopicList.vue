@@ -40,15 +40,30 @@ export default {
     },
     deleteTopic(id) {
       topicService
-      .deleteTopic(id)
+      .deleteTopic(this.topic.id)
       .then(response => {
         if(response.status === 200) {
           alert("Topic Was Successfully Deleted");
-          this.$router.push('/');
+          this.getTopics();
         }
-
+      }).catch((error) => {
+        this.handleErrorResponse(error, "deleting")
       })
-
+    },
+    handleErrorResponse(error, verb) {
+      if (error.response) {
+        this.errorMsg =
+          "Error " +
+          verb +
+          " card. Response received was '" +
+          error.response.statusText +
+          "'.";
+      } else if (error.request) {
+        this.errorMsg = "Error " + verb + " card. Server could not be reached.";
+      } else {
+        this.errorMsg =
+          "Error " + verb + " card. Request could not be created.";
+      }
     }
   },
   created() {
