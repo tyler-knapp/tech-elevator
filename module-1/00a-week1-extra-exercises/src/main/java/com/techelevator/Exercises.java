@@ -1,5 +1,7 @@
 package com.techelevator;
 
+import java.util.ArrayList;
+
 public class Exercises {
 
 	/*
@@ -82,6 +84,7 @@ public class Exercises {
 	 makeEnds([7, 4, 6, 2]) → [7, 2]
 	 */
 	public int[] makeEnds(int[] nums) {
+
 		return new int[]{nums[0] , nums[nums.length - 1]};
 	}
 
@@ -152,17 +155,12 @@ public class Exercises {
 	 */
 	public int[] fix23(int[] nums) {
 
-		int count = 0;
-		boolean isThereATwoFollowedByAThree = false;
-		//newArray[] = new int[]
-
-		for( int i = 0 ; i < nums.length -1 ; i++){
-			if(nums[i] == 2 && nums[i+1] == 3){
-				//newArray =
+		for(int i = 0; i < nums.length ; i++){
+			if((nums[i] == 2) && (nums[i+1] == 3)){
+				nums[i+1] = 0;
+			}
 		}
-
-		}
-		return new int[]{};
+		return nums;
 	}
 
 	/*
@@ -172,7 +170,14 @@ public class Exercises {
 	 start1([1, 2], []) → 1
 	 */
 	public int start1(int[] a, int[] b) {
-		return 0;
+		int count = 0;
+		if( a.length > 0 && a[0] == 1){
+			count++;
+		}
+		if( b.length > 0 && b[0] == 1){
+			count++;
+		}
+		return count;
 	}
 
 	/*
@@ -183,7 +188,17 @@ public class Exercises {
 	 biggerTwo([1, 1], [1, 2]) → [1, 2]
 	 */
 	public int[] biggerTwo(int[] a, int[] b) {
-		return new int[]{};
+
+		int sumA = a[0] + a[1];
+		int sumB = b[0] + b[1];
+
+		if(sumA > sumB){
+			return a;
+		}
+		if(sumB > sumA){
+			return b;
+		}
+			return a;
 	}
 	
 	/*
@@ -313,6 +328,17 @@ public class Exercises {
 	 blackjack(19, 22) → 19
 	 */
 	public int blackjack(int a, int b) {
+
+		if( (a <= 21) && ((21 - a) < (21 - b) || b > 21)){
+			return a;
+		}
+		if( (b <= 21) && ( (21 - a) > (21 - b) || a > 21 ) ){
+			return b;
+		}
+
+		if(a == b){
+			return a;
+		}
 		return 0;
 	}
 
