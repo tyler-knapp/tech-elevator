@@ -22,7 +22,8 @@ public class Exercises {
 		// ### EXAMPLE:
 		int numberOfBirds = 6;
 		int numberOfNests = 3;
-		int numberOfExtraBirds = numberOfBirds - numberOfNests;
+		int differenceBetweenBirdsAndNests = numberOfBirds - numberOfNests;
+		System.out.println(differenceBetweenBirdsAndNests);
 
         /* Exercise 3
         3. 3 raccoons are playing in the woods. 2 go home to eat dinner. How
@@ -67,9 +68,6 @@ public class Exercises {
 		int totalOwlsOnTheFence = owlsSittingOnTheFence + additionalOwls;
 
 		System.out.println(totalOwlsOnTheFence);
-
-
-
 
         /* Exercise 7
         7. 2 beavers were working on their home. 1 went for a swim. How many
