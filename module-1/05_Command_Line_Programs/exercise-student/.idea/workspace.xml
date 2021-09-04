@@ -4,13 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30831f3e-8217-434c-a382-4de17e526a7e" name="Default Changelist" comment="" />
+    <list default="true" id="30831f3e-8217-434c-a382-4de17e526a7e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/techelevator/Fibonacci.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/techelevator/Fibonacci.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
   <component name="ProjectId" id="1sgG2ehnvH1ry4CV29qAV1cgxnw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -21,7 +28,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../07_Collections_Part_1" />
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
-  <component name="RunManager" selected="JUnit.All in m01d06-introduction-to-objects-exercise">
+  <component name="RunManager" selected="Application.Fibonacci">
     <configuration name="DecimalToBinary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.techelevator.DecimalToBinary" />
       <module name="m01d05-command-line-programs-exercise" />
@@ -31,6 +38,27 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Fibonacci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.techelevator.Fibonacci" />
+      <module name="m01d05-command-line-programs-exercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.techelevator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in m01d05-command-line-programs-exercise" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="m01d05-command-line-programs-exercise" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -45,6 +73,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Fibonacci" />
+        <item itemvalue="JUnit.All in m01d05-command-line-programs-exercise" />
         <item itemvalue="JUnit.All in m01d06-introduction-to-objects-exercise" />
         <item itemvalue="Application.DecimalToBinary" />
       </list>

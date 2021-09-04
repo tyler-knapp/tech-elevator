@@ -6,34 +6,31 @@ public class Fibonacci {
 
 	public static void main(String[] args) {
 
-		// Get user input
-		Scanner input = new Scanner(System.in);
+		Scanner input = new Scanner( System.in );
 
-		System.out.print( " Please enter a number: " );
-		int userFibNumber = input.nextInt();
-		input.nextLine();
+		System.out.println("Please Enter a Number: ");
 
-		int fibPositionZero = 0;
-		int fibPositionOne = 1;
-		int fibSumPreviousTwoInts;
+		int userFibInput = input.nextInt();
 
-		if(userFibNumber == 0) {
-			System.out.println("0, 1");
-		} else if(userFibNumber == 1) {
-			System.out.println("0, 1, 1");
-		} else {
-			for(int i = 0; i <= fibPositionOne ; i++){
-				if( fibPositionZero <= userFibNumber) {
-					if(userFibNumber > 1){
-						System.out.print( fibPositionZero + " , ");
-					}
-				}
-				fibSumPreviousTwoInts = fibPositionZero + fibPositionOne;
-				fibPositionZero = fibPositionOne;
-				fibPositionOne = fibSumPreviousTwoInts;
-			}
+		int firstFibNumber = 0;
+		int secondFibNumber = 1;
+		int sumOfPreviousTwoNumbers = firstFibNumber + secondFibNumber;
+
+		if(userFibInput <= 0){
+			System.out.print( firstFibNumber + ", " + secondFibNumber );
+		} else if ( userFibInput == 1){
+			System.out.print( firstFibNumber + ", " + secondFibNumber + ", " + userFibInput );
 		}
+			System.out.print( firstFibNumber + ", " + secondFibNumber );
+			for(int i = 0 ; i <= userFibInput; i = sumOfPreviousTwoNumbers ){
 
+			System.out.print(", " + sumOfPreviousTwoNumbers);
+
+			firstFibNumber = secondFibNumber;
+			secondFibNumber = sumOfPreviousTwoNumbers;
+			sumOfPreviousTwoNumbers = firstFibNumber + secondFibNumber;
+
+		}
 
 
 	}
