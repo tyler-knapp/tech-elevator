@@ -9,19 +9,20 @@ public class TempConvert {
 		Scanner input = new Scanner(System.in);
 
 		System.out.println("Please Enter the Temperature: ");
-		String userTemperatureInput = input.nextLine();
-		double numberOfTemperature = Double.parseDouble(userTemperatureInput);
+		String userTemperatureInputInDegrees = input.nextLine();
+
+		double temperatureInDegrees = Double.parseDouble(userTemperatureInputInDegrees);
 
 		System.out.println("Is the temperature in (C)elsius, or (F)ahrenheit?: ");
-		String userCelsiusOrFahrenheit = input.nextLine();
+		String userCelsiusOrFahrenheitInput = input.nextLine();
 
-		double temperatureToCelsius =  (numberOfTemperature - 32) / 1.8;
-		double temperatureToFahrenheit =  (numberOfTemperature * 1.8) + 32;
+		double temperatureToCelsius =  (temperatureInDegrees - 32) / 1.8;
+		double temperatureToFahrenheit =  (temperatureInDegrees * 1.8) + 32;
 
-		if(userCelsiusOrFahrenheit.equals("C")){
-			System.out.println( numberOfTemperature + "C is " + temperatureToFahrenheit + "F" );
-		} else if (userCelsiusOrFahrenheit.equals("F")){
-			System.out.println( numberOfTemperature + "F is " + temperatureToCelsius + "C" );
+		if(userCelsiusOrFahrenheitInput.equals("C")){
+			System.out.println( temperatureInDegrees + "C is " + temperatureToFahrenheit + "F" );
+		} else if (userCelsiusOrFahrenheitInput.equals("F")){
+			System.out.println( temperatureInDegrees + "F is " + temperatureToCelsius + "C" );
 		} else {
 			System.out.println("error... maybe you need to capitalize!");
 		}

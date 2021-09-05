@@ -22,11 +22,12 @@ public class DecimalToBinary {
 		System.out.print("Please enter in a series of decimal values (separated by spaces): ");
 
 		String decimalValuesInput = input.nextLine();
-		String[] decimalValuesSeperated = decimalValuesInput.split(" ");
+
+		String[] decimalValuesSeparated = decimalValuesInput.split(" ");
 		// Loop through our array of strings
-		for(int i = 0;  i < decimalValuesSeperated.length ; i++) {
+		for(int i = 0;  i < decimalValuesSeparated.length ; i++) {
 			//for each iteration parse and give us an int at specified index (i)
-			int inputNumber = Integer.parseInt(decimalValuesSeperated[i]);
+			int inputNumber = Integer.parseInt(decimalValuesSeparated[i]);
 			// print out each user generated number & text
 			System.out.print(inputNumber + " in binary is ");
 			//pass input number to decimalToBinary

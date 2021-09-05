@@ -11,7 +11,7 @@ public class Exercises {
 	 helloName("X") → "Hello X!"
 	 */
 	public String helloName(String name) {
-		String newStr = new String ("Hello " + name +"!");
+		String newStr = new String ("Hello " + name + "!");
 		return newStr;
 	}
 
@@ -55,8 +55,7 @@ public class Exercises {
 		// create new string that start + word + end
 		String end = out.substring(2);
 		// return the new string
-		String combined = start + word + end;
-		return combined;
+		return start + word + end;
 	}
 
 	/*
@@ -66,9 +65,11 @@ public class Exercises {
 	 extraEnd("ab") → "ababab"
 	 extraEnd("Hi") → "HiHiHi"
 	 */
+
 	public String extraEnd(String str) {
-		String lastThreeCopiesOfLastTwoChars = new String(str.substring(str.length() - 2) + str.substring(str.length() - 2) + str.substring(str.length() - 2));
-		return lastThreeCopiesOfLastTwoChars;
+		String lastTwoCharactersOfString = str.substring(str.length() - 2);
+		String ans = (lastTwoCharactersOfString + lastTwoCharactersOfString + lastTwoCharactersOfString);
+		return ans;
 	}
 
 	/*
@@ -255,12 +256,14 @@ public class Exercises {
 	 */
 	public String twoChar(String str, int index) {
 
-		String twoLettersStartingAtIndex = new String( str.substring( index, index + 2));
-
-		if( str.length() - index > 2 ){
-			return twoLettersStartingAtIndex;
+		String ans = "";
+		if(str.length() - index > 1 && index >= 0){
+			ans = str.substring(index, index + 2);
+		} else if (str.length() - index <= 1 || index < 0){
+			ans = str.substring(0, 2);
 		}
-		return str.substring(0,2);
+
+		return ans;
 	}
 
 	/*
@@ -321,12 +324,19 @@ public class Exercises {
 	 */
 	public String frontTimes(String str, int n) {
 
-		String stringOfFirstThreeChars = "";
-
-		if(str.length() < 3){
-			return stringOfFirstThreeChars.substring(0);
+		String answer = "";
+		if(str.length() >= 3){
+			String firstThreeCharactersOfString = str.substring(0,3);
+			for(int i = 0; i < n  ; i++){
+				answer += firstThreeCharactersOfString;
+			}
+		} else if( str.length() < 3){
+			for(int i = 0; i < n ; i++){
+				answer += str;
+			}
 		}
-		return stringOfFirstThreeChars;
+
+		return answer;
 	}
 
 	/*

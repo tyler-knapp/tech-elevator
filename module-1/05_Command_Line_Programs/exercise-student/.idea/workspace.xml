@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="30831f3e-8217-434c-a382-4de17e526a7e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/techelevator/Fibonacci.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/techelevator/Fibonacci.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/techelevator/TempConvert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/techelevator/TempConvert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../06_Introduction_Objects_Strings/exercise-student/src/main/java/com/techelevator/Exercises.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_Introduction_Objects_Strings/exercise-student/src/main/java/com/techelevator/Exercises.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +29,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../07_Collections_Part_1" />
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
-  <component name="RunManager" selected="Application.Fibonacci">
+  <component name="RunManager" selected="JUnit.ExercisesTest">
     <configuration name="DecimalToBinary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.techelevator.DecimalToBinary" />
       <module name="m01d05-command-line-programs-exercise" />
@@ -55,6 +56,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TempConvert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.techelevator.TempConvert" />
+      <module name="m01d05-command-line-programs-exercise" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.techelevator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in m01d05-command-line-programs-exercise" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="m01d05-command-line-programs-exercise" />
       <option name="PACKAGE_NAME" value="" />
@@ -63,20 +77,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in m01d06-introduction-to-objects-exercise" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExercisesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="m01d06-introduction-to-objects-exercise" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.techelevator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.techelevator" />
+      <option name="MAIN_CLASS_NAME" value="com.techelevator.ExercisesTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExercisesTest" />
+        <item itemvalue="Application.DecimalToBinary" />
+        <item itemvalue="Application.TempConvert" />
         <item itemvalue="Application.Fibonacci" />
         <item itemvalue="JUnit.All in m01d05-command-line-programs-exercise" />
-        <item itemvalue="JUnit.All in m01d06-introduction-to-objects-exercise" />
-        <item itemvalue="Application.DecimalToBinary" />
       </list>
     </recent_temporary>
   </component>
@@ -90,5 +112,16 @@
       <updated>1621286614490</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../../06_Introduction_Objects_Strings/exercise-student/src/main/java/com/techelevator/Exercises.java</url>
+          <line>258</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
