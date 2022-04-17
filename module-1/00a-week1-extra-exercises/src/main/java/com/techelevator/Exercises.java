@@ -14,13 +14,15 @@ public class Exercises {
 
 	public int arrayCount9(int[] nums) {
 
-		int count = 0;
-		for( int i = 0 ; i < nums.length ; i++){
+		int numberOfNinesInArray = 0;
+		
+		for(int i = 0; i < nums.length; i++){
 			if(nums[i] == 9){
-				count++;
+				numberOfNinesInArray++;
 			}
 		}
-		return count;
+		return numberOfNinesInArray;
+		
 	}
 
 	/*
@@ -31,16 +33,25 @@ public class Exercises {
 	 */
 
 	public boolean arrayFront9(int[] nums) {
-
-		boolean isThereANineInTheFirstFourPositions = false;
-
-		for(int i = 0 ; i < nums.length  ; i++){
-			if( nums[i] == 9 && i < 4 ){
-				isThereANineInTheFirstFourPositions = true;
+		boolean doesFirstFourContainNine = false;
+		
+		if(nums.length >= 4){
+			for (int i = 0 ; i < 4 ; i++){
+				if(nums[i] ==9){
+					doesFirstFourContainNine = true;
+				}
+			}
+		} else if( nums.length < 4){
+			for (int i = 0 ; i < nums.length ; i++){
+				if(nums[i] ==9){
+					doesFirstFourContainNine = true;
+				}
 			}
 		}
-		return isThereANineInTheFirstFourPositions;
-	}
+		return doesFirstFourContainNine;
+		}
+	
+	
 
 	/*
 	 3. Given an array of ints, return true if .. 1, 2, 3, .. appears in the array somewhere.
@@ -51,12 +62,13 @@ public class Exercises {
 
 
 	public boolean array123(int[] nums) {
-		boolean isThereAOneTwoThreeSequence = false;
-		for( int i = 0 ; i < nums.length - 2 ; i++ )
-			if ( nums[i] == 1 && nums[i+1] == 2 && nums[i+2] == 3){
-				isThereAOneTwoThreeSequence = true;
+		boolean isThereA123Sequence = false;
+		for(int i = 0; i < nums.length - 2; i++){
+			if(nums[i] == 1 && nums[i + 1] == 2 && nums[i + 2] == 3){
+				isThereA123Sequence = true;
 			}
-		return isThereAOneTwoThreeSequence;
+		}
+		return isThereA123Sequence;
 	}
 	
 	/*
@@ -67,13 +79,13 @@ public class Exercises {
 	 noTriples([1, 1, 1, 2, 2, 2, 1]) → false
 	 */
 	public boolean noTriples(int[] nums) {
-		boolean areThereThreeOfTheSameValuesInARow = true;
+		boolean noTriples = true;
 		for ( int i = 0 ; i < nums.length -2 ; i++){
 			if( nums[i] == nums[i+1] && nums[i+1] == nums[i+2] ){
-				areThereThreeOfTheSameValuesInARow = false;
+				noTriples= false;
 			}
 		}
-		return areThereThreeOfTheSameValuesInARow;
+		return noTriples;
 	}
 
 	/*
@@ -209,7 +221,10 @@ public class Exercises {
 	 makeMiddle([1, 2]) → [1, 2]
 	 */
 	public int[] makeMiddle(int[] nums) {
-		return new int[]{};
+		int firstNumber = nums[(nums.length / 2) - 1];
+		int secondNumber = nums[(nums.length/2)];
+		
+		return new int[]{firstNumber, secondNumber};
 	}
 
 	/*
@@ -219,7 +234,7 @@ public class Exercises {
 	 plusTwo([9, 2], [3, 4]) → [9, 2, 3, 4]
 	 */
 	public int[] plusTwo(int[] a, int[] b) {
-		return new int[]{};
+		return new int[]{a[0], a[1], b[0], b[1]};
 	}
 
 	/*
@@ -230,7 +245,13 @@ public class Exercises {
 	 swapEnds([8, 6, 7, 9, 5]) → [5, 6, 7, 9, 8]
 	 */
 	public int[] swapEnds(int[] nums) {
-		return new int[]{};
+		int lastElement = nums[nums.length-1];
+		int firstElement = nums[0];
+		
+		nums[0] = lastElement;
+		nums[nums.length-1] = firstElement;
+		
+		return nums;
 	}
 
 	/*
@@ -240,6 +261,18 @@ public class Exercises {
 	 more14([1, 1]) → true
 	 */
 	public boolean more14(int[] nums) {
+		int countOnes = 0;
+		int countFours = 0;
+		for(int i = 0; i < nums.length ; i++){
+			if(nums[i] == 1){
+				countOnes++;
+			} else if(nums[i]== 4){
+				countFours++;
+			}
+		}
+		if(countOnes > countFours){
+			return true;
+		}
 		return false;
 	}
 
@@ -253,7 +286,13 @@ public class Exercises {
 	 fizzArray(10) → [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 	 */
 	public int[] fizzArray(int n) {
-		return new int[]{};
+		int[] result = new int[n];
+		int count = 0;
+		for(int i = 0 ; i < n ; i++){
+			result[i] = count;
+			count++;
+		}
+		return result;
 	}
 
 	/*
@@ -263,7 +302,13 @@ public class Exercises {
 	 only14([1, 1]) → true
 	 */
 	public boolean only14(int[] nums) {
-		return false;
+		
+		for(int i = 0; i < nums.length; i++){
+			if(nums[i] == 0 || nums[i] == 2 || nums[i] == 3 || nums[i] == 5 ||nums[i] == 6 || nums[i] == 7 || nums[i] == 8 || nums[i] == 9){
+				return false;
+			}
+		}
+		return true;
 	}
 	
 	/*
@@ -273,7 +318,21 @@ public class Exercises {
 	 no14([2, 3, 4]) → true
 	 */
 	public boolean no14(int[] nums) {
-		return false;
+		boolean doesContainOne = false;
+		boolean doesContainFour = false;
+		for(int i = 0; i < nums.length ; i++){
+			if(nums[i] == 1){
+				doesContainOne = true;
+			}
+			if(nums[i] == 4){
+				doesContainFour = true;
+			}
+		}
+		if(doesContainOne && doesContainFour){
+			return false;
+		}
+		return true;
+
 	}
 
 	/*
@@ -283,6 +342,15 @@ public class Exercises {
 	 has12([3, 1, 4, 5, 2]) → true
 	 */
 	public boolean has12(int[] nums) {
+		for(int i = 0 ; i < nums.length ; i++){
+			if(nums[i] == 1){
+				for(int j = i+1; j < nums.length; j++){
+					if(nums[j] == 2){
+						return true;
+					}
+				}
+			}
+		}
 		return false;
 	}
 
@@ -295,7 +363,13 @@ public class Exercises {
 	 fizzArray3(1, 3) → [1, 2]
 	 */
 	public int[] fizzArray3(int start, int end) {
-		return new int[]{};
+		int[] result = new int[end - start];
+		int startCounter = start;
+		for(int i = 0; i < end - start; i++){
+			result[i] = startCounter;
+			startCounter++;
+		}
+		return result;
 	}
 
 	/*
@@ -305,6 +379,9 @@ public class Exercises {
 	 lessBy10(11, 1, 7) → true
 	 */
 	public boolean lessBy10(int a, int b, int c) {
+		if(a - b >= 10 || b - a >= 10 || b - c >= 10 || c - b >= 10 || c - a >= 10 || a - c >= 10){
+			return true;
+		}
 		return false;
 	}
 
@@ -317,7 +394,13 @@ public class Exercises {
 	 greenTicket(1, 1, 2) → 10
 	 */
 	public int greenTicket(int a, int b, int c) {
-		return 0;
+		int ticketTotal = 0;
+		 if( a == b && b == c){
+			ticketTotal = 20;
+		}else if( a == b || b ==c || a == c){
+		 	ticketTotal = 10;
+		 }
+		return ticketTotal;
 	}
 	
 	/*
@@ -350,7 +433,32 @@ public class Exercises {
 	 evenlySpaced(4, 6, 3) → false
 	 */
 	public boolean evenlySpaced(int a, int b, int c) {
-		return false;
+		
+		if(a > b && a > c){
+			if(b > c){
+				if( a - b == b - c){
+					return true;
+				}
+				return false;
+			}
+		}
+		if(b > a && b > c){
+			if(a > c){
+				if( b - a == a - c){
+					return true;
+				}
+				return false;
+			}
+		}
+		if(c > a && c > b){
+			if(a > b){
+				if( c - a == a - b){
+					return true;
+				}
+				return false;
+			}
+		}
+	 return true;
 	}
 
 }
