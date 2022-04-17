@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30831f3e-8217-434c-a382-4de17e526a7e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/techelevator/TempConvert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/techelevator/TempConvert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../06_Introduction_Objects_Strings/exercise-student/src/main/java/com/techelevator/Exercises.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../06_Introduction_Objects_Strings/exercise-student/src/main/java/com/techelevator/Exercises.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +28,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../07_Collections_Part_1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../07_Collections_Part_1/tutorial-student" />
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RunManager" selected="JUnit.ExercisesTest">
@@ -118,7 +120,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../../06_Introduction_Objects_Strings/exercise-student/src/main/java/com/techelevator/Exercises.java</url>
-          <line>258</line>
+          <line>268</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>

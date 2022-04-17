@@ -320,19 +320,15 @@ public class Exercises {
 	public boolean no14(int[] nums) {
 		boolean doesContainOne = false;
 		boolean doesContainFour = false;
-		for(int i = 0; i < nums.length ; i++){
-			if(nums[i] == 1){
+		for (int num : nums) {
+			if (num == 1) {
 				doesContainOne = true;
 			}
-			if(nums[i] == 4){
+			if (num == 4) {
 				doesContainFour = true;
 			}
 		}
-		if(doesContainOne && doesContainFour){
-			return false;
-		}
-		return true;
-
+		return !doesContainOne || !doesContainFour;
 	}
 
 	/*

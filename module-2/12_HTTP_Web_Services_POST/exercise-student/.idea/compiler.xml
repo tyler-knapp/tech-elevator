@@ -6,15 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="m01d06-introduction-to-objects-exercise" />
-        <module name="m01d05-command-line-programs-exercise" />
-        <module name="m01d07-collections-part-1-tutorial" />
+        <module name="m02d12-http-web-services-POST-exercise" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="m01d05-command-line-programs-exercise" target="11" />
-      <module name="m01d06-introduction-to-objects-exercise" target="11" />
-      <module name="m01d07-collections-part-1-tutorial" target="11" />
-    </bytecodeTargetLevel>
   </component>
 </project>
