@@ -10,19 +10,15 @@ public class Exercises {
 	 arrayCount9([1, 9, 9]) → 2
 	 arrayCount9([1, 9, 9, 3, 9]) → 3
 	 */
-
-
+	
 	public int arrayCount9(int[] nums) {
-
 		int numberOfNinesInArray = 0;
-		
 		for(int i = 0; i < nums.length; i++){
 			if(nums[i] == 9){
 				numberOfNinesInArray++;
 			}
 		}
 		return numberOfNinesInArray;
-		
 	}
 
 	/*
@@ -37,35 +33,35 @@ public class Exercises {
 		
 		if(nums.length >= 4){
 			for (int i = 0 ; i < 4 ; i++){
-				if(nums[i] ==9){
+				if (nums[i] == 9) {
 					doesFirstFourContainNine = true;
+					break;
 				}
 			}
-		} else if( nums.length < 4){
-			for (int i = 0 ; i < nums.length ; i++){
-				if(nums[i] ==9){
+		} else {
+			for (int num : nums) {
+				if (num == 9) {
 					doesFirstFourContainNine = true;
+					break;
 				}
 			}
 		}
 		return doesFirstFourContainNine;
 		}
-	
-	
-
+		
 	/*
 	 3. Given an array of ints, return true if .. 1, 2, 3, .. appears in the array somewhere.
 	 array123([1, 1, 2, 3, 1]) → true
 	 array123([1, 1, 2, 4, 1]) → false
 	 array123([1, 1, 2, 1, 2, 3]) → true
 	 */
-
-
+	
 	public boolean array123(int[] nums) {
 		boolean isThereA123Sequence = false;
 		for(int i = 0; i < nums.length - 2; i++){
-			if(nums[i] == 1 && nums[i + 1] == 2 && nums[i + 2] == 3){
+			if (nums[i] == 1 && nums[i + 1] == 2 && nums[i + 2] == 3) {
 				isThereA123Sequence = true;
+				break;
 			}
 		}
 		return isThereA123Sequence;
@@ -78,11 +74,13 @@ public class Exercises {
 	 noTriples([1, 1, 2, 2, 2, 1]) → false
 	 noTriples([1, 1, 1, 2, 2, 2, 1]) → false
 	 */
+	
 	public boolean noTriples(int[] nums) {
 		boolean noTriples = true;
 		for ( int i = 0 ; i < nums.length -2 ; i++){
-			if( nums[i] == nums[i+1] && nums[i+1] == nums[i+2] ){
-				noTriples= false;
+			if (nums[i] == nums[i + 1] && nums[i + 1] == nums[i + 2]) {
+				noTriples = false;
+				break;
 			}
 		}
 		return noTriples;
@@ -96,7 +94,6 @@ public class Exercises {
 	 makeEnds([7, 4, 6, 2]) → [7, 2]
 	 */
 	public int[] makeEnds(int[] nums) {
-
 		return new int[]{nums[0] , nums[nums.length - 1]};
 	}
 
@@ -107,10 +104,7 @@ public class Exercises {
 	 has23([4, 5]) → false
 	 */
 	public boolean has23(int[] nums) {
-		if( nums[0] == 2 || nums[0] == 3 || nums[1] == 2 || nums[1] == 3){
-			return true;
-		}
-		return false;
+		return nums[0] == 2 || nums[0] == 3 || nums[1] == 2 || nums[1] == 3;
 	}
 
 	/*
@@ -120,10 +114,7 @@ public class Exercises {
 	 no23([3, 5]) → false
 	 */
 	public boolean no23(int[] nums) {
-		if( nums[0] == 2 || nums[0] == 3 || nums[1] == 2 || nums[1] ==3 ){
-			return false;
-		}
-		return true;
+		return nums[0] != 2 && nums[0] != 3 && nums[1] != 2 && nums[1] != 3;
 	}
 
 	/*
@@ -135,13 +126,9 @@ public class Exercises {
 	 makeLast([3]) → [0, 3]
 	 */
 	public int[] makeLast(int[] nums) {
-
 		int[] newArray = new int[nums.length * 2];
-
 		newArray[newArray.length -1] = nums[nums.length -1];
-
 		return newArray;
-
 	}
 
 	/*
@@ -151,7 +138,6 @@ public class Exercises {
 	 double23([2, 3]) → false
 	 */
 	public boolean double23(int[] nums) {
-
 		if( nums.length > 1){
 			return (nums[0] == 2 && nums[1] == 2) || (nums[0] == 3 && nums[1] == 3);
 		}
@@ -200,7 +186,6 @@ public class Exercises {
 	 biggerTwo([1, 1], [1, 2]) → [1, 2]
 	 */
 	public int[] biggerTwo(int[] a, int[] b) {
-
 		int sumA = a[0] + a[1];
 		int sumB = b[0] + b[1];
 
